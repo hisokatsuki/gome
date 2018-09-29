@@ -218,7 +218,14 @@
         float: left;
         width:160px;
         .hot-name{
-            @extend %hotname;
+            height:$font-size-16;
+            margin-top:24px;
+            line-height:$font-size-16;
+            font-size:$font-size-16;
+            color:#404040;
+            &:hover{
+                color:$font-color;
+            }
         }
         .hot-price{
             margin-top:14px;

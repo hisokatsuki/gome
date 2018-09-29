@@ -35,6 +35,14 @@ $none:none;
     background:url($url) no-repeat $position-left $position-top;
     overflow: hidden;
 }
+// 无定位图标
+@mixin icons3($width:12px,$height:13px,$position-left:-145px,$position-top:-1496px,$url:"https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") {
+    display:inline-block;
+    width:$width;
+    height:$height;
+    vertical-align: middle;
+    background:url($url) no-repeat $position-left $position-top;
+}
 // 清除浮动的函数
 @mixin clearfix() {
     &:after {
