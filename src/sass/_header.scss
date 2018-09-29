@@ -1,0 +1,155 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: $none;
+}
+li{
+    list-style: $none;
+}
+em,i{
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+img{
+    display: block;
+}
+body{
+    font-size: $font-size-12;
+    font-family: $font-family;
+    line-height:$line-height-24;
+    color:$body-color;
+}
+// 顶部广告图
+#top-banner{
+    background:rgb(183, 11, 1);
+    .wrap{
+        width:$width1200;
+        margin:0 auto;
+    }
+    img{
+        display:block;
+    }
+    span{
+        @include icons1(12px,12px,10px,175px,-60px,-466px);
+        text-indent: -9999px;
+        cursor:pointer;
+    }
+}
+// 头部
+#header{
+    // 菜单栏
+    .menu{
+        height:30px;
+        background:#f8f8f8;
+        border-bottom:1px solid #f3f3f3;
+    } 
+    // 居中的盒子  
+    .wrap{
+        width:$width1200;
+        margin:0 auto;
+    }
+    // 所有a的颜色一致
+    a{
+        color:$body-color;
+    }
+    // 滑过li，li下a颜色改变
+    li:hover a{
+        color:$font-color;
+    }
+    // 所有的li左浮动
+    li{
+        float:left;
+    }  
+    // 左菜单
+    .menu-left{
+        float: left;                    
+    }
+    // 右菜单下的国美会员
+    .gome-vip{
+        position: relative;
+        margin-right:12px;
+        line-height:$line-height-30;
+        span{
+            display:block;
+            padding:0 20px 0 10px;
+            border:1px solid #f8f8f8;
+            border-bottom:0;
+        }
+        // 小图标
+        i{
+            @include icons1(7px ,4px ,12px ,8px ,-62px,-433px );
+        }
+    }
+    // 滑过国美会员li，更改小图标
+    .gome-vip:hover i{
+        background-position:-55px -433px;
+    }
+    // 登录
+    .login{
+        margin-right:10px;
+        line-height:32px;
+        color:#888;
+    }
+    // 注册
+    .reg{
+        position: relative;
+        color:$font-color;
+        i{
+            @include icons1();
+        }
+    }
+    // 右菜单
+    .menu-right{
+        float:right;
+        li{
+            position: relative;
+            &:hover i{
+                background-position:-55px -433px;
+            }
+        }
+        a{
+            line-height: 32px;
+        }
+        span{
+            display:block;
+            padding:0 20px 0 10px;
+            border:1px solid #f8f8f8;
+            border-bottom:0;
+        }
+        i{
+            @include icons1(7px ,4px ,13px ,8px ,-62px,-433px );
+        }
+    } 
+    .gome-link{
+        margin-right:10px;
+    }
+    // 下拉内容
+    .public_dropdown{
+        position: absolute;
+        width:260px;
+        top:30px;
+        left:0;
+        overflow: hidden;
+        background:#fff;
+        border:1px solid #e6e6e6;
+        strong{
+            display: block;
+            padding:10px 10px 0;
+            a{
+                line-height: $line-height-24;
+                color:#069;        
+            }
+        }
+        .mygome-order li{
+            float: left;
+            width:50%;
+            height:25px;
+            line-height: 25px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+#gm-coupon{
+    width:$width1200;
+    margin:20px auto 0;
+    overflow: hidden;
+    // 领券图片
+    .coupon{
+        width:122px;
+        float:left;
+    }
+    ul{
+        float: left;
+        width:1039px;
+        overflow:hidden;
+    }
+    li{
+        float:left;
+        overflow: hidden;
+        a{
+            display: block;
+            width:207px;
+            border-right:1px dashed #ddd;
+            overflow: hidden;
+        }
+    }
+    // 最后一个li 的宽度为207
+    .c-lastli{
+        width:207px;
+    }
+    // 查看更多
+    .more{
+        width:38px;
+        float:right;
+    }
+}

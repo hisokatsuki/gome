@@ -1,0 +1,132 @@
+@charset "utf-8";
+#gm-public{
+    background:#f7f7f7;
+    padding:30px 0 20px;
+    // 居中的盒子
+    .wrap{
+        width:$width1200;
+        margin:0 auto;
+        overflow: hidden;
+    }
+    a{
+        color:$body-color;
+        @include a-changecolor();
+    }
+    // 标题共用样式
+    .gm-title{
+        overflow: hidden;
+        h3{
+            float: left;
+            font-size:18px;
+            line-height:38px;
+            color:#333;
+            font-weight: normal;       
+        }
+        span{
+            float: right;
+            display: block;
+            margin-top:12px;
+            margin-right:15px;
+        }
+        
+    }
+    // 热门话题
+    .gm-hottopic{
+        float:left;
+        width:954px;        
+    }
+    li{
+        float: left;
+        width:306px;
+        margin-right:10px;
+        padding-bottom:20px;
+        background:#fff;
+    }
+    .hot-img{
+        height:180px;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .hot-bot{
+        padding:0 20px;
+        a:hover{
+            color:$font-color;
+        }
+    }
+    // 标题
+    .img-title{
+        height:28px;
+        line-height:28px;
+        margin:12px 0 7px;
+        font-size:$font-size-16;
+        word-break: break-all;
+        a{
+            color:#333;
+        }       
+    }
+    // 内容
+    .img-info{
+        height:54px;
+        line-height:18px;
+        margin-bottom:17px;
+        a{
+            color:#5e5e5e;
+        }
+    }
+    // 点赞和评论
+    .img-data{
+        span{
+            padding-left:21px;
+            margin-right:31px;
+        }
+        span:nth-of-type(1){
+            background:url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/love.png?v=2413410") no-repeat 0 50%;
+        }
+        span:nth-of-type(2){
+            background:url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/discuss.png?v=2413410") no-repeat 0 50%;
+        }
+    }
+    // 兴趣圈子
+    .gm-interest{
+        float:left;
+        width:246px;
+    }
+    .interest-inner{
+        height:327px;
+        padding:15px 15px 0;
+        background:#fff;
+        p{
+            height:22px;
+            font-size:$font-size-13;
+            line-height:$line-height-22;
+            word-break: break-all;
+            overflow:hidden;
+        }
+        a{
+            color:#5e5e5e;
+            @include a-changecolor();
+        }
+    }
+    .interest-txt{
+        padding:15px 0 12px;
+        margin-bottom:14px;
+        border-bottom:1px dashed #e6e6e6;
+        span{
+            padding:0 3px;
+            color:#fff;
+            background:#ff7612;
+            border-radius: 2px;
+        }
+        a{
+            color:#333;
+            font-size:$font-size-14;
+            @include a-changecolor();
+        }
+        p{
+            margin:3px 0;
+            color:#a5a5a5;
+        }
+    }
+}

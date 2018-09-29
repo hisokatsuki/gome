@@ -1,0 +1,118 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#mask {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#agreement {
+  width: 890px;
+  height: 525px;
+  padding: 16px 35px 0 35px;
+  background: #fff;
+  position: absolute;
+  border: 1px solid #eee;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  z-index: 2;
+}
+#agreement h4 {
+  padding: 7px 0;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+#agreement .txt p {
+  font-size: 12px;
+  color: #585858;
+  line-height: 24px;
+}
+#agreement .txt b {
+  font-size: 12px;
+}
+#agreement .gome_agree {
+  padding-top: 15px;
+}
+#agreement .gome_agree a {
+  display: inline-block;
+  padding-bottom: 5px;
+  font-size: 13px;
+  color: #2875cc;
+}
+#agreement .gome_agree div {
+  width: 795px;
+  height: 79px;
+  padding: 0 14px 0 9px;
+  color: #333;
+  border: 1px solid #e6e6e6;
+  line-height: 24px;
+  overflow-y: scroll;
+}
+#agreement .no, #agreement .yes {
+  display: inline-block;
+  height: 30px;
+  padding: 0 15px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #5a6066;
+  line-height: 30px;
+  border: 1px solid #cacccf;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#agreement .no {
+  margin-left: 308px;
+}
+#agreement .yes {
+  margin-left: 15px;
+  color: #f20c59;
+  border: 1px solid #f20c59;
+}
+
+#logo {
+  margin-top: 18px;
+  height: 120px;
+  vertical-align: middle;
+}
+#logo .wrap {
+  width: 990px;
+  margin: 0 auto;
+}
+#logo a {
+  display: inline-block;
+  width: 300px;
+  height: 62px;
+  margin-top: 16px;
+  background: url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat;
+}
+
+#register .wrap {
+  width: 990px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=register.css.map */

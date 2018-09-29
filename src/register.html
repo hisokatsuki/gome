@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- logo -->
+    <div id="logo">
+        <div class="wrap">
+            <a href="index.html"></a>
+        </div>
+    </div>
+    <!-- 注册信息 -->
+    <div id="register">
+        <div class="wrap">
+            <div class="formlists">
+                <form action="php/register.php" method="POST">
+                    <!-- 用户名 -->
+                    <div class="formlist1">
+                        <label for="uname">用户名：</label>
+                        <input type="text" name="username" id="uname">
+                        <span>请输入用户名</span>
+                        <span>该用户名已存在，立刻<a href="login.html">登录</a>或更换用户名</span>
+                    </div>
+                    <!-- 设置密码 -->
+                    <div class="formlist2">
+                        <label for="pass">设置密码：</label>
+                        <input type="password" name="password" id="pass">
+                        <span></span>
+                    </div>
+                    <!-- 确认密码 -->
+                    <div class="formlist3">
+                        <label for="c_pass">确认密码：</label>
+                        <input type="password" name="c_password" id="c_pass">
+                        <span>请再次输入密码</span>
+                        <span>两次密码不一致</span>
+                    </div>
+                    <!-- 手机号 -->
+                    <div class="formlist4">
+                        <label for="mobile">手机号：</label>
+                        <input type="text" name="mobile" id="mobile">
+                        <span>手机号码格式有误，请重新输入</span>
+                    </div>
+                    <!-- 立即注册 -->
+                    <input type="submit" class="reg_btn" value="立即注册" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 遮罩和服务协议弹窗 -->
+    <div id="mask"></div>
+    <div id="agreement">
+        <h4>阅读注册协议</h4>
+        <div class="txt">
+            <p><b>【审慎阅读】注册协议已更新，您在点击同意前，应当认真阅读以下协议，尤其粗体标识的重要条款。请您务必审慎阅读、充分理解协议中相关条款内容。</b></p>
+            <p><b>【特别提示】</b>当您点击同意后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与国美发生争议的，适用《国美平台服务协议》处理。</p>
+        </div>
+        <div class="gome_agree">
+            <a href="#">国美平台服务协议</a>
+            <div>
+                <p>&nbsp;&nbsp;欢迎您成为国美平台会员，当您注册成功后，您可凭国美平台会员账号登录国美集团旗下的多个交易平台，且无需另行注册账号！</p>
+                <p>【审慎阅读】您在申请注册流程中点击同意本协议之前，应当认真阅读本协议。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。免除或者限制责任的条款将以粗体下划线标识，您应重点阅读。当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序后，即表示您已充分阅读、理解并接受本协议的全部内容，并与国美平台达成一致，成为国美平台“会员”。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序。</p>
+            </div>
+        </div>
+        <div class="gome_agree">
+            <a href="#">国美平台隐私政策</a>
+            <div>
+                <p>&nbsp;&nbsp;【特别提示】尊敬的国美平台会员：我们对《国美平台隐私政策》进行了更新。本次更新我们做出了诸多有利于保护您个人信息的调整，请仔细阅读条款（尤其是加粗划线的内容）并确定了解我们对您个人信息的处理规则。阅读过程中，如您有任何疑问，可联系我们的客服咨询，如您不同意协议中的任何条款，您应立即停止访问国美平台。</p>
+                <p>《国美平台隐私政策》正文</p>
+            </div>
+        </div>
+        <div class="gome_agree">
+            <a href="#">美付宝服务协议</a>
+            <div>
+                <p>&nbsp;&nbsp;欢迎您成为国美平台会员，当您注册成功后，您可凭国美平台会员账号登录国美集团旗下的多个交易平台，且无需另行注册账号！</p>
+                <p>&nbsp;&nbsp;一、美付宝服务协议的确认
+                    1、本协议有助于您了解美付宝为您提供的服务内容及您使用服务的权利和义务，请您仔细阅读（特别是以粗体标注的内容）。如果您对本协议的条款有疑问，您可通过美付宝客服渠道（本网站（下文定义）的在线客服，或拨打客服电话（400-635-2005）进行咨询。     
+                    2、如本协议发生变更，美付宝将通过gome.ebcpay.com网站公告的方式提前予以公布，变更后的协议在公告期届满起生效。若您在协议生效后继续使用美付宝服务的，表示您接受变更后的协议，也将遵循变更后的协议使用美付宝服务。</p>
+            </div>
+        </div>
+        <a href="index.html" class="no">不同意</a>
+        <a href="javascript:;" class="yes">同意协议</a>
+    </div>
+    <script src="script/thirdplugins/jquery1.11.3.js"></script>
+    <script>
+        // 1.点击同意协议，隐藏遮罩和协议
+        var $hide=$('#agreement,#mask');
+        $('.yes').on('click',function(){
+            $hide.hide();
+        })
+        // 2.协议水平垂直居中
+        var $agreement=$('#agreement');
+        var $l=($(window).width()-$agreement.outerWidth())/2;
+        var $t=($(window).height()-$agreement.outerHeight())/2;
+        $agreement.css({
+            'left':$l,
+            'top':$t
+        });
+        $(window).on('resize',function(){
+            $agreement.css({
+                'left':$l,
+                'top':$t
+            });
+        });
+    </script>
+</body>
+</html>

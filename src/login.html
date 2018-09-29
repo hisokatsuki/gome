@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login">
+        <form method="post">
+            <!-- 用户名 -->
+            <div class="name">
+                <input type="text" placeholder="手机号/用户名">
+                <span></span>
+            </div>
+            <!-- 密码 -->
+            <div class="pass">
+                <input type="password" placeholder="密码">
+            </div>
+            <!-- 是否自动登录 -->
+            <div>
+                <input type="checkbox" id="auto" name="auto">
+                <label for="auto">自动登录</label>
+            </div>
+            <!-- 忘记密码/免费注册 -->
+            <div>
+                <a href="#">忘记密码</a> |
+                <a href="register.html">免费注册</a>
+            </div>
+            <!-- 登录 -->
+            <input type="submit" value="登录" class="submit">
+        </form>
+    </div>
+    <script src="js/jquery1.11.3.js"></script>
+    <script>
+        var bstop=true;
+        $('.submit').on('click',function(){
+            console.log($('.name input').val());
+            $.ajax({
+                type:'post',
+                url:'php/login.php',
+                data:{
+                    name:$('.name input').val(),
+                    pass:$('.pass input').val()
+                }
+            }).done(function(d){
+                if(d){
+                    bstop=true;
+                    window.location.href="index1.html";
+                }else{
+                    $('.name span').html('用户名不存在');
+                    bstop=false;
+                }
+            })
+            if(bstop){
+                return false;
+            }
+        })
+    </script>
+</body>
+</html>

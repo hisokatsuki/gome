@@ -1,0 +1,917 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+em, i {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-size: 12px;
+  font-family: Arial, "Microsoft Yahei";
+  line-height: 24px;
+  color: #888;
+}
+
+#top-banner {
+  background: #b70b01;
+}
+#top-banner .wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#top-banner img {
+  display: block;
+}
+#top-banner span {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 175px;
+  width: 12px;
+  height: 12px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -60px -466px;
+  overflow: hidden;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+#header .menu {
+  height: 30px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #f3f3f3;
+}
+#header .wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+#header a {
+  color: #888;
+}
+#header li:hover a {
+  color: #f5004b;
+}
+#header li {
+  float: left;
+}
+#header .menu-left {
+  float: left;
+}
+#header .gome-vip {
+  position: relative;
+  margin-right: 12px;
+  line-height: 30px;
+}
+#header .gome-vip span {
+  display: block;
+  padding: 0 20px 0 10px;
+  border: 1px solid #f8f8f8;
+  border-bottom: 0;
+}
+#header .gome-vip i {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+  width: 7px;
+  height: 4px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
+  overflow: hidden;
+}
+#header .gome-vip:hover i {
+  background-position: -55px -433px;
+}
+#header .login {
+  margin-right: 10px;
+  line-height: 32px;
+  color: #888;
+}
+#header .reg {
+  position: relative;
+  color: #f5004b;
+}
+#header .reg i {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: -16px;
+  width: 12px;
+  height: 13px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -145px -1496px;
+  overflow: hidden;
+}
+#header .menu-right {
+  float: right;
+}
+#header .menu-right li {
+  position: relative;
+}
+#header .menu-right li:hover i {
+  background-position: -55px -433px;
+}
+#header .menu-right a {
+  line-height: 32px;
+}
+#header .menu-right span {
+  display: block;
+  padding: 0 20px 0 10px;
+  border: 1px solid #f8f8f8;
+  border-bottom: 0;
+}
+#header .menu-right i {
+  display: block;
+  position: absolute;
+  top: 13px;
+  right: 8px;
+  width: 7px;
+  height: 4px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
+  overflow: hidden;
+}
+#header .gome-link {
+  margin-right: 10px;
+}
+#header .public_dropdown {
+  position: absolute;
+  width: 260px;
+  top: 30px;
+  left: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+}
+#header .public_dropdown strong {
+  display: block;
+  padding: 10px 10px 0;
+}
+#header .public_dropdown strong a {
+  line-height: 24px;
+  color: #069;
+}
+#header .public_dropdown .mygome-order li {
+  float: left;
+  width: 50%;
+  height: 25px;
+  line-height: 25px;
+}
+
+#gm-countdown {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 20px;
+}
+#gm-countdown .gm-countdown-l {
+  position: relative;
+  float: left;
+  width: 950px;
+  height: 252px;
+}
+#gm-countdown .countdown-l-t {
+  height: 40px;
+  position: relative;
+}
+#gm-countdown .click-box {
+  float: left;
+  width: 120px;
+  border-left: 1px solid #e6e6e6;
+}
+#gm-countdown .click-box img {
+  float: left;
+  margin-left: 5px;
+}
+#gm-countdown .click-box h3 {
+  float: left;
+  font-size: 18px;
+  color: #f5004b;
+  line-height: 40px;
+  font-weight: normal;
+}
+#gm-countdown .time-box {
+  float: right;
+  width: 238px;
+  height: 40px;
+  border-right: 1px solid #e6e6e6;
+}
+#gm-countdown .time-box span {
+  float: left;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 7px;
+  color: #f5004b;
+}
+#gm-countdown .time-box i {
+  float: left;
+  display: block;
+  margin-top: 5px;
+  font-size: 20px;
+  font-style: normal;
+  color: #f5004b;
+  font-weight: bold;
+}
+#gm-countdown .time-box em {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+  font-style: normal;
+  border-radius: 5px;
+  background: #f5004b;
+}
+#gm-countdown .line-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #f5004b;
+}
+#gm-countdown .countdown-l-b {
+  height: 210px;
+  border: 1px solid #e6e6e6;
+}
+#gm-countdown .countdown-list li {
+  float: left;
+  width: 237px;
+  height: 209px;
+}
+#gm-countdown .countdown-list a {
+  display: block;
+  height: 179px;
+  margin-top: 15px;
+  border-right: 1px dashed #eee;
+}
+#gm-countdown .countdown-list li:nth-of-type(4) a {
+  border-right: none;
+}
+#gm-countdown .countdown-list img {
+  margin-left: 58px;
+}
+#gm-countdown .countdown-list p {
+  width: 196px;
+  height: 18px;
+  margin-left: 20px;
+  line-height: 18px;
+  color: #5e5e5e;
+  word-break: break-all;
+  overflow: hidden;
+}
+#gm-countdown .countdown-price {
+  margin: 6px 0 0 20px;
+  color: #ff0027;
+  font-size: 20px;
+}
+#gm-countdown .countdown-price .del {
+  font-size: 12px;
+  color: #999;
+  margin-left: 1px;
+  text-decoration: line-through;
+}
+#gm-countdown .countdown-btn {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 50;
+}
+#gm-countdown .countdown-btn span {
+  display: block;
+  background: #000;
+  opacity: 0.2;
+  width: 24px;
+  height: 48px;
+}
+#gm-countdown .countdown-btn p {
+  width: 24px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
+  cursor: pointer;
+}
+#gm-countdown .c-btn-left {
+  float: left;
+}
+#gm-countdown .c-btn-left p {
+  left: 0;
+  background-position: -4px -178px;
+}
+#gm-countdown .c-btn-left:hover span, #gm-countdown .c-btn-right:hover span {
+  opacity: 0.4;
+}
+#gm-countdown .c-btn-right {
+  float: right;
+}
+#gm-countdown .c-btn-right p {
+  right: 0;
+  background-position: -33px -178px;
+}
+#gm-countdown .gm-countdown-r {
+  float: right;
+  width: 250px;
+  height: 252px;
+  text-align: right;
+}
+#gm-countdown .gm-countdown-r a {
+  width: 240px;
+}
+#gm-countdown .gm-countdown-r img {
+  display: inline-block;
+}
+
+#gm-coupon {
+  width: 1200px;
+  margin: 20px auto 0;
+  overflow: hidden;
+}
+#gm-coupon .coupon {
+  width: 122px;
+  float: left;
+}
+#gm-coupon ul {
+  float: left;
+  width: 1039px;
+  overflow: hidden;
+}
+#gm-coupon li {
+  float: left;
+  overflow: hidden;
+}
+#gm-coupon li a {
+  display: block;
+  width: 207px;
+  border-right: 1px dashed #ddd;
+  overflow: hidden;
+}
+#gm-coupon .c-lastli {
+  width: 207px;
+}
+#gm-coupon .more {
+  width: 38px;
+  float: right;
+}
+
+#gm-feature {
+  width: 1200px;
+  margin: 0 auto;
+}
+#gm-feature .gm-title {
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+}
+#gm-feature .gm-title h2 {
+  float: left;
+  width: 70px;
+  margin-top: 28px;
+  text-indent: -10000px;
+  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
+}
+#gm-feature .gm-title span {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #ccc;
+  padding: 30px 0 0 9px;
+}
+#gm-feature .gm-feature-l {
+  float: left;
+  width: 420px;
+  margin-right: 10px;
+}
+#gm-feature .gm-feature-l h2 {
+  background-position: -169px -100px;
+}
+#gm-feature .gm-feature-c {
+  float: left;
+  width: 420px;
+  margin-right: 10px;
+}
+#gm-feature .gm-feature-c h2 {
+  background-position: -169px -132px;
+}
+#gm-feature .gm-feature-r {
+  float: left;
+  width: 340px;
+}
+#gm-feature .gm-feature-r h2 {
+  background-position: -169px -164px;
+}
+#gm-feature .gm-f-inner {
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+#gm-feature .gm-f-inner a {
+  float: left;
+}
+#gm-feature .gm-f-inner .dashedborder {
+  border-bottom: 1px dashed #eee;
+}
+#gm-feature .f-inner-l {
+  float: left;
+  width: 219px;
+}
+#gm-feature .f-inner-r {
+  border-left: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+#gm-feature .f-inner-r a {
+  display: block;
+  width: 118px;
+  height: 59px;
+  text-align: center;
+  opacity: 0.9;
+}
+#gm-feature .f-inner-r img {
+  display: inline-block;
+  width: 100px;
+  margin-top: 15px;
+}
+
+#gm-finance {
+  width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+#gm-finance .gm-title {
+  height: 60px;
+  overflow: hidden;
+}
+#gm-finance h2 {
+  margin-top: 28px;
+  float: left;
+  color: #333;
+  font-weight: normal;
+}
+#gm-finance span {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #ccc;
+  padding: 30px 0 0 9px;
+}
+#gm-finance .gm-finance-bot {
+  height: 230px;
+}
+#gm-finance .gm-bot-l {
+  float: left;
+  width: 420px;
+  height: 230px;
+  position: relative;
+}
+#gm-finance .gm-bot-l span {
+  display: block;
+  position: absolute;
+  width: 73px;
+  height: 30px;
+  padding: 0 13px;
+  font-size: 14px;
+  line-height: 30px;
+  left: 60px;
+  bottom: 48px;
+  background: #b88828;
+  border-radius: 2px;
+}
+#gm-finance .gm-bot-l a {
+  color: #fff;
+}
+#gm-finance .gm-bot-l i {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 7px;
+  height: 11px;
+  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -126px -52px;
+  overflow: hidden;
+}
+#gm-finance .gm-bot-r {
+  float: left;
+  width: 779px;
+  height: 228px;
+}
+#gm-finance .gm-bot-r ul {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+#gm-finance .gm-bot-r li {
+  float: left;
+  width: 194px;
+  border-right: 1px dashed #eee;
+}
+#gm-finance .gm-bot-r img {
+  width: 194px;
+}
+#gm-finance .gm-bot-r li:nth-of-type(4) {
+  border-right: 0;
+}
+
+#gm-public {
+  background: #f7f7f7;
+  padding: 30px 0 20px;
+}
+#gm-public .wrap {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#gm-public a {
+  color: #888;
+}
+#gm-public a:hover {
+  color: #f5004b;
+}
+#gm-public .gm-title {
+  overflow: hidden;
+}
+#gm-public .gm-title h3 {
+  float: left;
+  font-size: 18px;
+  line-height: 38px;
+  color: #333;
+  font-weight: normal;
+}
+#gm-public .gm-title span {
+  float: right;
+  display: block;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+#gm-public .gm-hottopic {
+  float: left;
+  width: 954px;
+}
+#gm-public li {
+  float: left;
+  width: 306px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  background: #fff;
+}
+#gm-public .hot-img {
+  height: 180px;
+}
+#gm-public .hot-img img {
+  width: 100%;
+  height: 100%;
+}
+#gm-public .hot-bot {
+  padding: 0 20px;
+}
+#gm-public .hot-bot a:hover {
+  color: #f5004b;
+}
+#gm-public .img-title {
+  height: 28px;
+  line-height: 28px;
+  margin: 12px 0 7px;
+  font-size: 16px;
+  word-break: break-all;
+}
+#gm-public .img-title a {
+  color: #333;
+}
+#gm-public .img-info {
+  height: 54px;
+  line-height: 18px;
+  margin-bottom: 17px;
+}
+#gm-public .img-info a {
+  color: #5e5e5e;
+}
+#gm-public .img-data span {
+  padding-left: 21px;
+  margin-right: 31px;
+}
+#gm-public .img-data span:nth-of-type(1) {
+  background: url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/love.png?v=2413410") no-repeat 0 50%;
+}
+#gm-public .img-data span:nth-of-type(2) {
+  background: url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/discuss.png?v=2413410") no-repeat 0 50%;
+}
+#gm-public .gm-interest {
+  float: left;
+  width: 246px;
+}
+#gm-public .interest-inner {
+  height: 327px;
+  padding: 15px 15px 0;
+  background: #fff;
+}
+#gm-public .interest-inner p {
+  height: 22px;
+  font-size: 13px;
+  line-height: 22px;
+  word-break: break-all;
+  overflow: hidden;
+}
+#gm-public .interest-inner a {
+  color: #5e5e5e;
+}
+#gm-public .interest-inner a:hover {
+  color: #f5004b;
+}
+#gm-public .interest-txt {
+  padding: 15px 0 12px;
+  margin-bottom: 14px;
+  border-bottom: 1px dashed #e6e6e6;
+}
+#gm-public .interest-txt span {
+  padding: 0 3px;
+  color: #fff;
+  background: #ff7612;
+  border-radius: 2px;
+}
+#gm-public .interest-txt a {
+  color: #333;
+  font-size: 14px;
+}
+#gm-public .interest-txt a:hover {
+  color: #f5004b;
+}
+#gm-public .interest-txt p {
+  margin: 3px 0;
+  color: #a5a5a5;
+}
+
+#gm-hotlist .b-inner-r .hot-name {
+  height: 16px;
+  margin-top: 24px;
+  line-height: 16px;
+  font-size: 16px;
+  color: #404040;
+}
+
+#gm-hotlist {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+#gm-hotlist:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gm-hotlist .gm-title {
+  height: 60px;
+  overflow: hidden;
+}
+#gm-hotlist .gm-title h2 {
+  margin-top: 28px;
+  float: left;
+  color: #333;
+  font-weight: normal;
+}
+#gm-hotlist .gm-title b {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ccc;
+  padding: 30px 0 0 9px;
+}
+#gm-hotlist .gm-title a {
+  float: right;
+  display: block;
+  margin-top: 30px;
+  color: #5e5e5e;
+}
+#gm-hotlist .gm-title a:hover {
+  color: #f5004b;
+}
+#gm-hotlist .gm-title i {
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  vertical-align: middle;
+  padding-top: 4px;
+  margin-left: 3px;
+  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -123px -126px;
+}
+#gm-hotlist .gm-title em {
+  float: right;
+  margin-top: 30px;
+}
+#gm-hotlist .gm-hotlist-l {
+  float: left;
+  width: 830px;
+}
+#gm-hotlist .gm-l-b {
+  height: 338px;
+  border: 1px solid #eee;
+}
+#gm-hotlist .gm-l-b a {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+#gm-hotlist .star {
+  float: left;
+  width: 281px;
+  height: 100%;
+  margin-right: -1px;
+  border-right: 1px solid #eee;
+}
+#gm-hotlist .star i {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 72px;
+  height: 72px;
+  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -52px 0;
+  overflow: hidden;
+}
+#gm-hotlist .star img {
+  display: inline-block;
+  margin: 30px 0 29px;
+}
+#gm-hotlist .star p {
+  width: 240px;
+  height: 24px;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #404040;
+  overflow: hidden;
+}
+#gm-hotlist .star p:hover {
+  color: #f5004b;
+}
+#gm-hotlist .star p:nth-of-type(2) {
+  color: #ff0027;
+}
+#gm-hotlist .hot-list {
+  float: left;
+  width: 547px;
+}
+#gm-hotlist .hot-list ul {
+  width: 548px;
+}
+#gm-hotlist .hot-list ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gm-hotlist .hot-list li {
+  float: left;
+  width: 274px;
+  height: 170px;
+  overflow: hidden;
+}
+#gm-hotlist .hot-list a {
+  display: block;
+  height: 168px;
+  border-right: 1px dashed #eee;
+  border-bottom: 1px dashed #eee;
+  overflow: hidden;
+}
+#gm-hotlist .hot-list img {
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin: 25px 10px 0;
+}
+#gm-hotlist .hot-list p {
+  float: left;
+  width: 120px;
+  height: 40px;
+  font-size: 13px;
+  text-align: left;
+  color: #5e5e5e;
+  line-height: 20px;
+  overflow: hidden;
+}
+#gm-hotlist .hot-list p:hover {
+  color: #f5004b;
+}
+#gm-hotlist .hot-list .hot-name {
+  margin-top: 29px;
+}
+#gm-hotlist .hot-list .hot-price {
+  margin-top: 8px;
+  line-height: 14px;
+  font-size: 14px;
+  color: #ff0027;
+}
+#gm-hotlist .hot-list b {
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 77px;
+  right: -3px;
+  bottom: -28px;
+  font-size: 125px;
+  font-weight: normal;
+  font-style: italic;
+  color: #f9f7f5;
+}
+#gm-hotlist .gm-hotlist-r {
+  float: right;
+  width: 361px;
+}
+#gm-hotlist .gm-r-b ul {
+  border: 1px solid #eee;
+  box-sizing: border-box;
+}
+#gm-hotlist .gm-r-b li {
+  width: 100%;
+  height: 169px;
+  overflow: hidden;
+}
+#gm-hotlist .gm-r-b li:nth-of-type(1) {
+  border-bottom: 1px dashed #eee;
+}
+#gm-hotlist .gm-r-b a {
+  display: block;
+}
+#gm-hotlist .gm-r-b a:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gm-hotlist .gm-r-b img {
+  width: 120px;
+  height: 120px;
+  margin: 5px 0 0 5px;
+}
+#gm-hotlist .b-inner-l {
+  position: relative;
+  float: left;
+  width: 130px;
+  height: 130px;
+  margin: 19px 30px 20px 20px;
+  border-radius: 68px;
+  background: #f6f6f6;
+}
+#gm-hotlist .txt {
+  position: absolute;
+  bottom: 4px;
+  left: 64px;
+}
+#gm-hotlist .txt div {
+  height: 18px;
+  margin-top: 4px;
+  background: #e74ccc;
+}
+#gm-hotlist .txt span {
+  display: block;
+  line-height: 18px;
+  padding: 0 4px;
+  color: #fff;
+}
+#gm-hotlist .b-inner-r {
+  float: left;
+  width: 160px;
+}
+#gm-hotlist .b-inner-r .hot-price {
+  margin-top: 14px;
+  line-height: 18px;
+  color: #888;
+}
+#gm-hotlist .b-inner-r .hot-price span {
+  font-size: 16px;
+  color: #ff0027;
+}
+#gm-hotlist .b-inner-r .des {
+  margin-top: 39px;
+}
+#gm-hotlist .b-inner-r .des span {
+  display: block;
+  height: 18px;
+  line-height: 18px;
+  color: #888;
+}
+
+/*# sourceMappingURL=index.css.map */

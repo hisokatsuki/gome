@@ -1,0 +1,242 @@
+@charset "utf-8";
+// 占位继承--热销榜和家电服务的列表标题
+%hotname{
+    height:$font-size-16;
+    margin-top:24px;
+    line-height:$font-size-16;
+    font-size:$font-size-16;
+    color:#404040;
+}
+#gm-hotlist{
+    width:$width1200;
+    margin:0 auto;
+    padding-top:20px;
+    @include clearfix();
+    // 共用的标题样式
+    .gm-title{
+        height:60px;
+        overflow: hidden;
+        h2{
+            margin-top:28px;
+            float: left;
+            color:#333;
+            font-weight: normal;
+        }
+        b{
+            display: block;
+            float:left;
+            font-size:$font-size-20;
+            font-weight: normal;
+            color:#ccc;
+            padding:30px 0 0 9px;
+        }
+        a{
+            float: right;
+            display: block;
+            margin-top:30px;
+            color:#5e5e5e;
+            @include a-changecolor();
+        }
+        // 左箭头图标
+        i{
+            display:inline-block;
+            width:10px;
+            height:14px;
+            vertical-align: middle;
+            padding-top: 4px;
+            margin-left:3px;
+            background:url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -123px -126px;
+        }
+        em{
+            float: right;
+            margin-top:30px;
+        }
+    }
+    // 热销榜左边--热销榜
+    .gm-hotlist-l{
+        float:left;
+        width:830px;     
+    }
+    .gm-l-b{
+        height:338px;
+        border:1px solid #eee;
+        a{
+            position: relative;
+            display:block;
+            text-align: center
+        }
+    }
+    // 热销榜star
+    .star{
+        float: left;
+        width:281px;
+        height:100%;
+        margin-right:-1px;
+        border-right:1px solid #eee;
+        i{
+            @include icons2( 72px,72px,20px,20px,-52px,0,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png")
+        }
+        img{
+            display:inline-block;
+            margin:30px 0 29px;
+        }
+        p{
+            width:240px;
+            height:24px;
+            margin-left:20px;
+            font-size:$font-size-16;
+            color:#404040;
+            overflow: hidden;
+            &:hover{
+                color:$font-color;
+            }
+        }
+        p:nth-of-type(2){
+            color:#ff0027;
+        }
+    }
+    // 热销榜其他
+    .hot-list{
+        float: left;
+        width:547px;
+        ul{
+            width:548px;
+            @include clearfix();
+        }
+        li{
+            float: left;
+            width:274px;
+            height:170px;
+            overflow: hidden;
+        }
+        a{
+            display:block;           
+            height:168px;
+            border-right:1px dashed #eee;
+            border-bottom:1px dashed #eee;
+            overflow: hidden;
+        }
+        img{
+            float:left;
+            width:120px;
+            height:120px;
+            margin:25px 10px 0;
+        }
+        p{
+            float: left;
+            width:120px;
+            height:40px;
+            font-size:$font-size-13;
+            text-align: left;
+            color:#5e5e5e;
+            line-height:20px;
+            overflow: hidden;
+            &:hover{
+                color:$font-color;
+            }
+        }
+        // 列表标题
+        .hot-name{
+            margin-top:29px;
+        }
+        // 价格
+        .hot-price{
+            margin-top:8px;
+            line-height:14px;
+            font-size:$font-size-14;
+            color:#ff0027;
+        }
+        // 数字
+        b{
+            display: block;
+            position: absolute;
+            width:70px;
+            height:77px;
+            right:-3px;
+            bottom:-28px;
+            font-size:125px;
+            font-weight: normal;
+            font-style:italic;
+            color:#f9f7f5;
+        }
+    }
+    // 热销榜右边--家电服务
+    .gm-hotlist-r{
+        float:right;
+        width:361px;
+    }
+    .gm-r-b{
+        ul{
+            border:1px solid #eee;
+            box-sizing: border-box
+        }
+        li{
+            width:100%;
+            height:169px;
+            
+            overflow: hidden;
+        }
+        li:nth-of-type(1){
+            border-bottom:1px dashed #eee;
+        }      
+        a{
+            display: block;
+            @include clearfix();
+        }
+        img{
+            width:120px;
+            height:120px;
+            margin:5px 0 0 5px;
+        }
+    }
+    .b-inner-l{
+        position: relative;
+        float: left;
+        width:130px;
+        height:130px;
+        margin:19px 30px 20px 20px;
+        border-radius: 68px;
+        background:#f6f6f6;
+    }
+    .txt{
+        position: absolute;
+        bottom:4px;
+        left:64px;
+        div{
+            height:$line-height-18;
+            margin-top: 4px;
+            background:#e74ccc;
+        }
+        span{
+            display: block;
+            line-height:$line-height-18;
+            padding:0 4px;
+            color:#fff;
+        }
+    }
+    .b-inner-r{
+        float: left;
+        width:160px;
+        .hot-name{
+            @extend %hotname;
+        }
+        .hot-price{
+            margin-top:14px;
+            line-height:$line-height-18;
+            color:#888;
+            span{
+                font-size:$font-size-16;
+                color:#ff0027;
+            }
+        }
+        .des{
+            margin-top:39px;
+            span{
+                display: block;
+                height:$line-height-18;
+                line-height:$line-height-18;
+                color:#888;
+            }
+        }
+    }
+}

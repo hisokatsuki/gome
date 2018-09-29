@@ -1,0 +1,83 @@
+@charset "utf-8";
+#gm-feature{
+    width:$width1200;
+    margin:0 auto;
+    .gm-title{ //标题共用样式
+        width:100%;
+        height:60px;
+        overflow: hidden;
+        h2{
+            float: left;
+            width: 70px;
+            margin-top:28px;
+            text-indent: -10000px;
+            background:url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
+        }
+        span{
+            display: block;
+            float:left;
+            font-size:20px;
+            color:#ccc;
+            padding:30px 0 0 9px;
+        }
+    }
+    //实惠
+    .gm-feature-l{ 
+        float:left;
+        width:420px;
+        margin-right:10px;
+        h2{
+            background-position:-169px -100px;
+        }
+    }
+    //新潮
+    .gm-feature-c{ 
+        float:left;
+        width:420px;
+        margin-right:10px;
+        h2{
+            background-position:-169px -132px;
+        }
+    }
+    //品牌
+    .gm-feature-r{ 
+        float:left;
+        width:340px;;
+        h2{
+            background-position:-169px -164px;
+        }
+    }
+    // 实惠 新潮 品牌内容公共样式
+    .gm-f-inner{
+        border:1px solid #e6e6e6;
+        overflow: hidden;
+        a{
+            float: left;
+        }
+        .dashedborder{
+            border-bottom:1px dashed #eee;
+        }
+    }
+    // 品牌内容的左部
+    .f-inner-l{
+        float: left;
+        width:219px;
+    }
+    // 品牌内容的右部
+    .f-inner-r{
+        border-left:1px solid #e6e6e6;
+        overflow: hidden;
+        a{
+            display:block;
+            width:118px;
+            height:59px;
+            text-align: center;
+            opacity: 0.9;
+        }
+        img{
+            display:inline-block;
+            width:100px;
+            margin-top:15px;
+        }
+    }
+}

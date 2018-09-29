@@ -1,0 +1,54 @@
+@charset "utf-8";
+$width1200:1200px; //居中的盒子的宽
+$font-size-12:12px;
+$font-size-13:13px;
+$font-size-14:14px;
+$font-size-16:16px;
+$font-size-18:18px;
+$font-size-20:20px;
+$font-family:Arial,"Microsoft Yahei";
+$font-color:#f5004b;
+$body-color:#888;
+$line-height-18:18px;
+$line-height-22:22px;
+$line-height-24:24px;
+$line-height-30:30px;
+$none:none;
+// 封装小图标的函数
+@mixin icons1($width:12px,$height:13px,$top:1px,$right:-16px,$position-left:-145px,$position-top:-1496px,$url:"https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") {
+    display:block;
+    position: absolute;
+    top:$top;
+    right:$right;
+    width:$width;
+    height:$height;
+    background:url($url) no-repeat $position-left $position-top;
+    overflow: hidden;
+}
+@mixin icons2($width:12px,$height:13px,$top:1px,$left:-16px,$position-left:-145px,$position-top:-1496px,$url:"https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") {
+    display:block;
+    position: absolute;
+    top:$top;
+    left:$left;
+    width:$width;
+    height:$height;
+    background:url($url) no-repeat $position-left $position-top;
+    overflow: hidden;
+}
+// 清除浮动的函数
+@mixin clearfix() {
+    &:after {
+        content: " "; 
+        display: block; 
+        clear: both;
+        height:0;
+        overflow: hidden;
+        visibility: hidden;
+    }
+}
+// 封装滑过a变色
+@mixin a-changecolor {
+    &:hover{
+        color:$font-color;
+    }
+}

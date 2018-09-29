@@ -1,0 +1,127 @@
+@charset "UTF-8"; //双引号
+$width990:990px; //居中的盒子的宽度
+$font-size-12:12px;
+$font-size-14:14px;
+$font-size-16:16px;
+$font-family:'微软雅黑';
+$line-height-24:24px;
+$line-height-30:30px;
+$color:#333;
+$per:100%;
+$none:none;
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    width:$per;
+    height:$per;
+}
+body{
+    font-size: $font-size-12;
+    font-family: $font-family;
+    width:$per;
+    height:$per;
+}
+a{
+    text-decoration: $none;
+}
+// 遮罩
+#mask{
+    height:$per;
+    width:$per;
+    background:rgba(0,0,0,0.05);
+    position:absolute;
+    left:0;
+    top:0;
+}
+// 服务协议
+#agreement{
+    width:890px;
+    height:525px;
+    padding:16px 35px 0 35px;
+    background:#fff;
+    position:absolute;
+    border:1px solid #eee;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+    box-sizing:border-box;
+    z-index:2;
+    h4{
+        padding:7px 0;
+        font-size:$font-size-16;
+        font-weight:normal;
+        text-align:center;
+    }
+    .txt p{
+        font-size:$font-size-12;
+        color:#585858;
+        line-height:$line-height-24;
+    }
+    .txt b{
+        font-size:$font-size-12;
+    }
+    // 三个服务协议
+    .gome_agree{
+        padding-top:15px;
+    }
+    .gome_agree a{
+        display:inline-block;
+        padding-bottom:5px;
+        font-size:13px;
+        color:#2875cc;
+    }
+    .gome_agree div{
+        width:795px;
+        height:79px;
+        padding:0 14px 0 9px;
+        color:#333;
+        border:1px solid #e6e6e6;
+        line-height:$line-height-24;
+        overflow-y:scroll;
+    }
+    // 同意和不同意按钮
+    .no, .yes{
+        display:inline-block;
+        height:30px;
+        padding:0 15px;
+        margin-top:20px;
+        font-size:$font-size-14;
+        color:#5a6066;
+        line-height:$line-height-30;
+        border:1px solid #cacccf;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    .no{
+        margin-left:308px;
+    }
+    .yes{
+        margin-left:15px;
+        color:#f20c59;
+        border:1px solid #f20c59;
+    }
+}
+// logo
+#logo{
+    margin-top:18px;
+    height:120px;
+    vertical-align:middle;
+    .wrap{ //居中的盒子
+        width:$width990;
+        margin:0 auto;
+    }
+    a{
+        display:inline-block;
+        width:300px;
+        height:62px;
+        margin-top:16px;
+        background:url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat;
+    }
+}
+// 注册信息
+#register{
+    .wrap{
+        width:$width990;
+        margin:0 auto;
+    }
+}
