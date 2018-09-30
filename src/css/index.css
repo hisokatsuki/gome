@@ -53,39 +53,58 @@ body {
   cursor: pointer;
 }
 
-#header .menu {
+#gome-topmenu {
   height: 30px;
   background: #f8f8f8;
   border-bottom: 1px solid #f3f3f3;
 }
-#header .wrap {
+#gome-topmenu .wrap {
   width: 1200px;
   margin: 0 auto;
 }
-#header a {
+#gome-topmenu li {
+  float: left;
+}
+#gome-topmenu .public_dropdown {
+  display: none;
+  position: absolute;
+  top: 30px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+  background: #fff;
+}
+#gome-topmenu .drop:hover .public_dropdown {
+  display: block;
+  z-index: 9;
+}
+#gome-topmenu .drop:hover span {
+  border-color: #e6e6e6;
+  background: #fff;
+  z-index: 10;
+}
+
+.menu-left {
+  float: left;
+}
+.menu-left a {
   color: #888;
 }
-#header li:hover a {
+.menu-left a:hover {
   color: #f5004b;
 }
-#header li {
-  float: left;
-}
-#header .menu-left {
-  float: left;
-}
-#header .gome-vip {
+.menu-left .gome-vip {
   position: relative;
   margin-right: 12px;
   line-height: 30px;
 }
-#header .gome-vip span {
+.menu-left .gome-vip span {
+  position: relative;
   display: block;
   padding: 0 20px 0 10px;
   border: 1px solid #f8f8f8;
   border-bottom: 0;
 }
-#header .gome-vip i {
+.menu-left .gome-vip span i {
   display: block;
   position: absolute;
   top: 12px;
@@ -95,47 +114,55 @@ body {
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
   overflow: hidden;
 }
-#header .gome-vip:hover i {
+.menu-left .gome-vip:hover i {
   background-position: -55px -433px;
 }
-#header .login {
-  margin-right: 10px;
+.menu-left .login {
+  margin-right: 6px;
   line-height: 32px;
   color: #888;
 }
-#header .reg {
+.menu-left .reg {
   position: relative;
   color: #f5004b;
 }
-#header .reg i {
+.menu-left .reg i {
   display: block;
   position: absolute;
-  top: 1px;
-  right: -16px;
+  top: 0;
+  right: -17px;
   width: 12px;
   height: 13px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -145px -1496px;
   overflow: hidden;
 }
-#header .menu-right {
+
+.menu-right {
   float: right;
 }
-#header .menu-right li {
+.menu-right a {
+  color: #888;
+}
+.menu-right a:hover {
+  color: #f5004b;
+}
+.menu-right li {
   position: relative;
 }
-#header .menu-right li:hover i {
+.menu-right li:hover i {
   background-position: -55px -433px;
 }
-#header .menu-right a {
-  line-height: 32px;
-}
-#header .menu-right span {
+.menu-right span {
+  position: relative;
   display: block;
   padding: 0 20px 0 10px;
   border: 1px solid #f8f8f8;
   border-bottom: 0;
 }
-#header .menu-right i {
+.menu-right span a {
+  line-height: 32px;
+}
+.menu-right i {
   display: block;
   position: absolute;
   top: 13px;
@@ -145,31 +172,391 @@ body {
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
   overflow: hidden;
 }
-#header .gome-link {
+.menu-right em {
+  font-size: 17px;
+  color: #dd00a7;
+  background: 0 0;
+  line-height: 30px;
+  height: 30px;
+  top: 0;
+}
+.menu-right .gome-link {
   margin-right: 10px;
 }
-#header .public_dropdown {
-  position: absolute;
-  width: 260px;
-  top: 30px;
+.menu-right .gome-link a {
+  line-height: 32px;
+}
+
+.gome-vip .public_dropdown {
+  width: 290px;
+  left: 0;
+  padding: 10px 15px;
+}
+.gome-vip .vip-name {
+  padding: 5px 0 20px;
+}
+.gome-vip .vip-name:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-vip .vip-name em {
+  float: left;
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -337px;
+  border-radius: 50px;
+}
+.gome-vip .vip-name div:nth-of-type(1) {
+  float: left;
+  width: 220px;
+  padding-left: 15px;
+}
+.gome-vip .vip-name p {
+  margin-top: 15px;
+}
+.gome-vip .vip-name p a {
+  color: #069;
+}
+.gome-vip .vip-icon {
+  position: relative;
+  padding-top: 15px;
+  border-top: 1px solid #f3f3f3;
+}
+.gome-vip .vip-icon p {
+  line-height: 18px;
+  color: #333;
+}
+.gome-vip .vip-icon p a {
+  float: right;
+  color: #ccc;
+}
+.gome-vip .vip-icon p a:hover {
+  color: #f5004b;
+}
+.gome-vip .vip-icon div {
+  position: relative;
+  width: 240px;
+  height: 70px;
+  margin: 10px 25px 0;
   left: 0;
   overflow: hidden;
-  background: #fff;
-  border: 1px solid #e6e6e6;
+  z-index: 2;
 }
-#header .public_dropdown strong {
+.gome-vip .vip-icon ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 720px;
+}
+.gome-vip .vip-icon li {
+  width: 80px;
+  height: 70px;
+  text-align: center;
+}
+.gome-vip .vip-icon i {
+  display: block;
+  height: 40px;
+  color: #ccc;
+  line-height: 40px;
+  font-size: 40px;
+}
+.gome-vip .vip-icon i:hover {
+  color: #888;
+}
+.gome-vip .vip-icon .vip-icon-prev {
+  display: block;
+  position: absolute;
+  top: 54px;
+  left: 0;
+  width: 16px;
+  height: 29px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -60px -357px;
+  overflow: hidden;
+}
+.gome-vip .vip-icon .vip-icon-prev:hover {
+  background-position: -60px -513px;
+}
+.gome-vip .vip-icon .vip-icon-next {
+  display: block;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  width: 16px;
+  height: 29px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -76px -357px;
+  overflow: hidden;
+}
+.gome-vip .vip-icon .vip-icon-next:hover {
+  background-position: -76px -513px;
+}
+
+.gome-mygome .public_dropdown {
+  width: 260px;
+  left: 0;
+}
+.gome-mygome .public_dropdown strong {
   display: block;
   padding: 10px 10px 0;
 }
-#header .public_dropdown strong a {
+.gome-mygome .public_dropdown strong a {
   line-height: 24px;
   color: #069;
 }
-#header .public_dropdown .mygome-order li {
+.gome-mygome .public_dropdown .mygome-order {
+  padding: 0 0 9px;
+  margin: 0 10px;
+  border-bottom: 1px solid #f3f3f3;
+}
+.gome-mygome .public_dropdown .mygome-order:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-mygome .public_dropdown .mygome-order li {
   float: left;
   width: 50%;
   height: 25px;
   line-height: 25px;
+}
+.gome-mygome .public_dropdown .mygome-coupon:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-mygome .public_dropdown .mygome-coupon li {
+  width: 63px;
+  text-align: center;
+  padding: 8px 0 10px;
+}
+.gome-mygome .public_dropdown .mygome-coupon a {
+  display: block;
+  line-height: 14px;
+  margin: 5px 0;
+  border-right: 1px solid #f3f3f3;
+}
+.gome-mygome .public_dropdown .mygome-coupon b {
+  display: inline-block;
+  width: 100%;
+  color: #cdcdcd;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.gome-mygome .public_dropdown p {
+  padding: 10px;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+.gome-mygome .public_dropdown .mygome-track {
+  height: 50px;
+  padding: 0 0 18px 10px;
+  background: #f8f8f8;
+}
+.gome-mygome .public_dropdown .mygome-track:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-mygome .public_dropdown .mygome-track li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -397px;
+  margin: 0 12px 10px 0;
+}
+
+.gome-enterprise .public_dropdown {
+  right: 0;
+  width: 200px;
+}
+.gome-enterprise .public_dropdown a {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1511px;
+}
+
+.gome-service .public_dropdown {
+  width: 210px;
+  left: 0;
+  padding: 15px;
+}
+.gome-service .public_dropdown ul {
+  height: 48px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.gome-service .public_dropdown li {
+  width: 33%;
+  height: 24px;
+}
+.gome-service .public_dropdown li:hover a {
+  color: #f5004b;
+}
+.gome-service .public_dropdown p {
+  font-weight: 700;
+}
+.gome-service .public_dropdown .online {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+  background: #dd00a7;
+  text-align: center;
+}
+
+#gome-topmenu .online {
+  color: #fff;
+}
+#gome-topmenu .online em {
+  margin-right: 10px;
+  font-size: 19px;
+  color: #fff;
+  line-height: 25px;
+}
+
+#gome-topmenu dd li {
+  float: none;
+}
+
+.gome-sitemap .public_dropdown {
+  right: -98px;
+  width: 1198px;
+  padding: 10px 0;
+}
+.gome-sitemap .public_dropdown:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-sitemap .public_dropdown dl {
+  float: left;
+  padding: 0 15px 0 40px;
+  margin: 10px 0;
+  border-left: 1px solid #f3f3f3;
+}
+.gome-sitemap .public_dropdown dl:nth-of-type(5) {
+  border-left: 0;
+}
+.gome-sitemap .public_dropdown dt {
+  color: #5e5e5e;
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.gome-sitemap .public_dropdown dd {
+  height: 120px;
+}
+.gome-sitemap .public_dropdown dd:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gome-sitemap .public_dropdown ul {
+  float: left;
+  width: 75px;
+}
+.gome-sitemap .public_dropdown .hot {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 14px;
+  width: 11px;
+  height: 14px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -452px;
+  overflow: hidden;
+}
+.gome-sitemap .public_dropdown .new {
+  display: block;
+  position: absolute;
+  top: 1px;
+  right: 38px;
+  width: 11px;
+  height: 14px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -452px;
+  overflow: hidden;
+}
+
+.gome-phone .public_dropdown {
+  right: 0;
+  width: 130px;
+  padding: 10px 15px;
+}
+.gome-phone .public_dropdown a {
+  display: inline-block;
+  width: 130px;
+  height: 170px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -799px;
+}
+
+#gome-head {
+  position: relative;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+}
+#gome-head:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-head .gm-logo {
+  position: absolute;
+  left: 0;
+  width: 125px;
+  margin: 32px 10px 0 0;
+}
+#gome-head .gm-logo a {
+  display: inline-block;
+  width: 125px;
+  height: 56px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png") no-repeat 0 0;
+  text-indent: -999px;
+  overflow: hidden;
+}
+#gome-head .gm-logo-gif {
+  position: absolute;
+  left: 135px;
+  width: 100px;
+  margin: 35px 0 0 10px;
+}
+
+#gome-category {
+  border-bottom: 1px solid #dd00a7;
+  background: #f8f8f8;
+}
+#gome-category .wrap {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
 }
 
 #gm-countdown {
@@ -1170,6 +1557,13 @@ body {
 }
 #gome-footer .gm-footer-credit .f-icon5 {
   background-position: -175px -180px;
+}
+
+#gome-main {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+  background: red;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -7,75 +7,256 @@
         <span>关闭</span>
     </div>
 </div>
-<!-- 头部-->
-<div id="header">
-    <!-- 菜单栏 -->
-    <div class="menu">
-        <div class="wrap">
-            <ul class="menu-left">
-                <li class="gome-home drop" style="display:none;">
-                    <span>
-                        <a href="index.html">国美首页</a>
-                        <i></i>
-                    </span>                     
-                </li>
-                <li class="gome-vip drop">
-                    <span>
-                        <a href="#">国美会员</a>
-                        <i></i>
-                    </span>  
-                </li>
-                <li class="gome-l-r">
-                    <a href="login.html" class="login">登录</a>
-                    <a href="register.html" class="reg">注册有礼<i></i></a>                  
-                </li>
-            </ul>
-            <ul class="menu-right">
-                <li class="gome-link">
-                        <a href="#">我的订单</a>
-                </li>
-                <li class="gome-mygome drop">
-                    <span>
-                        <a href="#">我的国美</a>
-                        <i></i>
-                    </span>
-                    <div class="public_dropdown">
-                        <strong>我的国美，<a href="login.html">请登录!</a></strong>
-                        <ul class="mygome-order">
-                            <li><a href="#" target="_blank">待处理订单</a></li>
-                            <li><a href="#" target="_blank">我的收藏</a></li>
-                            <li><a href="#" target="_blank">我的金融</a></li>
-                            <li><a href="#" target="_blank">个人资料</a></li>
-                            <li><a href="#" target="_blank">我的美店</a></li>
-                        </ul>
+<!-- 菜单栏 -->
+<div id="gome-topmenu">
+    <div class="wrap">
+        <ul class="menu-left">
+            <li class="gome-home drop" style="display:none;">
+                <span>
+                    <a href="index.html">国美首页</a>
+                    <i></i>
+                </span>                     
+            </li>
+            <li class="gome-vip drop">
+                <span>
+                    <a href="#">国美会员</a>
+                    <i></i>
+                </span>  
+                <div class="public_dropdown">
+                    <div class="vip-name">
+                        <em></em>
+                        <div>
+                            <p class="vip-name-login">欢迎来到国美，
+                                <a href="login.html">请登录！</a>
+                            </p>
+                        </div>
                     </div>
-                </li>
-                <li class="gome-enterprise drop">
-                    <span>
-                        <a href="#">企业采购</a>
-                        <i></i>
-                    </span>
-                </li>
-                <li class="gome-service drop">
-                    <span>
-                        <a href="#">国美服务</a>
-                        <i></i>
-                    </span>
-                </li>
-                <li class="gome-sitemap drop">
-                    <span>
-                        <a href="#">网站导航</a>
-                        <i></i>
-                    </span>
-                </li>
-                <li class="gome-phone drop">
-                    <span>
-                        <em class="gm-icon">á</em>
-                        <a href="#">手机国美</a>
-                        <i></i>
-                    </span>
-                </li>
-            </ul>
-        </div>
+                    <div class="vip-icon">
+                        <p>我的特权<a href="#">会员俱乐部</a></p>
+                        <a href="javascript:;" class="vip-icon-prev"></a>
+                        <a href="javascript:;" class="vip-icon-next"></a>
+                        <div>
+                            <ul>
+                                <li><a href="#"><i class="gm-icon">6</i>美豆抽奖</a></li>
+                                <li><a href="#"><i class="gm-icon">:</i>退换货保障</a></li>
+                                <li><a href="#"><i class="gm-icon">?</i>价格保护</a></li>
+                                <li><a href="#"><i class="gm-icon">@</i>消费得美豆</a></li>
+                                <li><a href="#"><i class="gm-icon">=</i>专属阶梯价</a></li>
+                                <li><a href="#"><i class="gm-icon">9</i>生日礼包</a></li>
+                                <li><a href="#"><i class="gm-icon">7</i>自营免运费</a></li>
+                                <li><a href="#"><i class="gm-icon">&gt;</i>专属客服</a></li>
+                                <li><a href="javascript:;"><i class="gm-icon">≠</i>更多精彩</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="gome-l-r">
+                <a href="login.html" class="login">登录</a>
+                <a href="register.html" class="reg">注册有礼<i></i></a>                  
+            </li>
+        </ul>
+        <ul class="menu-right">
+            <li class="gome-link">
+                    <a href="#">我的订单</a>
+            </li>
+            <li class="gome-mygome drop">
+                <span>
+                    <a href="#">我的国美</a>
+                    <i></i>
+                </span>
+                <div class="public_dropdown">
+                    <strong>我的国美，<a href="login.html">请登录!</a></strong>
+                    <ul class="mygome-order">
+                        <li><a href="#" target="_blank">待处理订单</a></li>
+                        <li><a href="#" target="_blank">我的收藏</a></li>
+                        <li><a href="#" target="_blank">我的金融</a></li>
+                        <li><a href="#" target="_blank">个人资料</a></li>
+                        <li><a href="#" target="_blank">我的美店</a></li>
+                    </ul>
+                    <ul class="mygome-coupon">
+                        <li><a href="#">红 券</a><b>-</b></li>
+                        <li><a href="#">蓝 券</a><b>-</b></li>
+                        <li><a href="#">店铺券</a><b>-</b></li>
+                        <li><a href="#">购物券</a><b>-</b></li>
+                    </ul>
+                    <p>足迹</p>
+                    <ul class="mygome-track">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="gome-enterprise drop">
+                <span>
+                    <a href="#">企业采购</a>
+                    <i></i>
+                </span>
+                <div class="public_dropdown">
+                    <a href="#"></a>
+                </div>
+            </li>
+            <li class="gome-service drop">
+                <span>
+                    <em class="gm-icon">f</em>
+                    <a href="#">服务中心</a>
+                    <i></i>
+                </span>
+                <div class="public_dropdown">
+                    <p><a href="#">售后服务</a></p>
+                    <ul>
+                        <li><a href="#">物流与配送</a></li>
+                        <li><a href="#">上门安装</a></li>
+                        <li><a href="#">退换货服务</a></li>
+                        <li><a href="#">手机维修</a></li>
+                        <li><a href="#">延保服务</a></li>
+                        <li><a href="#">家电回收</a></li>
+                    </ul>
+                    <p><a href="#">帮助服务</a></p>
+                    <ul>
+                        <li><a href="#">焦点问题</a></li>
+                        <li><a href="#">签收与验货</a></li>
+                        <li><a href="#">分期付款</a></li>
+                        <li><a href="#">退款说明</a></li>
+                        <li><a href="#">优惠券说明</a></li>
+                    </ul>
+                    <a href="#" class="online"><em class="gm-icon">f</em>在线客服</a>
+                </div>
+            </li>
+            <li class="gome-sitemap drop">
+                <span>
+                    <a href="#">网站导航</a>
+                    <i></i>
+                </span>
+                <div class="public_dropdown">
+                    <dl>
+                        <dt>主题促销</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">真划算</a></li>
+                                <li><a href="#">抢购</a></li>
+                                <li><a href="#">美家致选</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">家电城</a></li>
+                                <li><a href="#">服饰城</a></li>
+                                <li><a href="#">国美超市</a></li>
+                                <li><a href="#">品牌街</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">智能</a></li>
+                                <li><a href="#">今日特卖</a><i class="hot"></i></li>
+                                <li><a href="#">新品抢先</a></li>
+                                <li><a href="#">家居家装</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>特色分类</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">电视影音</a></li>
+                                <li><a href="#">冰洗</a></li>
+                                <li><a href="#">洗衣机</a></li>
+                                <li><a href="#">空调</a></li>
+                                <li><a href="#">厨卫生活</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">手机</a></li>
+                                <li><a href="#">数码</a></li>
+                                <li><a href="#">电脑办公</a></li>
+                                <li><a href="#">精品配件</a></li>
+                                <li><a href="#">汽车</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">住宅家具</a></li>
+                                <li><a href="#">家装建材</a></li>
+                                <li><a href="#">家居日用</a></li>
+                                <li><a href="#">床品家纺</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">服饰鞋帽</a></li>
+                                <li><a href="#">运动户外</a></li>
+                                <li><a href="#">箱包奢品</a></li>
+                                <li><a href="#">钟表首饰</a></li>
+                                <li><a href="#">文化艺术</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">食品酒水</a></li>
+                                <li><a href="#">医疗保健</a></li>
+                                <li><a href="#">母婴玩具</a></li>
+                                <li><a href="#">美妆个护</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>便捷服务</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">话费充值</a></li>
+                                <li><a href="#">游戏点卡</a></li>
+                                <li><a href="#">美盈宝</a></li>
+                                <li><a href="#">定期理财</a></li>
+                                <li><a href="#">转让理财</a></li>
+                                <li><a href="#">美店</a><i class="new"></i></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">流量充值</a></li>
+                                <li><a href="#">投金宝</a></li>
+                                <li><a href="#">票据理财</a></li>
+                                <li><a href="#">上门服务</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>更多热点</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">商家入驻</a></li>
+                                <li><a href="#">企业采购</a><i class="hot"></i></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>国美旗下</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#">国美管家</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="gome-phone drop">
+                <span>
+                    <em class="gm-icon">á</em>
+                    <a href="#">手机国美</a>
+                    <i></i>
+                </span>
+                <div class="public_dropdown">
+                    <a href="#"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="gome-head">
+    <div class="gm-logo">
+        <a href="#">国美</a>
+    </div>
+    <div class="gm-logo-gif">
+        <a href="#">
+            <img src="https://gfs10.gomein.net.cn/T1x6CsB_dT1RCvBVdK.gif">
+        </a>
+    </div>  
+    <div class="gm-search">
+        
+    </div>  
+</div>
+<div id="gome-category">
+    <div class="wrap">
+
     </div>
 </div>

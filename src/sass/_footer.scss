@@ -2,6 +2,7 @@
 #gome-help{
     width:$width1200;
     margin:30px auto 0;
+    // 品质，低价，速达
     ul{
         background:#f5f5f5;
         padding:15px 0;
@@ -30,6 +31,7 @@
             @include icons3(3px,10px,-120px,-1489px);
         }
     }
+    // 物流配送，支付与账户等
     .gm-help-box{
         width:110%;
         margin-left:-5%;
@@ -155,6 +157,7 @@
             line-height:$line-height-22;
         }
     }
+    // footer最下面一排图标
     .gm-footer-credit{
         border-top:1px solid #e6e6e6;
         margin-top:5px;

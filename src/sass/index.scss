@@ -8,6 +8,13 @@
 @import 'public'; // 热门话题 兴趣圈子
 @import 'hotlist';// 热销榜
 @import 'footer'; //footer
+// 主要内容
+#gome-main{
+    width:$width1200;
+    height:300px;
+    margin:0 auto;
+    background:red;
+}
 
         
 
