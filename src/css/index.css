@@ -75,12 +75,12 @@ body {
 }
 #gome-topmenu .drop:hover .public_dropdown {
   display: block;
-  z-index: 9;
+  z-index: 99;
 }
 #gome-topmenu .drop:hover span {
   border-color: #e6e6e6;
   background: #fff;
-  z-index: 10;
+  z-index: 100;
 }
 
 .menu-left {
@@ -91,6 +91,25 @@ body {
 }
 .menu-left a:hover {
   color: #f5004b;
+}
+.menu-left .gome-home {
+  margin: 0 10px;
+  line-height: 32px;
+}
+.menu-left .gome-home a {
+  color: #5e5e5e;
+}
+.menu-left .gome-home a:hover {
+  color: #f5004b;
+}
+.menu-left .gome-home i {
+  margin-right: 2px;
+  display: inline-block;
+  width: 13px;
+  height: 12px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -17px -1362px;
+  vertical-align: baseline;
 }
 .menu-left .gome-vip {
   position: relative;
@@ -548,6 +567,251 @@ body {
   width: 100px;
   margin: 35px 0 0 10px;
 }
+#gome-head .gm-search {
+  position: absolute;
+  top: 32px;
+  left: 385px;
+  width: 500px;
+  z-index: 91;
+}
+#gome-head .gm-search .gm-search-top {
+  position: relative;
+  height: 30px;
+  border: 1px solid #dd00a7;
+  font-size: 14px;
+  background: #fff;
+}
+#gome-head .gm-search .gm-search-top .voice-search {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  width: 15px;
+  height: 20px;
+  padding: 5px 0;
+  margin-right: 3px;
+  background: url("../images/voice.png") no-repeat center;
+  background-size: 13px 19px;
+  cursor: pointer;
+  opacity: .55;
+}
+#gome-head .searchform {
+  position: relative;
+}
+#gome-head .searchform label {
+  position: absolute;
+  top: 1px;
+  left: 75px;
+  font-size: 14px;
+  color: #a5a5a5;
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+}
+#gome-head .searchform input {
+  position: absolute;
+  width: 310px;
+  padding: 5px 5px 5px 72px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: arial;
+  color: #5E5E5E;
+  border: 0;
+  background: 0;
+  outline: 0;
+}
+#gome-head .searchform button {
+  float: right;
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  border: 0;
+  background: #dd00a7;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+#gome-head .search-type-dropdown {
+  position: absolute;
+  float: left;
+  top: 0;
+  left: 0;
+  width: 62px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+#gome-head .search-type-dropdown .search-type {
+  position: relative;
+  width: 42px;
+  height: 30px;
+  padding: 0 10px;
+  border-right: 1px solid #dd00a7;
+  cursor: pointer;
+}
+#gome-head .search-type-dropdown .search-type i {
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 9px;
+  width: 11px;
+  height: 7px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -145px -1469px;
+  overflow: hidden;
+}
+#gome-head .search-type-dropdown .search-dropdown {
+  display: none;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  top: 30px;
+  background: #fff;
+  border: 1px solid #dd00a7;
+}
+#gome-head .search-type-dropdown .search-dropdown li {
+  width: 42px;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+#gome-head .search-type-dropdown .search-dropdown li:hover {
+  background: #eee;
+}
+#gome-head .search-type-dropdown:hover .search-dropdown {
+  display: block;
+}
+#gome-head .gm-hot-keywords {
+  height: 14px;
+  line-height: 14px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+#gome-head .gm-hot-keywords a:nth-of-type(1) {
+  color: #f5004b;
+}
+#gome-head .gm-hot-keywords a {
+  color: #a5a5a5;
+  margin-right: 5px;
+}
+#gome-head .gm-hot-keywords a:hover {
+  color: #f5004b;
+}
+#gome-head .gm-shopcar {
+  position: absolute;
+  top: 32px;
+  right: 0;
+  width: 240px;
+  z-index: 8;
+}
+#gome-head .gm-shopcar .shopcar {
+  position: relative;
+  float: right;
+}
+#gome-head .gm-shopcar .shopcarbox {
+  position: relative;
+  vertical-align: middle;
+}
+#gome-head .gm-shopcar .shopcarbox > span {
+  display: block;
+  background: #fff;
+}
+#gome-head .gm-shopcar .shopcarbox a {
+  position: relative;
+  display: block;
+  height: 34px;
+  width: 75px;
+  margin: 1px;
+  color: #5e5e5e;
+  padding: 5px 20px 0 45px;
+  line-height: 34px;
+}
+#gome-head .gm-shopcar .shopcarbox a:hover {
+  color: #f5004b;
+  text-decoration: underline;
+}
+#gome-head .gm-shopcar .shopcarbox .down {
+  display: none;
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 280px;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.09);
+  z-index: -1;
+}
+#gome-head .gm-shopcar .shopcarbox .noshop {
+  text-align: center;
+  line-height: 100px;
+  color: #a5a5a5;
+}
+#gome-head .gm-shopcar .shopcarbox .noshop a {
+  display: inline;
+  padding: 0;
+  text-decoration: underline;
+}
+#gome-head .gm-shopcar .shopcarbox:hover > span {
+  box-shadow: 0 -9px 9px transparent, -9px -9px 9px rgba(0, 0, 0, 0.03), 7px -6px 9px rgba(0, 0, 0, 0.03);
+}
+#gome-head .gm-shopcar .shopcarbox:hover .down {
+  display: block;
+}
+#gome-head .gm-shopcar .shopcarbox:hover b {
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid #5e5e5e;
+  top: 11px;
+}
+#gome-head .gm-shopcar em {
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 27px;
+  height: 20px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -100px -701px;
+  overflow: hidden;
+}
+#gome-head .gm-shopcar .shopnum {
+  position: absolute;
+  display: block;
+  top: -7px;
+  left: 25px;
+  width: 14px;
+  height: 18px;
+  padding: 0 3px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  background: #a5a5a5;
+  font-weight: 700;
+}
+#gome-head .gm-shopcar .shopnum span {
+  color: #fff;
+  line-height: 18px;
+}
+#gome-head .gm-shopcar i {
+  position: absolute;
+  left: 5px;
+  bottom: -4px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-left: 4px solid #a5a5a5;
+  overflow: hidden;
+}
+#gome-head .gm-shopcar b {
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 4px solid transparent;
+  border-top: 4px solid #5e5e5e;
+  overflow: hidden;
+  z-index: 96;
+}
 
 #gome-category {
   border-bottom: 1px solid #dd00a7;
@@ -557,6 +821,101 @@ body {
   width: 1200px;
   height: 40px;
   margin: 0 auto;
+}
+
+.gm-sidecatrgory {
+  float: left;
+  position: relative;
+  width: 200px;
+}
+.gm-sidecatrgory:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.gm-sidecatrgory h2 {
+  float: left;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 40px;
+  background: #f1f1f1;
+  opacity: 0.9;
+}
+.gm-sidecatrgory h2 a {
+  padding-left: 15px;
+  color: #585858;
+}
+.gm-sidecatrgory .gm-nav .graybgcolor {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 200px;
+  height: 450px;
+  background: #333;
+  opacity: 0.7;
+  z-index: 8;
+}
+.gm-sidecatrgory .gm-nav .sidenav {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 200px;
+  z-index: 9999;
+}
+.gm-sidecatrgory .gm-nav li {
+  height: 29px;
+  line-height: 29px;
+}
+.gm-sidecatrgory .gm-nav li a {
+  display: inline-block;
+  color: #fff;
+}
+
+.mainnav {
+  float: left;
+  width: 800px;
+  height: 38px;
+}
+.mainnav li {
+  position: relative;
+  float: left;
+  padding: 0 13px;
+  text-align: center;
+  line-height: 38px;
+}
+.mainnav .def a {
+  color: #f5004b;
+}
+.mainnav a {
+  font-size: 15px;
+  line-height: 40px;
+  color: #000;
+}
+.mainnav a:hover {
+  color: #f5004b;
+}
+.mainnav .hot {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 14px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -130px -721px;
+  overflow: hidden;
+}
+.mainnav .line {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  width: 1px;
+  height: 13px;
+  background-color: #b2b2b2;
 }
 
 #gm-countdown {
