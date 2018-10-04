@@ -1,31 +1,5 @@
 @charset "UTF-8"; //双引号
-$width990:990px; //居中的盒子的宽度
-$font-size-12:12px;
-$font-size-14:14px;
-$font-size-16:16px;
-$font-family:'微软雅黑';
-$line-height-24:24px;
-$line-height-30:30px;
-$color:#333;
-$per:100%;
-$none:none;
-*{
-    margin:0;
-    padding:0;
-}
-html{
-    width:$per;
-    height:$per;
-}
-body{
-    font-size: $font-size-12;
-    font-family: $font-family;
-    width:$per;
-    height:$per;
-}
-a{
-    text-decoration: $none;
-}
+@import 'variable';
 // 遮罩
 #mask{
     height:$per;

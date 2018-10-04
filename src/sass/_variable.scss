@@ -1,5 +1,6 @@
 @charset "utf-8";
 $width1200:1200px; //居中的盒子的宽
+$width990:990px; //居中的盒子的宽度
 $font-size-12:12px;
 $font-size-13:13px;
 $font-size-14:14px;
@@ -16,6 +17,33 @@ $line-height-25:25px;
 $line-height-30:30px;
 $line-height-32:32px;
 $none:none;
+$per:100%;
+// 默认样式
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: $none;
+}
+li{
+    list-style: $none;
+}
+em,i{
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+}
+img{
+    display: block;
+}
+body{
+    font-size: $font-size-12;
+    font-family: $font-family;
+    line-height:$line-height-24;
+    color:$body-color;
+}
 // 封装小图标的函数
 @mixin icons1($width:12px,$height:13px,$top:1px,$right:-16px,$position-left:-145px,$position-top:-1496px,$url:"https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") {
     display:block;

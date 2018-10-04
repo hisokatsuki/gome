@@ -10,13 +10,237 @@
 @import 'footer'; //footer
 // 主要内容
 #gome-main{
+    position: relative;
     width:$width1200;
-    height:300px;
-    margin:0 auto;
-    background:red;
+    height:450px;
+    margin:0 auto;   
+}
+// 轮播图
+.gm-banner{
+    position: absolute;
+    top:0;
+    left:200px;
+    width:750px;
+    height:450px;
+    // 图片
+    ul{
+        li{
+        position: absolute;
+        top:0;
+        left:0;
+        }
+    }
+    // 小方块
+    ol{
+        position: absolute;
+        bottom:10px;
+        left:0;
+        width:750px;
+        text-align: center;
+        li{
+            display: inline-block;
+            width:30px;
+            height:5px;
+            margin:0 4px;
+            background:rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+        .active{
+            background:$font-color;
+        }
+    }
+    // 按钮
+    .banner-btn{
+        position:absolute;
+        right:0;
+        top:50%;
+        margin-top:-40px;
+        span{
+            display:inline-block;
+            width:40px;
+            height:80px;
+            background:#000;
+            opacity: 0.2;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.4;
+            }
+        }
+        i{                              
+            z-index:50;
+        }     
+    }
+    // 左按钮
+    .btn-left{
+        i{
+            @include icons2(40px,80px,0,0,0,-112px,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png");    
+        }
+    }
+    // 右按钮
+    .btn-right{
+        i{
+            @include icons1(40px,80px,0,0,-42px,-112px,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png");
+        }
+    }
+}
+// 右边
+.gm-service{
+    position: absolute;
+    right:0;
+    height:448px;
+    border:1px solid #e6e6e6;
+    border-left:0;
+    .gm-round{
+        height:60px;
+        margin-top:7px;
+        z-index: 1;
+        a{
+            display: block;
+            position: relative;           
+        }
+        .title{
+            position: absolute;
+            top:14px;
+            left:15px;
+            p{
+                height:18px;
+                color:#fff;
+            }
+            .title-t{
+                line-height:14px;
+                font-size:$font-size-14;
+                font-weight:700;
+            }
+            .title-b{
+                font-size:13px;
+                line-height:16px;
+            }
+        }
+    }
+}   
+// 快讯
+.gm-flash{
+    width:220px;
+    margin:0 15px;
+    border-bottom:1px dashed #ccc;
+    overflow: hidden;
+    // a:hover{
+    //     color:$font-color;
+    // }
+    .gm-flash-t{
+        width:220px;
+        height:36px;
+        overflow: hidden;
+        @include clearfix();
+        h3{
+            float: left;
+            margin-top:12px;
+            font-size:$font-size-14;
+            color:#333;
+            font-weight:400;
+        }
+        a{
+            float: right;
+            margin-top:13px;
+            font-size:$font-size-12;
+            color:#888;
+            text-align: center;
+            @include a-changecolor();
+        }
+        span{
+            @include icons3(5px,9px,-126px,-130px,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png");
+            margin-left:4px;
+            vertical-align: baseline;
+        }
+    } 
+    .gm-flash-b{
+        margin-bottom:10px;
+        div{
+            width: 250px;
+            height: 26px;
+            font-size: 12px;
+            line-height: 26px;
+        }
+        .th{
+            display: block;
+            float: left;
+            width:24px;
+            height:26px;
+            color:#888;
+            margin-right:7px;
+            overflow: hidden;
+        }
+        .txt{
+            display: inline-block;
+            width: 196px;
+            color:#5e5e5e;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .def{
+            color:$font-color;
+        }
+        a:hover{
+            color:$font-color;
+        }
+    }
+}
+// 图标
+.gm-service-box{
+    position: relative;
+    width:250px;
+    height:216px;
+    .icon-box{
+        width:220px;
+        margin-left:15px;
+        overflow: hidden;
+        ul{
+            width:252px;
+            
+        }
+        li{
+            position: relative;
+            float: left;
+            width:55px;
+            height: 70px;
+            padding-top:2px;
+            margin-right:29px;
+            text-align: center;
+            overflow: hidden;
+        }
+        a{
+            position: absolute;
+            display: block;
+            width:38px;
+            height:71px;
+            left:14px;
+            &:hover i{
+                color:$font-color;
+            }
+            i{
+                display: block;
+                margin-top:10px;
+                margin-left:-13px;
+                font-size:32px;
+                color:#373737;
+            }
+            .title{
+                display: block;
+                width:36px;
+                height:20px;
+                margin-top:8px;
+                margin-left:-5px;
+                font-size:$font-size-12;
+                color:#5e5e5e;
+                overflow: hidden;
+                cursor: pointer;
+            }
+        }
+    }
 }
 
-        
+ 
 
         
        

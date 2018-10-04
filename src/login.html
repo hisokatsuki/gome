@@ -4,59 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>用户登录-国美</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <div class="login">
-        <form method="post">
-            <!-- 用户名 -->
-            <div class="name">
-                <input type="text" placeholder="手机号/用户名">
-                <span></span>
-            </div>
-            <!-- 密码 -->
-            <div class="pass">
-                <input type="password" placeholder="密码">
-            </div>
-            <!-- 是否自动登录 -->
-            <div>
-                <input type="checkbox" id="auto" name="auto">
-                <label for="auto">自动登录</label>
-            </div>
-            <!-- 忘记密码/免费注册 -->
-            <div>
-                <a href="#">忘记密码</a> |
-                <a href="register.html">免费注册</a>
-            </div>
-            <!-- 登录 -->
-            <input type="submit" value="登录" class="submit">
-        </form>
+    <!-- logo -->
+    <div id="gm-head">
+        <div class="logo">
+            <a href="index.html"></a>
+        </div>
     </div>
-    <script src="js/jquery1.11.3.js"></script>
-    <script>
-        var bstop=true;
-        $('.submit').on('click',function(){
-            console.log($('.name input').val());
-            $.ajax({
-                type:'post',
-                url:'php/login.php',
-                data:{
-                    name:$('.name input').val(),
-                    pass:$('.pass input').val()
-                }
-            }).done(function(d){
-                if(d){
-                    bstop=true;
-                    window.location.href="index1.html";
-                }else{
-                    $('.name span').html('用户名不存在');
-                    bstop=false;
-                }
-            })
-            if(bstop){
-                return false;
-            }
-        })
-    </script>
+    <!-- 安全提示 -->
+    <div id="gm-safetip">
+        <p class="safetip">
+            <em></em>
+            依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版
+            <a href="https://login.gome.com.cn/authAgreeMentPrivacy" target="_blank">《国美隐私政策》</a>
+            已上线，将更有利于保护您的个人隐私。
+        </p>
+    </div>
+    <!-- 登录框 -->
+    <div id="gm-content">
+        <div class="main">
+            <div class="login-box">
+                <div class="login-type">
+                    <div class="logintab righttab">
+                        <a href="javascript:;">账户登录</a>
+                    </div>
+                </div>
+                <div class="loginbox">
+                    <div class="login-wrap">
+                        <div class="err-tip">
+                            <span></span>
+                            <p></p>
+                        </div>
+                        <form method="post">
+                            <!-- 用户名 -->
+                            <div class="name">
+                                <input type="text" placeholder="手机号/用户名">
+                                <span></span>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="pass">
+                                <input type="password" placeholder="密码">
+                            </div>
+                            <!-- 是否自动登录/忘记密码/免费注册-->
+                            <div class="remember">
+                                <div class="remember-left">
+                                    <input type="checkbox" id="auto" name="auto">
+                                    <label for="auto">自动登录</label>
+                                </div>
+                                <div class="remember-right">
+                                    <a href="#">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                    <a href="register.html">免费注册</a>
+                                </div>
+                            </div>
+                            <!-- 登录 -->
+                            <div class="login-btn">
+                                <input type="submit" value="登录" class="submit">
+                            </div>
+                        </form>
+                        <p class="quicklogin">
+                            <a href="javascript:;">手机号快速登录(支持门店预留手机)</a>
+                        </p>
+                    </div>
+                </div>
+                <dl class="corp-login">
+                    <dd class="play-icon">
+                        <a href="#" class="borderline">门店会员卡登录</a>
+                        <a href="#" class="borderline"><em>QQ</em></a>
+                        <a href="#" class="borderline">微信</a>
+                        <a href="#" class="borderline">微博</a>
+                        <a href="#">美付宝</a>
+                        <a href="#" class="borderline show-hide hide">极信通</a>
+                        <a href="#" class="show-hide hide">支付宝</a>                    
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" class="more"></a>
+                    </dd>
+                </dl>
+            </div>
+            <a href="#" class="opinion"><i></i>我想对"登录"提意见</a>
+        </div>
+    </div>    
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="script/thirdplugins/jquery1.11.3.js"></script>
+    <script src="script/js/login.js"></script>
 </body>
 </html>

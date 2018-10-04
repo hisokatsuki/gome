@@ -1,0 +1,226 @@
+@charset "utf-8";
+@import 'variable';
+// logo
+#gm-head{
+    width:$width990;
+    height:120px;
+    margin:0 auto;
+    vertical-align:middle;
+    .logo{
+        float: left;
+        margin: 18px 40px 0 0;
+        a{
+            display:inline-block;
+            width:300px;
+            height:62px;
+            margin-top:13px;
+            background:url("https://css.gomein.net.cn/images/regfront/register/loginlogo.png") no-repeat;
+        }
+    }
+}
+// 安全提示
+#gm-safetip{
+    background-color:#fff4e3;
+    border-top:1px solid #fee6bc;
+    .safetip{
+        width:828px;
+        height:29px;
+        padding-left:10px;
+        margin:0 auto;
+        line-height:29px;
+        background-color:#fff4e3;
+        color:#ff7f23;
+        em{
+            display: block;
+            float: left;
+            margin: 8px 5px 0 0;
+            @include icons3(16px,16px,-28px,0,"https://css.gomein.net.cn/images/loginfront/login/login-bg-common.png")
+        }
+        a{
+            color:#2875cc;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+// 登录
+#gm-content{
+    background:#e30c36;
+    .main {
+        position: relative;
+        width:$width1200;
+        height:480px;
+        margin:0 auto;
+        background:url("https://gfs11.gomein.net.cn/T1Cp_gBsJv1RCvBVdK.jpg") no-repeat top center;
+        z-index: 990;
+        .opinion{
+            position: absolute;
+            right:108px;
+            top:-56px;
+            height:16px;
+            line-height:16px;
+            font-family: simsun;
+            color:$body-color;
+            z-index: 990;
+            i{
+                margin-right: 8px;
+                padding-bottom: 2px;
+                @include icons3(15px,16px,0,-257px,"https://css.gomein.net.cn/images/loginfront/login/login-bg-common.png");
+            }
+        }    
+    }
+}
+// 登录框
+.login-box{
+    position: relative;
+    float: right;
+    width:350px;
+    margin-top:24px;
+    margin-right:105px;
+    background:#fff;
+    overflow: visible;
+    .login-type{
+        position: relative;
+        height:54px;
+        .logintab{
+            float: left;
+            width:350px;
+            height:54px;
+            line-height:54px;
+            font-size:$font-size-18;
+            color:#5e5e5e;
+            text-align: center;
+            border-bottom: 1px solid #f4f4f4;
+            a{
+                display: block;
+                width:99%;
+                height:54px;
+                line-height:54px;
+                color:#e3101e;
+            }
+        }
+    }
+    .loginbox{
+        padding:25px 11px 0 19px;
+        .login-wrap{
+            position: relative;
+            width:300px;
+            padding:5px 10px 0;
+            
+        }
+    }
+}
+// 用户名和密码
+.name,.pass{
+    position: relative;
+    height: 52px;
+    input{
+        position: relative;
+        width:268px;
+        height:25px;
+        padding:8px 10px 7px;
+        line-height:21px;
+        font-size:$font-size-14;
+        font-family: Arial,simsun;
+        color:#333;
+        border: 1px solid #a5a5a5;
+        outline:0;
+        z-index:2;
+    }
+}
+// 是否自动登录
+.remember{
+    padding:10px 0 12px;
+    @include clearfix();
+    .remember-left{
+        float: left;
+        line-height:$line-height-18;
+        input{
+            float: left;
+            margin-right:4px;
+            margin-top:3px;
+        }
+        label{
+            float: left;
+            color:#5e5e5e;
+            line-height:18px;
+        }
+    }
+    .remember-right{
+        float:right;
+        width:120px;
+        line-height:18px;
+        color:#ccc;
+        a{
+            color:#5e5e5e;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        a:nth-of-type(1):hover{
+            color:$font-color;
+        }
+        a:nth-of-type(2){
+            color:#2875cc;
+        }
+    }
+}
+// 登录按钮
+.login-btn{
+    input{
+        display: block;
+        width:290px;
+        height:42px;
+        background:#ff5757;
+        color:#fff;
+        text-align: center;
+        border:0;
+        outline:0;
+        cursor: pointer;
+    }
+}
+// 手机号快速登录
+.quicklogin{
+    padding:30px 0 15px;
+    a{
+        color:#2875cc;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+// corp-login
+.corp-login{
+    position: relative;
+    padding:9px 20px;
+    color:#a5a5a5;
+    background-color:#fcfcfc;
+    border:1px solid #f0f0f0;
+    overflow: hidden;
+    .play-icon{
+        width:300px;
+        a{
+            float: left;
+            padding: 0 8px;
+            margin: 6px 0;
+            line-height:$line-height-18;
+            color: #5e5e5e;
+            cursor: pointer;
+        }
+        .borderline{
+            border-right:1px solid #e6e6e6;
+        }
+    }
+    .hide{
+        display:$none;
+    }
+    .show{
+        display: block;
+    }
+    .more{
+        @include icons1(19px,19px,14px,20px,0,0,"https://css.gomein.net.cn/images/loginfront/login/login-bg-common.png");
+        padding: 0;
+        margin: 0;
+    }
+}
