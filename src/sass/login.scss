@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import 'variable';
+@import 'footer';
 // logo
 #gm-head{
     width:$width990;
@@ -107,7 +108,26 @@
             position: relative;
             width:300px;
             padding:5px 10px 0;
-            
+            // 错误提示
+            .err-tip{
+                display:$none;
+                position: absolute;
+                top:-21px;
+                left:11px;
+                width:290px;
+                height:22px;
+                line-height:22px;
+                font-family:simsun;
+                color:#e3111e;
+                background:#fee;
+                z-index:3;
+                span{
+                    overflow: hidden;
+                    float: left;
+                    margin: 4px 5px 0 10px;
+                    @include icons3(14px,14px,-41px,-54px,"https://css.gomein.net.cn/images/loginfront/login/spr-icon.png");
+                }
+            }
         }
     }
 }
@@ -124,7 +144,7 @@
         font-size:$font-size-14;
         font-family: Arial,simsun;
         color:#333;
-        border: 1px solid #a5a5a5;
+        border: 1px solid #ccc;
         outline:0;
         z-index:2;
     }
@@ -222,5 +242,18 @@
         @include icons1(19px,19px,14px,20px,0,0,"https://css.gomein.net.cn/images/loginfront/login/login-bg-common.png");
         padding: 0;
         margin: 0;
+    }
+}
+// footer
+#gome-footer{
+    background:#fff;
+    border-top:0;
+    .gm-footer-box{
+        width:$width990;
+        background:#fff;
+        font-family:"微软雅黑";
+        span,.qrcode-section{
+            display:$none;
+        }
     }
 }

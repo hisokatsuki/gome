@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,268 @@ body {
   color: #888;
 }
 
+#gome-help {
+  width: 1200px;
+  margin: 30px auto 0;
+}
+#gome-help ul {
+  background: #f5f5f5;
+  padding: 15px 0;
+}
+#gome-help ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-help ul li {
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+#gome-help ul i {
+  display: inline-block;
+  width: 40px;
+  height: 42px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1469px;
+  margin-right: 10px;
+}
+#gome-help ul a {
+  font-size: 18px;
+  line-height: 40px;
+  color: #404040;
+}
+#gome-help ul a:hover {
+  color: #f5004b;
+}
+#gome-help ul a:nth-of-type(1) {
+  font-weight: bold;
+}
+#gome-help ul span {
+  margin: 0 16px;
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -120px -1489px;
+}
+#gome-help .gm-help-box {
+  width: 110%;
+  margin-left: -5%;
+}
+#gome-help .gm-help-box:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-help .gm-help-box dl {
+  float: left;
+  width: 9%;
+  padding: 15px 0 0 125px;
+}
+#gome-help .gm-help-box dt {
+  font-size: 16px;
+  color: #5e5e5e;
+  line-height: 25px;
+}
+#gome-help .gm-help-box dd {
+  line-height: 20px;
+}
+#gome-help .gm-help-box a {
+  color: #a5a5a5;
+}
+#gome-help .gm-help-box a:hover {
+  color: #f5004b;
+}
+
+#gome-footer {
+  margin-top: 15px;
+  border-top: 1px solid #dd00a7;
+  background: #f7f7f7;
+}
+#gome-footer .gm-footer-box {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  background: #f7f7f7;
+}
+#gome-footer .gm-footer-box ul:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-footer .gm-footer-box li {
+  float: left;
+  padding-right: 13px;
+}
+#gome-footer .gm-footer-box li:nth-of-type(5), #gome-footer .gm-footer-box li:nth-of-type(12) {
+  color: #ccc;
+}
+#gome-footer .gm-footer-box a {
+  color: #666;
+}
+#gome-footer .gm-footer-box a:hover {
+  color: #f5004b;
+}
+#gome-footer .gm-footer-box span {
+  display: inline-block;
+  padding: 0 50px 40px 0;
+}
+#gome-footer .gm-footer-box span:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-footer .gm-footer-box span p {
+  float: left;
+  margin-left: 10px;
+}
+#gome-footer .gm-footer-box span em {
+  display: block;
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
+}
+#gome-footer .gm-footer-box span i {
+  float: left;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -135px;
+}
+#gome-footer .gm-footer-box span:nth-of-type(2) i {
+  background-position: -45px -135px;
+}
+#gome-footer .qrcode-section {
+  position: absolute;
+  top: 15px;
+  right: -10px;
+}
+#gome-footer .qrcode-section .code-sm {
+  position: relative;
+  width: 50px;
+}
+#gome-footer .qrcode-section .code-sm:hover div {
+  display: block;
+}
+#gome-footer .qrcode-section em {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 10px;
+}
+#gome-footer .qrcode-section .wx i {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -105px -135px;
+}
+#gome-footer .qrcode-section .web i {
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -185px -135px;
+}
+#gome-footer .qrcode-section .code-sm .icon-triangle {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 68px;
+  width: 13px;
+  height: 8px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -67px -127px;
+  overflow: hidden;
+}
+#gome-footer .qrcode-section .code-sm div {
+  position: absolute;
+  left: -50px;
+  bottom: 54px;
+  z-index: 99;
+  padding: 10px;
+  border: 1px solid #eee;
+  display: none;
+  background: #fff;
+}
+#gome-footer .qrcode-section .app {
+  width: 110px;
+}
+#gome-footer .qrcode-section a {
+  display: inline-block;
+}
+#gome-footer .qrcode-section p {
+  line-height: 22px;
+}
+#gome-footer .gm-footer-credit {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 5px;
+  padding: 10px 0 25px;
+  overflow: hidden;
+}
+#gome-footer .gm-footer-credit b {
+  float: left;
+  display: block;
+  width: 60px;
+  padding: 0 30px 0 5px;
+  color: #999;
+  line-height: 18px;
+  font-weight: normal;
+}
+#gome-footer .gm-footer-credit a:nth-of-type(3) b, #gome-footer .gm-footer-credit a:nth-of-type(5) b {
+  padding-top: 9px;
+}
+#gome-footer .gm-footer-credit a:nth-of-type(4) b {
+  width: 50px;
+}
+#gome-footer .gm-footer-credit a:nth-of-type(6) b {
+  width: 110px;
+}
+#gome-footer .gm-footer-credit i {
+  float: left;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -180px;
+}
+#gome-footer .gm-footer-credit .f-icon1 {
+  background-position: -35px -180px;
+}
+#gome-footer .gm-footer-credit .f-icon2 {
+  background-position: -70px -180px;
+}
+#gome-footer .gm-footer-credit .f-icon3 {
+  background-position: -105px -180px;
+}
+#gome-footer .gm-footer-credit .f-icon4 {
+  background-position: -140px -180px;
+}
+#gome-footer .gm-footer-credit .f-icon5 {
+  background-position: -175px -180px;
+}
+
+body {
+  font-family: Arial,simsun;
+}
+
 #mask {
+  display: none;
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.05);
@@ -40,8 +302,9 @@ body {
 }
 
 #agreement {
+  display: none;
   width: 890px;
-  height: 525px;
+  height: 535px;
   padding: 16px 35px 0 35px;
   background: #fff;
   position: absolute;
@@ -52,6 +315,7 @@ body {
 }
 #agreement h4 {
   padding: 7px 0;
+  color: #000;
   font-size: 16px;
   font-weight: normal;
   text-align: center;
@@ -75,12 +339,16 @@ body {
 }
 #agreement .gome_agree div {
   width: 795px;
-  height: 79px;
+  height: 75px;
   padding: 0 14px 0 9px;
   color: #333;
   border: 1px solid #e6e6e6;
   line-height: 24px;
   overflow-y: scroll;
+}
+#agreement a:hover {
+  background: #f20c59;
+  color: #fff;
 }
 #agreement .no, #agreement .yes {
   display: inline-block;
@@ -104,25 +372,158 @@ body {
 }
 
 #logo {
-  margin-top: 18px;
   height: 120px;
   vertical-align: middle;
 }
 #logo .wrap {
   width: 990px;
   margin: 0 auto;
+  padding-top: 18px;
 }
 #logo a {
   display: inline-block;
   width: 300px;
   height: 62px;
+  vertical-align: middle;
+  background: url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat 0 0;
   margin-top: 16px;
-  background: url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat;
 }
 
-#register .wrap {
+#register {
   width: 990px;
   margin: 0 auto;
+}
+#register .wrap {
+  position: relative;
+  margin-top: 68px;
+  padding-bottom: 21px;
+  border: 1px solid #e6e6e6;
+  background: url("https://gfs11.gomein.net.cn/T1E1VjB7YT1RCvBVdK.png") no-repeat scroll 580px -60px;
+}
+#register .wrap .login-info {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+}
+#register .wrap .login-info a {
+  margin-left: 5px;
+  color: #006699;
+}
+#register .wrap .user-reg {
+  position: absolute;
+  top: -42px;
+  left: 149px;
+  width: 150px;
+  height: 40px;
+  margin-left: 2px;
+  font: bold 14px/41px "微软雅黑";
+  color: #cc0000;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-top: 2px solid #cc0000;
+  border-bottom: 0;
+  cursor: pointer;
+}
+
+.formlists {
+  padding-top: 40px;
+}
+.formlists .formlist {
+  position: relative;
+  padding: 0 0 26px 151px;
+  height: 40px;
+}
+.formlists .formlist label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 151px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  text-align: right;
+}
+.formlists .formlist input {
+  position: relative;
+  float: left;
+  width: 288px;
+  height: 36px;
+  padding: 0 4px;
+  border: 1px solid #ccc;
+  line-height: 36px;
+  color: #a5a5a5;
+  vertical-align: middle;
+  outline: 0;
+}
+.formlists .formlist .msg-box {
+  float: left;
+  width: 370px;
+  margin-left: 5px;
+}
+.formlists .formlist .msg-box .focus-box, .formlists .formlist .msg-box .blur-box {
+  display: none;
+}
+.formlists .formlist .msg-box .focus-box:after, .formlists .formlist .msg-box .blur-box:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.formlists .formlist .msg-box .focus-box p, .formlists .formlist .msg-box .blur-box p {
+  float: left;
+  height: 18px;
+  padding: 9px 5px 9px 5px;
+  line-height: 18px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.formlists .formlist .msg-box .blur-box {
+  color: #ff5757;
+}
+.formlists .formlist .correct {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 425px;
+  width: 17px;
+  height: 17px;
+  background: url("https://misc.gomein.net.cn/images/regfront/register/register.png") no-repeat 0 -20px;
+  overflow: hidden;
+  overflow: hidden;
+  display: none;
+}
+.formlists .formlist-btn {
+  padding: 15px 0;
+  margin-top: -15px;
+}
+.formlists .formlist-btn input {
+  display: block;
+  width: 298px;
+  height: 40px;
+  margin: 5px 0 0 151px;
+  font: 16px/40px "微软雅黑";
+  color: #fff;
+  text-align: center;
+  background-color: #ff5757;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+#gome-footer {
+  background: #fff;
+  border-top: 0;
+}
+#gome-footer .gm-footer-box {
+  width: 990px;
+  background: #fff;
+  font-family: "微软雅黑";
+}
+#gome-footer .gm-footer-box span, #gome-footer .gm-footer-box .qrcode-section {
+  display: none;
 }
 
 /*# sourceMappingURL=register.css.map */

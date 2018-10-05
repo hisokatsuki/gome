@@ -1,7 +1,12 @@
 @charset "UTF-8"; //双引号
 @import 'variable';
+@import 'footer';
+body{
+    font-family:Arial,simsun;
+}
 // 遮罩
 #mask{
+    display:none;
     height:$per;
     width:$per;
     background:rgba(0,0,0,0.05);
@@ -11,8 +16,9 @@
 }
 // 服务协议
 #agreement{
+    display:none;
     width:890px;
-    height:525px;
+    height:535px;
     padding:16px 35px 0 35px;
     background:#fff;
     position:absolute;
@@ -22,6 +28,7 @@
     z-index:2;
     h4{
         padding:7px 0;
+        color:#000;
         font-size:$font-size-16;
         font-weight:normal;
         text-align:center;
@@ -46,7 +53,7 @@
     }
     .gome_agree div{
         width:795px;
-        height:79px;
+        height:75px;
         padding:0 14px 0 9px;
         color:#333;
         border:1px solid #e6e6e6;
@@ -54,6 +61,10 @@
         overflow-y:scroll;
     }
     // 同意和不同意按钮
+    a:hover{
+        background:#f20c59;
+        color:#fff;
+    }
     .no, .yes{
         display:inline-block;
         height:30px;
@@ -77,25 +88,141 @@
 }
 // logo
 #logo{
-    margin-top:18px;
     height:120px;
     vertical-align:middle;
     .wrap{ //居中的盒子
         width:$width990;
         margin:0 auto;
+        padding-top:18px;
     }
     a{
-        display:inline-block;
-        width:300px;
-        height:62px;
+        @include icons3(300px,62px,0,0,"https://misc.gomein.net.cn/images/regfront/register/registerlogo.png");
         margin-top:16px;
-        background:url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat;
     }
 }
 // 注册信息
 #register{
+    width:$width990;
+    margin:0 auto;
     .wrap{
+        position: relative;
+        margin-top:68px;
+        padding-bottom:21px;
+        border:1px solid #e6e6e6;
+        background:url("https://gfs11.gomein.net.cn/T1E1VjB7YT1RCvBVdK.png") no-repeat scroll 580px -60px;
+        .login-info{
+            position: absolute;
+            top:-25px;
+            right:20px;
+            a{
+                margin-left:5px;
+                color:#006699;
+            }
+        }
+        .user-reg{
+            position: absolute;
+            top:-42px;
+            left:149px;
+            width:150px;
+            height:40px;
+            margin-left: 2px;
+            font:bold 14px/41px "微软雅黑";
+            color: #cc0000;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #e6e6e6;
+            border-top:2px solid #cc0000;
+            border-bottom:0;
+            cursor: pointer;
+        }
+        
+    }
+}
+// 注册表单
+.formlists{
+    padding-top:40px;
+    .formlist{
+        position: relative;
+        padding:0 0 26px 151px;
+        height:40px;
+        label{
+            position: absolute;
+            top:0;
+            left:0;
+            width:151px;
+            height:38px;
+            line-height:38px;
+            font-size:$font-size-14;
+            text-align: right;
+        }
+        input{
+            position: relative;
+            float: left;
+            width:288px;
+            height:36px;
+            padding:0 4px;
+            border:1px solid #ccc;
+            line-height:36px;
+            color:#a5a5a5;
+            vertical-align: middle;
+            outline:0;
+        }
+        // 提示框
+        .msg-box{
+            float: left;
+            width:370px;
+            margin-left:5px;
+            .focus-box,.blur-box{
+                display:$none;
+                @include clearfix();
+                p{
+                    float: left;
+                    height:$line-height-18;
+                    padding:9px 5px 9px 5px;
+                    line-height:$line-height-18;
+                    background-color:#fff;
+                    border:1px solid #ccc;
+                }
+            }
+            .blur-box{
+                color:#ff5757;
+            }
+        }
+        // 绿色的正确
+        .correct{
+            @include icons2(17px,17px,10px,425px,0,-20px,"https://misc.gomein.net.cn/images/regfront/register/register.png");
+            overflow: hidden;
+            display:$none;        
+        }
+    }
+    .formlist-btn{
+        padding:15px 0;
+        margin-top:-15px;
+        input{
+            display: block;
+            width:298px;
+            height:40px;
+            margin:5px 0 0 151px;;
+            font:16px/40px "微软雅黑";
+            color:#fff;
+            text-align: center;
+            background-color:#ff5757;
+            border:0;
+            outline:0;
+            cursor: pointer;
+        }
+    }
+}
+// footer
+#gome-footer{
+    background:#fff;
+    border-top:0;
+    .gm-footer-box{
         width:$width990;
-        margin:0 auto;
+        background:#fff;
+        font-family:"微软雅黑";
+        span,.qrcode-section{
+            display:$none;
+        }
     }
 }
