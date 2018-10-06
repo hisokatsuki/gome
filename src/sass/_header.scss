@@ -60,6 +60,7 @@
     float: left;  
     // 国美首页
     .gome-home{
+        display:$none;
         margin:0 10px;
         line-height:$line-height-32;
         a{

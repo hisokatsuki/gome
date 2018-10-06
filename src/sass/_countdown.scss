@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import 'variable';
 #gm-countdown{
     width:$width1200;
     margin:0 auto;
@@ -26,7 +27,7 @@
         }
         h3{
             float: left;
-            font-size:18px;
+            font-size:$font-size-18;
             color:#f5004b;
             line-height:40px;
             font-weight: normal;
@@ -78,10 +79,18 @@
     }
     // 图片列表
     .countdown-l-b{
+        position: relative;
         height:210px;
         border:1px solid #e6e6e6;
     }
+    .active{
+        display:$none;
+    }
     .countdown-list{
+        position: absolute;
+        top:0;
+        left:0;
+        @include clearfix();
         li{
             float: left;
             width:237px;
@@ -97,6 +106,8 @@
             border-right:none;
         }
         img{
+            width:120px;
+            height:120px;
             margin-left:58px;
         }
         p{

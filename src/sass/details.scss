@@ -1,0 +1,567 @@
+@charset "utf-8";
+@import 'variable';
+@import 'header';
+// 居中的盒子
+.wrap{
+    width:$width1200;
+    margin:0 auto;
+}
+// header
+#gome-topmenu{
+    .gome-home{
+        display:block;
+    }
+}
+#gome-category{
+    display:$none;
+}
+// gm-shopimg
+#gm-shopimg{
+    height:120px;
+    img{
+        height:120px;
+    }
+}
+// gm-shop-nav
+#gm-shop-nav{
+    background:#333;
+    ul{
+        @include clearfix();
+        li{
+            float: left;
+            text-align: center;
+            &:hover{
+                background:#2a2a2a;
+            }
+            a{
+                display: block;
+                height:40px;
+                padding:0 20px;
+                line-height:40px;
+                font-size:$font-size-16;
+                color: #fff;;
+            }
+        }
+    }
+}
+// 菜单栏
+#gm-menu{
+    position: relative;
+    background-color:#f6f6f6;
+    margin-bottom:16px;
+    z-index: 501;
+    .wrap{
+        @include clearfix();
+    }
+    // 左菜单
+    .left{
+        float: left;
+        ul{
+            padding:8px 6px;
+            line-height:$line-height-18;
+            @include clearfix();
+        }
+        li{
+            float: left;
+            a{
+                display: inline-block;
+                padding:4px 6px 4px 8px;            
+                color:#5e5e5e;
+                vertical-align: middle;
+            }
+            // 右图标
+            .icon-right{
+                @include icons3(7px,11px,0,0,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                margin:0 2px;
+            }
+        }
+        .active{
+            width:100px;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+    // 右菜单
+    .right{
+        float: right;
+        padding:8px 0;
+        overflow: hidden;
+        .name,.supplier,.collect{
+            font-size:13px;
+            color:#5e5e5e;
+        }
+        .identify{
+            padding:0 4px;
+            color:#fff;
+            background-color:#e3101e;
+        }
+        .supplier{
+            line-height:$line-height-22;
+            margin-left:20px;
+            overflow: hidden;
+            i{
+                // float: left;
+                margin-right:3px;
+                @include icons3(21px,20px,0,-167px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+        .collect{
+            margin-left:20px;
+            i{
+                margin-right:3px;
+                padding-top:5px;
+                @include icons3(16px,15px,0,-100px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                color:#000;
+            }
+        }
+    }
+}
+// 主要内容
+#gm-container{
+    width:$width1200;
+    margin:0 auto;
+    color:#5e5e5e;
+}
+// 左边
+.gm-left{
+    float: left;
+    margin-bottom:10px;
+    .magnifier{
+        position: relative;
+        width:450px;
+        // 小图
+        #spic {
+            // float: left;
+            position: relative;
+            width:448px;
+            height:448px;
+            border:1px solid #d9d9d9;
+            overflow: hidden;
+            img{
+                width:450px;
+                height:450px;
+            }
+            .icon-search{
+                @include icons1(24px,21px,424px,0,0,-770px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");             
+                z-index: 20;
+                overflow: hidden;
+                text-align: center;
+                padding-top: 3px;
+            }
+        }
+        // 小放
+        #sf {
+            position: absolute;
+            left:0;
+            top:0;
+            width:50px;
+            height:50px;
+            background:orange;
+            opacity: 0.3;
+            visibility: hidden;
+        }
+        // 大放
+        #bf {
+            // float: left;
+            position: absolute;
+            left:450px;
+            top:0;
+            width:448px;
+            height:448px;
+            border:1px solid #e4e4e4;
+            overflow: hidden;
+            visibility: hidden;
+            // 大图
+            img{
+                position: absolute;
+                left:0;
+                top:0;
+            }
+        }
+        // 图片列表
+        #ulist {
+            position: relative;
+            height:62px;
+            margin:20px 0 16px;
+            overflow: hidden;
+            #list {
+                position: absolute;
+                left:25px;
+                top:0;
+                width:400px;
+                height:60px;
+                overflow: hidden;
+            }
+            ul {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width:1000px;
+            }
+            li {
+                float: left;
+                width:60px;
+                height:60px;
+                margin-right:25px;
+                cursor: pointer;
+            }
+            img {
+                width: 58px;
+                height: 58px;
+            }
+            .active{
+                border:1px solid #e3101e;
+            }
+        }
+        a{
+            display: block;
+            position: absolute;
+            width:15px;
+            height:54px;
+            top:0;
+        }
+        // 右箭头
+        #right {
+            right:0;
+            color: #333;
+            i{
+                @include icons1(11px,21px,18px,0,0,-835px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+        #right:hover i{
+            background-position:0 -556px;
+        }
+        // 左箭头
+        #left {
+            left:0;
+            z-index: 2;
+            color: #fff;
+            i{
+                @include icons1(11px,21px,18px,0,0,-804px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+        #left:hover i{
+            background-position:0 -525px;
+        }
+    }
+    .toolbar{
+        @include clearfix();
+        width:450px;
+        .product-number{
+            float: left;
+            width:135px;
+            line-height:$line-height-18;
+        }
+        a{
+            float: right;
+            display: block;
+            position: relative;
+            margin-left:6px;
+            line-height:$line-height-18;
+            color: #5e5e5e;
+            @include a-changecolor();
+        }
+        i{
+            float: left;
+            margin-right:5px;
+        }
+        // 收藏
+        .collect{
+            i{
+                @include icons3(16px,15px,0,-100px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+        // 提心愿
+        .wish{
+            i{
+                @include icons3(14px,12px,0,-1929px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                margin-top:2px;
+            }
+        }
+        // 分享
+        .share{
+            .price_box{
+                display:$none;
+                position: absolute;
+                top:23px;
+                width:180px;
+                padding:8px 12px;
+                border:1px solid #ccc;
+                background:#fff;
+                z-index: 10;
+                i{
+                    @include icons2(12px,7px,-8px, 38px,0,-1885px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+                .price_box_tit{
+                    font-family: NSimSun;
+                    color: #666;
+                }
+                .share_txt{
+                    font-family: NSimSun;
+                    color: #999;
+                }
+                span{
+                    color: #069;
+                }
+            }
+            i{
+                @include icons3(18px,17px,0,-1902px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+        .share:hover .price_box{
+            display:block;
+        }
+    }
+}
+// 右边
+.gm-right{
+    float: left;
+    width:720px;
+    margin-left:30px;
+    .hgroup{
+        position: relative;
+        padding-bottom: 16px;
+        h1{
+            width:610px;
+            padding-top: 5px;
+            line-height: 26px;
+            font-size:$font-size-16;
+            color: #5e5e5e;
+            font-weight: 600;
+        }
+        h4{
+            width:610px;
+            line-height: 20px;
+            font-size:$font-size-12;
+            color: #e3101e;
+            overflow: hidden;
+            a{
+                color: #069;
+            }
+        }
+        .contrast{
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            span{
+                display: block;
+                line-height:12px;
+                color: #5e5e5e;
+            }
+            &:hover{
+                background: #f8f8f8;
+                border: 1px solid #ccc;
+            }
+        }
+    }
+    
+}
+// 商品价格
+.prd-price{
+    position: relative;
+    width: 690px;
+    padding: 20px 10px 0 20px;
+    background: #f6f6f6;
+    // 价格上部分
+    .prd-price-top{
+        @include clearfix();
+        padding-bottom:18px;
+        line-height:34px;
+        .prd-price-name{
+            float: left;
+            color: #888;
+        }
+        .prd-price-left{
+            float: left;
+            margin-left: 15px;
+            .price{
+                float: left;
+                display: block;
+                margin-right: 10px;
+                font-family: Arial;
+                font-size: 24px;
+                color: #e3101e;
+                font-weight: 700;
+                em{
+                    display: block;
+                    float: left;
+                    margin-right: 2px;
+                    font-size:$font-size-16;
+                }
+            }
+            .reduce{
+                float: left;
+                color: #069;
+            }
+        }
+        .prd-price-right{
+            float: right;
+            height: 33px;
+            line-height: 12px;
+            .line{
+                float: left;
+                margin-right: 3px;
+                line-height: 32px;
+                font-family: '宋体';
+                font-size: 32px;
+                color: #ccc;
+            }
+            .container{
+                float: left;
+                p{
+                    line-height:12px;
+                }
+                p:nth-of-type(2){
+                    margin-top:9px;
+                }
+                a{
+                    color:#069;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    // 价格下部分
+    .prd-price-bottom{
+        @include clearfix();
+        padding: 0 0 10px;
+        .prd-price-left{
+            float: left;
+            color:#888;
+        }
+        .prd-price-right{
+            float: left;
+            margin-left:18px;
+            b{
+                position: relative;
+                padding:1px 8px;
+                margin-right:11px;
+                line-height:12px;
+                color:#e3101e;
+                font-weight:400;
+                background:#ffdedf;
+                border-top:1px solid #e3010e;
+                border-bottom:1px solid #e3010e;
+                text-align: center;
+                cursor: pointer;
+            }
+            .left{
+                @include icons2(3px,18px,-1px,-3px,0,-1999px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+            .right{
+                @include icons1(3px,18px,-1px,-3px,0,-2027px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            }
+        }
+    }
+}
+// 按钮
+.prd-btn{
+    position: relative;
+    height: 42px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 34px;
+    // 数量
+    .count{
+        position: relative;
+        float: left;
+        width: 46px;
+        height: 38px;
+        margin-right: 15px;
+        border: 1px solid #ccc;
+        .qty{
+            float: left;
+            display: block;
+            width: 32px;
+            height: 38px;
+            line-height: 38px;
+            text-align: center;
+            color:#5e5e5e;
+            border:0;
+            outline:0;
+        }
+        a{
+            display: block;
+            float: left;
+            width: 13px;
+            height: 18px;
+            line-height: 18px;
+            color: #5e5e5e;
+            text-align: center;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background: #f8f8f8;
+        }
+        // 禁用
+        .disab{
+            color: #ccc;
+            cursor: not-allowed;
+        }
+        .reduce{
+            border-bottom:0;
+            padding-bottom:1px;
+        }
+    }
+    // 加入购物车
+    .addcart{
+        float: left;
+        height:24px;
+        padding:8px 25px;
+        margin-right:8px;
+        line-height:$line-height-22;
+        font-size:$font-size-18;
+        color:#fff;
+        background-color:#e3101e;
+    }
+    // 手机下单
+    .mobile-btn{
+        float: left;
+        position: relative;
+        display:block;
+        width:98px;
+        padding:8px 0;
+        margin-right: 8px;
+        line-height:$line-height-22;
+        color:#5e5e5e;
+        font-size:$font-size-12;
+        border:1px solid #ccc;
+        i{
+            @include icons3(28px,26px,0,-2362px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+            margin-right:8px;
+            margin-left:6px;
+        }
+        div{
+            display:$none;
+            margin-top:5px;
+            img{
+                margin-left: 4px;
+                vertical-align: middle;
+            }
+        }
+        &:hover div{
+            display:block;
+        }
+    }
+}
+// 温馨提示
+.prd-tips{
+    margin-bottom:35px;
+    line-height:20px;
+    color:#888;
+    @include clearfix();
+    span{
+        display:block;
+        float: left;
+        padding-left:10px;
+    }
+    p{
+        float: left;
+        padding-left: 10px;
+    }
+}
