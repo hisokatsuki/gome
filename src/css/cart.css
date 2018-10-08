@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -1163,813 +1164,6 @@ body {
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1353px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-em, i {
-  font-style: normal;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
-
-img {
-  display: block;
-}
-
-body {
-  font-size: 12px;
-  font-family: Arial, "Microsoft Yahei";
-  line-height: 24px;
-  color: #888;
-}
-
-@font-face {
-  font-family: iconfont;
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
-}
-.gm-icon {
-  font-family: 'iconfont' !important;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#gm-countdown {
-  width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding-top: 20px;
-}
-#gm-countdown .gm-countdown-l {
-  position: relative;
-  float: left;
-  width: 950px;
-  height: 252px;
-}
-#gm-countdown .countdown-l-t {
-  height: 40px;
-  position: relative;
-}
-#gm-countdown .click-box {
-  float: left;
-  width: 120px;
-  border-left: 1px solid #e6e6e6;
-}
-#gm-countdown .click-box img {
-  float: left;
-  margin-left: 5px;
-}
-#gm-countdown .click-box h3 {
-  float: left;
-  font-size: 18px;
-  color: #f5004b;
-  line-height: 40px;
-  font-weight: normal;
-}
-#gm-countdown .time-box {
-  float: right;
-  width: 238px;
-  height: 40px;
-  border-right: 1px solid #e6e6e6;
-}
-#gm-countdown .time-box span {
-  float: left;
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  padding-right: 7px;
-  color: #f5004b;
-}
-#gm-countdown .time-box i {
-  float: left;
-  display: block;
-  margin-top: 5px;
-  font-size: 20px;
-  font-style: normal;
-  color: #f5004b;
-  font-weight: bold;
-}
-#gm-countdown .time-box em {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  font-weight: normal;
-  color: #fff;
-  font-style: normal;
-  border-radius: 5px;
-  background: #f5004b;
-}
-#gm-countdown .line-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  border-top: 1px solid #f5004b;
-}
-#gm-countdown .countdown-l-b {
-  position: relative;
-  height: 210px;
-  border: 1px solid #e6e6e6;
-}
-#gm-countdown .active {
-  display: none;
-}
-#gm-countdown .countdown-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#gm-countdown .countdown-list:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gm-countdown .countdown-list li {
-  float: left;
-  width: 237px;
-  height: 209px;
-}
-#gm-countdown .countdown-list a {
-  display: block;
-  height: 179px;
-  margin-top: 15px;
-  border-right: 1px dashed #eee;
-}
-#gm-countdown .countdown-list li:nth-of-type(4) a {
-  border-right: none;
-}
-#gm-countdown .countdown-list img {
-  width: 120px;
-  height: 120px;
-  margin-left: 58px;
-}
-#gm-countdown .countdown-list p {
-  width: 196px;
-  height: 18px;
-  margin-left: 20px;
-  line-height: 18px;
-  color: #5e5e5e;
-  word-break: break-all;
-  overflow: hidden;
-}
-#gm-countdown .countdown-price {
-  margin: 6px 0 0 20px;
-  color: #ff0027;
-  font-size: 20px;
-}
-#gm-countdown .countdown-price .del {
-  font-size: 12px;
-  color: #999;
-  margin-left: 1px;
-  text-decoration: line-through;
-}
-#gm-countdown .countdown-btn {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 50%;
-  margin-top: -24px;
-  z-index: 50;
-}
-#gm-countdown .countdown-btn span {
-  display: block;
-  background: #000;
-  opacity: 0.2;
-  width: 24px;
-  height: 48px;
-}
-#gm-countdown .countdown-btn p {
-  width: 24px;
-  height: 48px;
-  position: absolute;
-  top: 0;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
-  cursor: pointer;
-}
-#gm-countdown .c-btn-left {
-  float: left;
-}
-#gm-countdown .c-btn-left p {
-  left: 0;
-  background-position: -4px -178px;
-}
-#gm-countdown .c-btn-left:hover span, #gm-countdown .c-btn-right:hover span {
-  opacity: 0.4;
-}
-#gm-countdown .c-btn-right {
-  float: right;
-}
-#gm-countdown .c-btn-right p {
-  right: 0;
-  background-position: -33px -178px;
-}
-#gm-countdown .gm-countdown-r {
-  float: right;
-  width: 250px;
-  height: 252px;
-  text-align: right;
-}
-#gm-countdown .gm-countdown-r a {
-  width: 240px;
-}
-#gm-countdown .gm-countdown-r img {
-  display: inline-block;
-}
-
-#gm-coupon {
-  width: 1200px;
-  margin: 20px auto 0;
-  overflow: hidden;
-}
-#gm-coupon .coupon {
-  width: 122px;
-  float: left;
-}
-#gm-coupon ul {
-  float: left;
-  width: 1039px;
-  overflow: hidden;
-}
-#gm-coupon li {
-  float: left;
-  overflow: hidden;
-}
-#gm-coupon li a {
-  display: block;
-  width: 207px;
-  border-right: 1px dashed #ddd;
-  overflow: hidden;
-}
-#gm-coupon .c-lastli {
-  width: 207px;
-}
-#gm-coupon .more {
-  width: 38px;
-  float: right;
-}
-
-#gm-feature {
-  width: 1200px;
-  margin: 0 auto;
-}
-#gm-feature .gm-title {
-  width: 100%;
-  height: 60px;
-  overflow: hidden;
-}
-#gm-feature .gm-title h2 {
-  float: left;
-  width: 70px;
-  margin-top: 28px;
-  text-indent: -10000px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
-}
-#gm-feature .gm-title span {
-  display: block;
-  float: left;
-  font-size: 20px;
-  color: #ccc;
-  padding: 30px 0 0 9px;
-}
-#gm-feature .gm-feature-l {
-  float: left;
-  width: 420px;
-  margin-right: 10px;
-}
-#gm-feature .gm-feature-l h2 {
-  background-position: -169px -100px;
-}
-#gm-feature .gm-feature-c {
-  float: left;
-  width: 420px;
-  margin-right: 10px;
-}
-#gm-feature .gm-feature-c h2 {
-  background-position: -169px -132px;
-}
-#gm-feature .gm-feature-r {
-  float: left;
-  width: 340px;
-}
-#gm-feature .gm-feature-r h2 {
-  background-position: -169px -164px;
-}
-#gm-feature .gm-f-inner {
-  border: 1px solid #e6e6e6;
-  overflow: hidden;
-}
-#gm-feature .gm-f-inner a {
-  float: left;
-}
-#gm-feature .gm-f-inner .dashedborder {
-  border-bottom: 1px dashed #eee;
-}
-#gm-feature .f-inner-l {
-  float: left;
-  width: 219px;
-}
-#gm-feature .f-inner-r {
-  border-left: 1px solid #e6e6e6;
-  overflow: hidden;
-}
-#gm-feature .f-inner-r a {
-  display: block;
-  width: 118px;
-  height: 59px;
-  text-align: center;
-  opacity: 0.9;
-}
-#gm-feature .f-inner-r img {
-  display: inline-block;
-  width: 100px;
-  margin-top: 15px;
-}
-
-#gm-finance {
-  width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  overflow: hidden;
-}
-#gm-finance .gm-title {
-  height: 60px;
-  overflow: hidden;
-}
-#gm-finance h2 {
-  margin-top: 28px;
-  float: left;
-  color: #333;
-  font-weight: normal;
-}
-#gm-finance span {
-  display: block;
-  float: left;
-  font-size: 20px;
-  color: #ccc;
-  padding: 30px 0 0 9px;
-}
-#gm-finance .gm-finance-bot {
-  height: 230px;
-}
-#gm-finance .gm-bot-l {
-  float: left;
-  width: 420px;
-  height: 230px;
-  position: relative;
-}
-#gm-finance .gm-bot-l span {
-  display: block;
-  position: absolute;
-  width: 73px;
-  height: 30px;
-  padding: 0 13px;
-  font-size: 14px;
-  line-height: 30px;
-  left: 60px;
-  bottom: 48px;
-  background: #b88828;
-  border-radius: 2px;
-}
-#gm-finance .gm-bot-l a {
-  color: #fff;
-}
-#gm-finance .gm-bot-l i {
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 7px;
-  height: 11px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -126px -52px;
-  overflow: hidden;
-}
-#gm-finance .gm-bot-r {
-  float: left;
-  width: 779px;
-  height: 228px;
-}
-#gm-finance .gm-bot-r ul {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  overflow: hidden;
-}
-#gm-finance .gm-bot-r li {
-  float: left;
-  width: 194px;
-  border-right: 1px dashed #eee;
-}
-#gm-finance .gm-bot-r img {
-  width: 194px;
-}
-#gm-finance .gm-bot-r li:nth-of-type(4) {
-  border-right: 0;
-}
-
-#gm-public {
-  background: #f7f7f7;
-  padding: 30px 0 20px;
-}
-#gm-public .wrap {
-  width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-#gm-public a {
-  color: #888;
-}
-#gm-public a:hover {
-  color: #f5004b;
-}
-#gm-public .gm-title {
-  overflow: hidden;
-}
-#gm-public .gm-title h3 {
-  float: left;
-  font-size: 18px;
-  line-height: 38px;
-  color: #333;
-  font-weight: normal;
-}
-#gm-public .gm-title span {
-  float: right;
-  display: block;
-  margin-top: 12px;
-  margin-right: 15px;
-}
-#gm-public .gm-hottopic {
-  float: left;
-  width: 954px;
-}
-#gm-public li {
-  float: left;
-  width: 306px;
-  margin-right: 10px;
-  padding-bottom: 20px;
-  background: #fff;
-}
-#gm-public .hot-img {
-  height: 180px;
-}
-#gm-public .hot-img img {
-  width: 100%;
-  height: 100%;
-}
-#gm-public .hot-bot {
-  padding: 0 20px;
-}
-#gm-public .hot-bot a:hover {
-  color: #f5004b;
-}
-#gm-public .img-title {
-  height: 28px;
-  line-height: 28px;
-  margin: 12px 0 7px;
-  font-size: 16px;
-  word-break: break-all;
-}
-#gm-public .img-title a {
-  color: #333;
-}
-#gm-public .img-info {
-  height: 54px;
-  line-height: 18px;
-  margin-bottom: 17px;
-}
-#gm-public .img-info a {
-  color: #5e5e5e;
-}
-#gm-public .img-data span {
-  padding-left: 21px;
-  margin-right: 31px;
-}
-#gm-public .img-data span:nth-of-type(1) {
-  background: url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/love.png?v=2413410") no-repeat 0 50%;
-}
-#gm-public .img-data span:nth-of-type(2) {
-  background: url("https://css.meixincdn.com/m/pc/dist/widget/indexHotTopic/images/discuss.png?v=2413410") no-repeat 0 50%;
-}
-#gm-public .gm-interest {
-  float: left;
-  width: 246px;
-}
-#gm-public .interest-inner {
-  height: 327px;
-  padding: 15px 15px 0;
-  background: #fff;
-}
-#gm-public .interest-inner p {
-  height: 22px;
-  font-size: 13px;
-  line-height: 22px;
-  word-break: break-all;
-  overflow: hidden;
-}
-#gm-public .interest-inner a {
-  color: #5e5e5e;
-}
-#gm-public .interest-inner a:hover {
-  color: #f5004b;
-}
-#gm-public .interest-txt {
-  padding: 15px 0 12px;
-  margin-bottom: 14px;
-  border-bottom: 1px dashed #e6e6e6;
-}
-#gm-public .interest-txt span {
-  padding: 0 3px;
-  color: #fff;
-  background: #ff7612;
-  border-radius: 2px;
-}
-#gm-public .interest-txt a {
-  color: #333;
-  font-size: 14px;
-}
-#gm-public .interest-txt a:hover {
-  color: #f5004b;
-}
-#gm-public .interest-txt p {
-  margin: 3px 0;
-  color: #a5a5a5;
-}
-
-#gm-hotlist {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 20px;
-}
-#gm-hotlist:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gm-hotlist .gm-title {
-  height: 60px;
-  overflow: hidden;
-}
-#gm-hotlist .gm-title h2 {
-  margin-top: 28px;
-  float: left;
-  color: #333;
-  font-weight: normal;
-}
-#gm-hotlist .gm-title b {
-  display: block;
-  float: left;
-  font-size: 20px;
-  font-weight: normal;
-  color: #ccc;
-  padding: 30px 0 0 9px;
-}
-#gm-hotlist .gm-title a {
-  float: right;
-  display: block;
-  margin-top: 30px;
-  color: #5e5e5e;
-}
-#gm-hotlist .gm-title a:hover {
-  color: #f5004b;
-}
-#gm-hotlist .gm-title i {
-  display: inline-block;
-  width: 10px;
-  height: 14px;
-  vertical-align: middle;
-  padding-top: 4px;
-  margin-left: 3px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -123px -126px;
-}
-#gm-hotlist .gm-title em {
-  float: right;
-  margin-top: 30px;
-}
-#gm-hotlist .gm-hotlist-l {
-  float: left;
-  width: 830px;
-}
-#gm-hotlist .gm-l-b {
-  height: 338px;
-  border: 1px solid #eee;
-}
-#gm-hotlist .gm-l-b a {
-  position: relative;
-  display: block;
-  text-align: center;
-}
-#gm-hotlist .star {
-  float: left;
-  width: 281px;
-  height: 100%;
-  margin-right: -1px;
-  border-right: 1px solid #eee;
-}
-#gm-hotlist .star i {
-  display: block;
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 72px;
-  height: 72px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -52px 0;
-  overflow: hidden;
-}
-#gm-hotlist .star img {
-  display: inline-block;
-  margin: 30px 0 29px;
-}
-#gm-hotlist .star p {
-  width: 240px;
-  height: 24px;
-  margin-left: 20px;
-  font-size: 16px;
-  color: #404040;
-  overflow: hidden;
-}
-#gm-hotlist .star p:hover {
-  color: #f5004b;
-}
-#gm-hotlist .star p:nth-of-type(2) {
-  color: #ff0027;
-}
-#gm-hotlist .hot-list {
-  float: left;
-  width: 547px;
-}
-#gm-hotlist .hot-list ul {
-  width: 548px;
-}
-#gm-hotlist .hot-list ul:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gm-hotlist .hot-list li {
-  float: left;
-  width: 274px;
-  height: 170px;
-  overflow: hidden;
-}
-#gm-hotlist .hot-list a {
-  display: block;
-  height: 168px;
-  border-right: 1px dashed #eee;
-  border-bottom: 1px dashed #eee;
-  overflow: hidden;
-}
-#gm-hotlist .hot-list img {
-  float: left;
-  width: 120px;
-  height: 120px;
-  margin: 25px 10px 0;
-}
-#gm-hotlist .hot-list p {
-  float: left;
-  width: 120px;
-  height: 40px;
-  font-size: 13px;
-  text-align: left;
-  color: #5e5e5e;
-  line-height: 20px;
-  overflow: hidden;
-}
-#gm-hotlist .hot-list p:hover {
-  color: #f5004b;
-}
-#gm-hotlist .hot-list .hot-name {
-  margin-top: 29px;
-}
-#gm-hotlist .hot-list .hot-price {
-  margin-top: 8px;
-  line-height: 14px;
-  font-size: 14px;
-  color: #ff0027;
-}
-#gm-hotlist .hot-list b {
-  display: block;
-  position: absolute;
-  width: 70px;
-  height: 77px;
-  right: -3px;
-  bottom: -28px;
-  font-size: 125px;
-  font-weight: normal;
-  font-style: italic;
-  color: #f9f7f5;
-}
-#gm-hotlist .gm-hotlist-r {
-  float: right;
-  width: 361px;
-}
-#gm-hotlist .gm-r-b ul {
-  border: 1px solid #eee;
-  box-sizing: border-box;
-}
-#gm-hotlist .gm-r-b li {
-  width: 100%;
-  height: 169px;
-  overflow: hidden;
-}
-#gm-hotlist .gm-r-b li:nth-of-type(1) {
-  border-bottom: 1px dashed #eee;
-}
-#gm-hotlist .gm-r-b a {
-  display: block;
-}
-#gm-hotlist .gm-r-b a:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gm-hotlist .gm-r-b img {
-  width: 120px;
-  height: 120px;
-  margin: 5px 0 0 5px;
-}
-#gm-hotlist .b-inner-l {
-  position: relative;
-  float: left;
-  width: 130px;
-  height: 130px;
-  margin: 19px 30px 20px 20px;
-  border-radius: 68px;
-  background: #f6f6f6;
-}
-#gm-hotlist .txt {
-  position: absolute;
-  bottom: 4px;
-  left: 64px;
-}
-#gm-hotlist .txt div {
-  height: 18px;
-  margin-top: 4px;
-  background: #e74ccc;
-}
-#gm-hotlist .txt span {
-  display: block;
-  line-height: 18px;
-  padding: 0 4px;
-  color: #fff;
-}
-#gm-hotlist .b-inner-r {
-  float: left;
-  width: 160px;
-}
-#gm-hotlist .b-inner-r .hot-name {
-  height: 16px;
-  margin-top: 24px;
-  line-height: 16px;
-  font-size: 16px;
-  color: #404040;
-}
-#gm-hotlist .b-inner-r .hot-name:hover {
-  color: #f5004b;
-}
-#gm-hotlist .b-inner-r .hot-price {
-  margin-top: 14px;
-  line-height: 18px;
-  color: #888;
-}
-#gm-hotlist .b-inner-r .hot-price span {
-  font-size: 16px;
-  color: #ff0027;
-}
-#gm-hotlist .b-inner-r .des {
-  margin-top: 39px;
-}
-#gm-hotlist .b-inner-r .des span {
-  display: block;
-  height: 18px;
-  line-height: 18px;
-  color: #888;
-}
-
 #gome-help {
   width: 1200px;
   margin: 30px auto 0;
@@ -2404,131 +1598,181 @@ body {
   vertical-align: baseline;
 }
 
-#gome-main {
+#gome-topmenu .wrap {
+  width: 990px;
+}
+
+#gm-logo {
   position: relative;
-  width: 1200px;
-  height: 450px;
+  width: 990px;
+  height: 120px;
   margin: 0 auto;
 }
+#gm-logo .logo {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  margin: 32px 10px 0 0;
+}
+#gm-logo .logo a {
+  display: inline-block;
+  width: 125px;
+  height: 56px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png") no-repeat;
+}
+#gm-logo .title {
+  position: absolute;
+  top: 0;
+  left: 135px;
+  width: 135px;
+  height: 120px;
+  padding: 0 40px 0 0;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.7/css/i/gwc.png") no-repeat 0 32px;
+}
 
-.gm-banner {
-  position: absolute;
-  top: 0;
-  left: 200px;
-  width: 750px;
-  height: 450px;
+#gm-cart-lists {
+  color: #333;
 }
-.gm-banner ul li {
-  position: absolute;
-  top: 0;
-  left: 0;
+#gm-cart-lists .wrap {
+  width: 990px;
+  margin: 0 auto;
 }
-.gm-banner ol {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 750px;
+#gm-cart-lists .checkbox_choose {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 5px;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5") no-repeat -611px -28px;
+}
+#gm-cart-lists .checkbox_no {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #CCC;
+  margin: 2px 16px;
+  background-color: #FFF;
+  border-radius: 2px;
+}
+#gm-cart-lists .cart-empty-box {
   text-align: center;
 }
-.gm-banner ol li {
-  display: inline-block;
-  width: 30px;
-  height: 5px;
-  margin: 0 4px;
-  background: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-.gm-banner ol .active {
-  background: #f5004b;
-}
-.gm-banner .banner-btn {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -40px;
-}
-.gm-banner .banner-btn span {
-  display: inline-block;
-  width: 40px;
-  height: 80px;
-  background: #000;
-  opacity: 0.2;
-  cursor: pointer;
-}
-.gm-banner .banner-btn span:hover {
-  opacity: 0.4;
-}
-.gm-banner .banner-btn i {
-  z-index: 50;
-}
-.gm-banner .btn-left i {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 80px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat 0 -112px;
-  overflow: hidden;
-}
-.gm-banner .btn-right i {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 80px;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -42px -112px;
-  overflow: hidden;
-}
-
-.gm-service {
-  position: absolute;
-  right: 0;
-  height: 448px;
+#gm-cart-lists .cart-empty-box .cart-empty {
+  padding: 56px 0;
   border: 1px solid #e6e6e6;
-  border-left: 0;
+  text-align: center;
 }
-.gm-service .gm-round {
-  height: 60px;
-  margin-top: 7px;
-  z-index: 1;
+#gm-cart-lists .cart-empty-box .icon-empty {
+  display: inline-block;
+  vertical-align: middle;
+  width: 71px;
+  height: 54px;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.7/css/i/sprite.png?v=0.4.5") no-repeat 0 0;
 }
-.gm-service .gm-round a {
+#gm-cart-lists .cart-empty-box .cart-empty-text {
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 26px;
+  font-size: 12px;
+  color: #333;
+  text-align: left;
+  vertical-align: middle;
+}
+#gm-cart-lists .cart-empty-box .cart-empty-text .cart-login {
+  float: left;
+  padding: 0px 15px 0px 0px;
+}
+#gm-cart-lists .cart-empty-box .cart-empty-text .cart-login a {
   display: block;
-  position: relative;
-}
-.gm-service .gm-round .title {
-  position: absolute;
-  top: 14px;
-  left: 15px;
-}
-.gm-service .gm-round .title p {
-  height: 18px;
+  background: #e3101e;
+  padding: 4px 8px;
+  border-radius: 3px;
+  line-height: 20px;
   color: #fff;
 }
-.gm-service .gm-round .title .title-t {
-  line-height: 14px;
-  font-size: 14px;
-  font-weight: 700;
+#gm-cart-lists .cart-empty-box .cart-empty-text .choose {
+  line-height: 29px;
+  color: #069;
 }
-.gm-service .gm-round .title .title-b {
-  font-size: 13px;
-  line-height: 16px;
+#gm-cart-lists .cart-empty-box .cart-empty-text .choose span {
+  font-family: SimSun;
+}
+#gm-cart-lists .cart-col-1, #gm-cart-lists .cart-col-2, #gm-cart-lists .cart-col-3, #gm-cart-lists .cart-col-4, #gm-cart-lists .cart-col-5, #gm-cart-lists .cart-col-6, #gm-cart-lists .cart-col-7 {
+  float: left;
 }
 
-.gm-flash {
-  width: 220px;
-  margin: 0 15px;
-  border-bottom: 1px dashed #ccc;
+.cart-header {
+  width: 988px;
+  height: 44px;
+  line-height: 44px;
+  background: #eee;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.cart-header .cart-col-1 {
+  width: 40px;
+  height: 30px;
+  text-align: center;
+}
+.cart-header .cart-col-2 {
+  width: 91px;
+}
+.cart-header .cart-col-3 {
+  width: 389px;
+}
+.cart-header .cart-col-4 {
+  width: 155px;
+}
+.cart-header .cart-col-4 .cart-price {
+  padding: 0 40px 0 22px;
+}
+.cart-header .cart-col-5 {
+  width: 80px;
+}
+.cart-header .cart-col-6 {
+  width: 154px;
+  text-align: right;
+}
+.cart-header .cart-col-6 .cart-amount {
+  padding-right: 70px;
+}
+.cart-header .cart-col-7 {
+  width: 79px;
+}
+
+.cart-list .cart-shop-header {
+  height: 38px;
+  margin-top: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  line-height: 38px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+.cart-list .cart-shop-header .cart-col-1 {
+  text-align: center;
+  width: 40px;
+}
+.cart-list .cart-shop-header .cart-col-2 {
+  width: 332px;
+  height: 38px;
+}
+.cart-list .cart-shop-header .cart-col-2 span {
+  display: inline-block;
+  width: 130px;
+  height: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
-.gm-flash .gm-flash-t {
-  width: 220px;
-  height: 36px;
-  overflow: hidden;
+.cart-list .cart-shop-good {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  background: #fffaf4;
+  text-align: center;
 }
-.gm-flash .gm-flash-t:after {
+.cart-list .cart-shop-good:after {
   content: " ";
   display: block;
   clear: both;
@@ -2536,115 +1780,256 @@ body {
   overflow: hidden;
   visibility: hidden;
 }
-.gm-flash .gm-flash-t h3 {
+.cart-list .cart-shop-good .cart-col-1, .cart-list .cart-shop-good .cart-col-2, .cart-list .cart-shop-good .cart-col-3, .cart-list .cart-shop-good .cart-col-4, .cart-list .cart-shop-good .cart-col-5, .cart-list .cart-shop-good .cart-col-6, .cart-list .cart-shop-good .cart-col-7 {
   float: left;
-  margin-top: 12px;
-  font-size: 14px;
-  color: #333;
-  font-weight: 400;
+  padding: 20px 0;
 }
-.gm-flash .gm-flash-t a {
-  float: right;
-  margin-top: 13px;
-  font-size: 12px;
-  color: #888;
-  text-align: center;
+.cart-list .cart-shop-good .cart-col-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  line-height: 14px;
 }
-.gm-flash .gm-flash-t a:hover {
-  color: #f5004b;
+.cart-list .cart-shop-good .cart-col-2 {
+  width: 91px;
+  height: 82px;
 }
-.gm-flash .gm-flash-t span {
-  display: inline-block;
-  width: 5px;
-  height: 9px;
-  vertical-align: middle;
-  background: url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat -126px -130px;
-  margin-left: 4px;
-  vertical-align: baseline;
-}
-.gm-flash .gm-flash-b {
-  margin-bottom: 10px;
-}
-.gm-flash .gm-flash-b div {
-  width: 250px;
-  height: 26px;
-  font-size: 12px;
-  line-height: 26px;
-}
-.gm-flash .gm-flash-b .th {
+.cart-list .cart-shop-good .cart-col-2 .g-img {
+  position: relative;
   display: block;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.cart-list .cart-shop-good .fl {
   float: left;
-  width: 24px;
-  height: 26px;
-  color: #888;
-  margin-right: 7px;
+}
+.cart-list .cart-shop-good .fl:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.cart-list .cart-shop-good .cart-col-3 {
+  width: 208px;
+  padding: 20px 0 5px;
+  text-align: left;
+}
+.cart-list .cart-shop-good .cart-col-3 .cart-name {
+  height: 38px;
+  line-height: 18px;
   overflow: hidden;
 }
-.gm-flash .gm-flash-b .txt {
+.cart-list .cart-shop-good .cart-col-3 .cart-name a {
+  display: block;
+  color: #333;
+}
+.cart-list .cart-shop-good .cart-col-3 i {
   display: inline-block;
-  width: 196px;
-  color: #5e5e5e;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5") no-repeat -549px -32px;
+  border-radius: 5px;
+}
+.cart-list .cart-shop-good .cart-col-4 {
+  width: 155px;
+  text-align: left;
+}
+.cart-list .cart-shop-good .cart-col-4 .cart-price {
+  padding-left: 22px;
+  padding-right: 40px;
+  font-family: "Microsoft YaHei";
+}
+.cart-list .cart-shop-good .cart-col-5 {
+  width: 80px;
+}
+.cart-list .cart-shop-good .cart-col-5 .cart-count {
+  position: relative;
+  width: 50px;
+  padding: 0 15px;
+}
+.cart-list .cart-shop-good .cart-col-5 .count-btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 15px;
+  height: 20px;
+  line-height: 20px;
+  color: #ccc;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ccc;
+}
+.cart-list .cart-shop-good .cart-col-5 .count-input {
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+  display: block;
+  text-align: center;
+  background: #fff;
+}
+.cart-list .cart-shop-good .cart-col-5 .count-input input {
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
+  border: 0;
+  text-align: center;
   overflow: hidden;
 }
-.gm-flash .gm-flash-b .def {
-  color: #f5004b;
+.cart-list .cart-shop-good .cart-col-5 .reduce {
+  left: 0;
 }
-.gm-flash .gm-flash-b a:hover {
-  color: #f5004b;
+.cart-list .cart-shop-good .cart-col-5 .add {
+  right: 0;
+  color: #666;
+}
+.cart-list .cart-shop-good .cart-col-6 {
+  width: 154px;
+  font-weight: 700;
+}
+.cart-list .cart-shop-good .cart-col-6 .cart-amount {
+  padding-right: 70px;
+  font-size: 13px;
+  font-family: "Microsoft YaHei";
+  text-align: right;
+}
+.cart-list .cart-shop-good .cart-col-7 {
+  width: 79px;
+  text-align: left;
+  line-height: 18px;
+}
+.cart-list .cart-shop-good .cart-col-7 .cart-good-fun {
+  margin-bottom: 2px;
+  padding-top: 1px;
+}
+.cart-list .cart-shop-good .cart-col-7 .cart-good-fun a {
+  color: #666;
+}
+.cart-list .cart-shop-good .cart-col-7 .cart-good-fun a:hover {
+  color: #e3101e;
+}
+.cart-list .cart-shop-good .cart-col-8 {
+  float: left;
+  width: 180px;
+  padding: 10px 0 20px;
 }
 
-.gm-service-box {
+.cart-bottom {
+  height: 60px;
+  margin-top: 20px;
+  background: #f3f3f3;
+}
+.cart-bottom .wrap:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.cart-bottom .cart-col-1, .cart-bottom .cart-col-2, .cart-bottom .cart-col-3, .cart-bottom .cart-col-4, .cart-bottom .cart-col-5 {
+  padding-top: 19px;
+  line-height: 22px;
+}
+.cart-bottom .cart-col-1 {
+  width: 40px;
+}
+.cart-bottom .cart-col-2 {
+  width: 91px;
+}
+.cart-bottom .cart-col-2 a {
+  margin-left: 20px;
+  color: #333;
+}
+.cart-bottom .cart-col-2 a:hover {
+  color: #e3101e;
+}
+.cart-bottom .cart-col-3 {
+  width: 110px;
+}
+.cart-bottom .cart-col-4 {
+  width: 532px;
+  padding-right: 10px;
+  text-align: right;
+}
+.cart-bottom .cart-col-4 .cart-select {
   position: relative;
-  width: 250px;
-  height: 216px;
-}
-.gm-service-box .icon-box {
-  width: 220px;
-  margin-left: 15px;
-  overflow: hidden;
-}
-.gm-service-box .icon-box ul {
-  width: 252px;
-}
-.gm-service-box .icon-box li {
-  position: relative;
-  float: left;
-  width: 55px;
-  height: 70px;
-  padding-top: 2px;
-  margin-right: 29px;
-  text-align: center;
-  overflow: hidden;
-}
-.gm-service-box .icon-box a {
-  position: absolute;
-  display: block;
-  width: 38px;
-  height: 71px;
-  left: 14px;
-}
-.gm-service-box .icon-box a:hover i {
-  color: #f5004b;
-}
-.gm-service-box .icon-box a i {
-  display: block;
-  margin-top: 10px;
-  margin-left: -13px;
-  font-size: 32px;
-  color: #373737;
-}
-.gm-service-box .icon-box a .title {
-  display: block;
-  width: 36px;
-  height: 20px;
-  margin-top: 8px;
-  margin-left: -5px;
-  font-size: 12px;
-  color: #5e5e5e;
-  overflow: hidden;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 22px;
+  vertical-align: top;
   cursor: pointer;
 }
+.cart-bottom .cart-col-4 .cart-select span {
+  color: #e3101e;
+  font-weight: 900;
+  font-size: 14px;
+}
+.cart-bottom .cart-col-4 .cart-select em {
+  display: inline-block;
+  width: 7px;
+  height: 4px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5") no-repeat -31px -76px;
+  margin-bottom: 3px;
+}
+.cart-bottom .cart-col-4 .bottom-total-pirce {
+  display: inline-block;
+}
+.cart-bottom .cart-col-4 .bottom-total-pirce dt {
+  float: left;
+  width: 120px;
+  text-align: right;
+}
+.cart-bottom .cart-col-4 .bottom-total-pirce dd {
+  float: left;
+  font-size: 18px;
+  color: #e3101e;
+  font-weight: 900;
+}
+.cart-bottom .cart-col-5 {
+  width: 136px;
+  padding-top: 0;
+  text-align: center;
+}
+.cart-bottom .cart-col-5 a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  background: #e3101e;
+  font-weight: 700;
+}
+.cart-bottom .cart-col-5 a em {
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5") no-repeat -648px -42px;
+  margin-left: 6px;
+}
 
-/*# sourceMappingURL=index.css.map */
+#gome-footer .gm-footer-box {
+  width: 990px;
+  font-family: "微软雅黑";
+}
+#gome-footer .gm-footer-box span, #gome-footer .gm-footer-box .qrcode-section {
+  display: none;
+}
+
+/*# sourceMappingURL=cart.css.map */

@@ -33,7 +33,7 @@
     .public_dropdown{
         display: none;
         position: absolute;
-        top:30px;
+        top:29px;
         border:1px solid #e6e6e6;
         overflow: hidden;
         background:#fff;
@@ -41,13 +41,13 @@
     // 滑过li出现相应的下拉内容
     .drop:hover .public_dropdown{
         display: block;
-        z-index:99;
+        z-index:999;
     }
     // li下的span项改变背景颜色
     .drop:hover span{
         border-color:#e6e6e6;
         background:#fff;
-        z-index:100;
+        z-index:1000;
     }
 }
 // 左菜单

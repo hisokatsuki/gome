@@ -6,6 +6,9 @@
     width:$width1200;
     margin:0 auto;
 }
+a{
+    color:#5e5e5e;
+}
 // header
 #gome-topmenu{
     .gome-home{
@@ -460,6 +463,246 @@
         }
     }
 }
+// 产品属性
+.prd-properties{
+    padding-left:20px;
+    // 特色
+    .features{
+        margin-top:20px;
+        @include clearfix();
+        .prd-properties-left{
+            float: left;
+            color: #888;
+        }
+        .prd-properties-right{
+            float: left;
+            margin-left:23px;
+            color: #888;
+            span{
+                position: relative;
+                padding: 3px 10px 3px 17px;
+                margin-right: 16px;
+                border: 1px solid #61819f;
+                border-left: 0 solid #61819f;
+                a{
+                    color: #61819f;
+                }
+            }
+            .properties-right1,.properties-right2,.properties-right3{
+                em{
+                    @include icons2(8px,20px,0,-8px,0,-2077px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+            }
+            .properties-right1{
+                b{
+                    @include icons2(16px,16px,1px,-6px,0,-2107px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+            }
+            .properties-right2{
+                b{
+                    @include icons2(16px,16px,1px,-5px,0,-2185px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+            }
+            .properties-right3{
+                b{
+                    @include icons2(16px,16px,1px,-6px,0,-2133px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+            }
+        }
+    }
+    // 送至
+    .send-to{
+        position: relative;
+        margin-top:13px;
+        line-height:$line-height-18;
+        @include clearfix();
+        .prd-properties-left{
+            float: left;
+            color: #888;
+        }
+        .prd-properties-right{
+            float: left;
+            margin-left:15px;
+            span{
+                display: inline-block;
+                line-height:$line-height-18;
+            }
+            .address{
+                padding: 0 21px 0 6px;
+                a{
+                    position: relative;
+                    color:#5e5e5e;
+                    &:hover{
+                        color:#e3101e;
+                    }
+                }
+                i{
+                    @include icons1(10px,6px,4px,-14px,0,-602px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                }
+            }
+            .hasstock{
+                margin-left: 20px;
+            }
+            .support{
+                margin-left: 20px;
+                color: #888;
+                a{
+                    margin: 0 10px;
+                    display: inline-block;
+                    color: #61819f;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    // 预计时间
+    .time{
+        margin-top: 12px;
+        line-height:12px;
+        color: #888;
+        .prd-properties-right{
+            margin-left:69px;
+        }
+    }
+    .service{
+        margin-top:16px;
+        line-height:12px;
+        @include clearfix();
+        .prd-properties-left{
+            float: left;
+            color: #888;
+        }
+        .prd-properties-right{
+            float: left;
+            margin-left: 15px;
+        }
+    }
+}
+.sales-property{
+    margin-top: 20px;
+    // 颜色
+    .color{
+        @include clearfix();
+        .prdleft{
+            float: left;
+            line-height:42px;
+            color:#888;
+        }
+        .prdright{
+            float: left;
+            width: 630px;
+            margin-left: 15px;
+        }
+        .prd-img-item{
+            float: left;
+            width: auto;
+            margin-right: 7px;
+            margin-bottom: 7px;
+            a{
+                position: relative;
+                display: block;
+                height: 40px;
+                color:#5e5e5e;
+                border: 1px solid #e6e6e6;
+                overflow: hidden;
+                img{
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                }
+                span{
+                    float: left;
+                    padding: 14px 10px;
+                    line-height:12px;
+                }
+                i{
+                    @include icons1(11px,11px,29px,0,0,-2211px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                    visibility: hidden;
+                }
+            }
+            a:hover{
+                border: 1px solid #e3101e;
+            }
+            .select{
+                border: 1px solid #e3101e;
+                i{
+                    visibility:visible;
+                }
+            }
+        }
+    }
+    // 版本
+    .version{
+        @include clearfix();
+        .prdleft{
+            float: left;
+            line-height:38px;
+            color:#888;
+        }
+        .prdright{
+            float: left;
+            width: 630px;
+            margin-left: 15px;
+            line-height:12px;
+            .prdmod{
+                float: left;
+                margin-right: 7px;
+                margin-bottom: 7px;
+                a{
+                    position: relative;
+                    display: block;
+                    border: 1px solid #ccc;
+                    padding: 11px 10px;
+                    i{
+                        @include icons1(11px,11px,24px,0,0,-2211px,"https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite");
+                        visibility: hidden;
+                    }
+                }
+                a:hover{
+                    border: 1px solid #e3101e;
+                }
+                .select{
+                    border: 1px solid #e3101e;
+                    i{
+                        visibility:visible;
+                    }
+                }
+            }
+        }
+    }
+}
+// 延保服务
+.e-w-service{
+    @include clearfix();
+    .prdleft{
+        float: left;
+        line-height:38px;
+        color:#888;
+    }
+    .prdright{
+        float: left;
+        width: 630px;
+        margin-left: 15px;
+        line-height:12px;
+        .prdmod{
+            float: left;
+            margin-right: 7px;
+            a{
+                position: relative;
+                display:block;
+                padding: 11px 8px 11px 30px;
+                border:1px solid #ccc;
+                img{
+                    position: absolute;
+                    top:8px;
+                    left:8px;
+                }
+            }
+        }
+    }
+}
 // 按钮
 .prd-btn{
     position: relative;
@@ -525,7 +768,7 @@
         position: relative;
         display:block;
         width:98px;
-        padding:8px 0;
+        padding:6px 0;
         margin-right: 8px;
         line-height:$line-height-22;
         color:#5e5e5e;
@@ -537,8 +780,15 @@
             margin-left:6px;
         }
         div{
+            position: absolute;
             display:$none;
-            margin-top:5px;
+            top: 38px;
+            left: -1px;
+            width:98px;
+            border:1px solid #ccc;
+            border-top:0;
+            background:#fff;
+            z-index: 100;
             img{
                 margin-left: 4px;
                 vertical-align: middle;

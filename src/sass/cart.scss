@@ -1,0 +1,414 @@
+@charset "utf-8";
+@import 'variable';
+@import 'header';
+@import 'footer';
+// header
+#gome-topmenu .wrap {
+    width:$width990;
+}
+// logo
+#gm-logo{
+    position: relative;
+    width:$width990;
+    height:120px;
+    margin:0 auto;
+    .logo{
+        position: absolute;
+        top:0px;
+        left:0;
+        margin: 32px 10px 0 0;;
+        a{
+            display:inline-block;
+            width: 125px;
+            height: 56px;
+            background:url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png") no-repeat;
+        }
+    }
+    .title{
+        position: absolute;
+        top:0;
+        left:135px;
+        width: 135px;
+        height:120px;
+        padding: 0 40px 0 0;
+        background:url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.7/css/i/gwc.png") no-repeat 0 32px;
+    }
+}
+// 购物车列表
+#gm-cart-lists{
+    color:#333;
+    .wrap{
+        width:$width990;
+        margin:0 auto;
+    }
+    // 选中复选框
+    .checkbox_choose{
+        display: inline-block;
+        width:14px;
+        height:14px;
+        margin-left: 5px;
+        background:url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5") no-repeat -611px -28px;;
+    }
+    // 未选中复选框
+    .checkbox_no{
+        width: 12px;
+        height: 12px;
+        border: 1px solid #CCC;
+        margin: 2px 16px;
+        background-color: #FFF;
+        border-radius: 2px;
+    }
+    .cart-empty-box{     
+        text-align: center;
+        .cart-empty{
+            padding: 56px 0;
+            border: 1px solid #e6e6e6;
+            text-align: center;
+        }
+        .icon-empty{
+            display:inline-block;
+            vertical-align: middle;
+            width: 71px;
+            height: 54px;
+            background:url("https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.7/css/i/sprite.png?v=0.4.5") no-repeat 0 0;
+        }
+        .cart-empty-text{
+            display:inline-block;
+            margin-left: 10px;
+            line-height: 26px;
+            font-size:$font-size-12;
+            color:#333;
+            text-align: left;
+            vertical-align: middle;
+            .cart-login{
+                float: left;
+                padding: 0px 15px 0px 0px;
+                a{
+                    display:block;
+                    background: #e3101e;
+                    padding: 4px 8px;
+                    border-radius: 3px;
+                    line-height: 20px;
+                    color:#fff;
+                }
+            }
+            .choose{
+                line-height:29px;
+                color: #069;
+                span{
+                    font-family: SimSun;
+                }
+            }
+        }
+    }    
+    .cart-col-1,.cart-col-2,.cart-col-3,.cart-col-4,.cart-col-5,.cart-col-6,.cart-col-7{
+        float: left;
+    }
+}
+.cart-header{
+    width: 988px;
+    height: 44px;
+    line-height: 44px;
+    background: #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    .cart-col-1{
+        width:40px;
+        height:30px;
+        text-align: center;
+    }
+    .cart-col-2{
+        width: 91px;
+    }
+    .cart-col-3{
+        width: 389px;
+    }
+    .cart-col-4{
+        width: 155px;
+        .cart-price{
+            padding:0 40px 0 22px;
+        }
+    }
+    .cart-col-5{
+        width: 80px;
+    }
+    .cart-col-6{
+        width: 154px;
+        text-align: right;
+        .cart-amount{
+            padding-right:70px;
+        }
+    }
+    .cart-col-7{
+        width: 79px;
+    }
+}
+// cart-list
+.cart-list{
+
+    .cart-shop-header{
+        height: 38px;
+        margin-top: 10px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        line-height: 38px;
+        border: 1px solid #ddd;
+        border-bottom:0;
+        border-radius: 3px 3px 0 0;
+        .cart-col-1{
+            text-align: center;
+            width:40px;
+        }
+        .cart-col-2{
+            width: 332px;
+            height: 38px;
+            span{
+                display: inline-block;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                font-weight: 700;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+    }
+    .cart-shop-good{
+        position: relative;
+        border: 1px solid #e6e6e6;
+        background:#fffaf4;
+        text-align: center;
+        @include clearfix();
+        .cart-col-1,.cart-col-2,.cart-col-3,.cart-col-4,.cart-col-5,.cart-col-6,.cart-col-7{
+            float: left;
+            padding: 20px 0;
+        }
+        .cart-col-1{
+            position: absolute;
+            top:0;
+            left:0;
+            width:40px;
+            line-height:14px;
+        }
+        .cart-col-2{
+            width: 91px;
+            height: 82px;
+            .g-img{
+                position: relative;
+                display:block;
+                width: 80px;
+                height: 80px;
+                border: 1px solid #e6e6e6;
+                overflow: hidden;
+            }
+        }
+        .fl{
+            float: left;
+            @include clearfix();
+        }
+        .cart-col-3{
+            width: 208px;
+            padding: 20px 0 5px;
+            text-align: left;
+            .cart-name{
+                height: 38px;
+                line-height:18px;
+                overflow: hidden;
+                a{
+                    display:block;
+                    color: #333;
+                }
+            }
+            i{
+                @include icons3(16px,16px,-549px,-32px,"https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5");
+                border-radius: 5px;
+            }
+        }
+        .cart-col-4{
+            width: 155px;
+            text-align: left;
+            .cart-price{
+                padding-left: 22px;
+                padding-right: 40px;
+                font-family: "Microsoft YaHei";
+            }
+        }
+        .cart-col-5{
+            width: 80px;
+            .cart-count{
+                position: relative;
+                width: 50px;
+                padding: 0 15px;
+            }
+            .count-btn{
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 15px;
+                height: 20px;
+                line-height: 20px;
+                color: #ccc;
+                background:#fff;
+                text-align: center;
+                font-weight: bold;
+                border: 1px solid #ccc;
+            }
+            .count-input{
+                height: 20px;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border: 1px solid #ccc;
+                border-right: none;
+                border-left: none;
+                width: 100%;
+                display: block;
+                text-align: center;
+                background: #fff;
+                input{
+                    width: 100%;
+                    height: 20px;
+                    margin: 0;
+                    padding: 0;
+                    line-height:18px;
+                    border:0;
+                    text-align: center;
+                    overflow: hidden;
+                }
+            }
+            .reduce{
+                left:0;
+            }
+            .add{
+                right:0;
+                color: #666;
+            }
+        }
+        .cart-col-6{
+            width: 154px;
+            font-weight: 700;
+            .cart-amount{
+                padding-right: 70px;
+                font-size:13px;
+                font-family: "Microsoft YaHei";
+                text-align: right;
+            }
+        }
+        .cart-col-7{
+            width: 79px;
+            text-align: left;
+            line-height:18px;
+            .cart-good-fun{
+                margin-bottom: 2px;
+                padding-top:1px;
+                a{
+                    color:#666;
+                    &:hover{
+                        color:#e3101e;
+                    }
+                }
+            }
+        }
+        .cart-col-8{
+            float: left;
+            width: 180px;
+            padding: 10px 0 20px;
+        }
+    }
+}
+// cart-bottom
+.cart-bottom{
+    height:60px;
+    margin-top: 20px;
+    background:#f3f3f3;
+    .wrap{
+        @include clearfix();
+    }
+    .cart-col-1,.cart-col-2,.cart-col-3,.cart-col-4,.cart-col-5{
+        padding-top: 19px;
+        line-height: 22px;
+    }
+    .cart-col-1{
+        width:40px;
+    }
+    .cart-col-2{
+        width:91px;
+        a{
+            margin-left:20px;
+            color:#333;
+            &:hover{
+                color: #e3101e;
+            }
+        }
+    }
+    .cart-col-3{
+        width: 110px;
+    }
+    .cart-col-4{
+        width: 532px;
+        padding-right: 10px;
+        text-align: right;
+        .cart-select{
+            position: relative;
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 22px;
+            vertical-align: top;
+            cursor: pointer;
+            span{
+                color: #e3101e;
+                font-weight: 900;
+                font-size:$font-size-14;
+            }
+            em{
+                @include icons3(7px,4px,-31px,-76px,"https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5");
+                margin-bottom: 3px;
+            }
+        }
+        .bottom-total-pirce{
+            display:inline-block;
+            dt{
+                float: left;
+                width: 120px;
+                text-align: right;
+            }
+            dd{
+                float: left;
+                font-size:$font-size-18;
+                color: #e3101e;
+                font-weight: 900;
+            }
+        }
+    }
+    .cart-col-5{
+        width: 136px;
+        padding-top:0;
+        text-align: center;
+        a{
+            display: block;
+            height: 60px;
+            line-height: 60px;
+            font-size:$font-size-16;
+            color: #fff;
+            text-align: center;
+            background: #e3101e;
+            font-weight: 700;
+            em{
+                @include icons3(12px,13px,-648px,-42px,"https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5");
+                margin-left:6px;
+                
+            }
+        }
+    }
+}
+// footer
+#gome-footer{
+    .gm-footer-box{
+        width:$width990;
+        font-family:"微软雅黑";
+        span,.qrcode-section{
+            display:$none;
+        }
+    }
+}

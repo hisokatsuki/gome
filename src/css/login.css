@@ -299,6 +299,184 @@ body {
   background-position: -175px -180px;
 }
 
+#gome-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  z-index: 999;
+  background: #5c5c5c;
+}
+#gome-bar .gm-bar-top b, #gome-bar .gm-bar-bot b {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  width: 7px;
+  height: 11px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -47px -464px;
+  overflow: hidden;
+}
+#gome-bar .gm-bar-top li, #gome-bar .gm-bar-bot li {
+  position: relative;
+  height: 38px;
+}
+#gome-bar .gm-bar-top li:hover, #gome-bar .gm-bar-bot li:hover {
+  background: #343434;
+}
+#gome-bar .gm-bar-top .hidebox, #gome-bar .gm-bar-bot .hidebox {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 18px;
+  padding: 9px 10px;
+  line-height: 18px;
+  border: 1px solid #e6e6e6;
+  color: #999;
+  background: #fff;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: -1;
+}
+#gome-bar .gm-bar-top li:hover .hidebox, #gome-bar .gm-bar-bot li:hover .hidebox {
+  display: block;
+  border-right: 0;
+  right: 35px;
+}
+#gome-bar .gm-bar-top li:hover b, #gome-bar .gm-bar-bot li:hover b {
+  background-position: -40px -464px;
+}
+#gome-bar .gm-bar-top {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  text-align: center;
+}
+#gome-bar .gm-bar-top li {
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/uiline.png") no-repeat center bottom;
+}
+#gome-bar .gm-bar-top .gm-bar-member, #gome-bar .gm-bar-top .gm-bar-collect, #gome-bar .gm-bar-top .gm-bar-cart {
+  position: relative;
+  height: 39px;
+  line-height: 39px;
+  cursor: pointer;
+}
+#gome-bar .gm-bar-top .gm-bar-member i, #gome-bar .gm-bar-top .gm-bar-collect i, #gome-bar .gm-bar-top .gm-bar-cart i {
+  margin-left: 5px;
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -18px -1025px;
+}
+#gome-bar .gm-bar-top .gm-bar-collect i {
+  background-position: -71px -1023px;
+}
+#gome-bar .gm-bar-top .gm-bar-cart {
+  height: 90px;
+  padding-top: 30px;
+}
+#gome-bar .gm-bar-top .gm-bar-cart i {
+  display: inline-block;
+  width: 31px;
+  height: 20px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -24px -1046px;
+  margin: 0 4px 3px 0;
+  display: block;
+}
+#gome-bar .gm-bar-top .gm-bar-cart em {
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 18px;
+  height: 16px;
+  color: #fff;
+  background: #a5a5a5;
+}
+#gome-bar .gm-bar-top .gm-bar-cart em .num {
+  position: absolute;
+  top: 0;
+  left: 6px;
+  font-weight: 400;
+  line-height: 16px;
+}
+#gome-bar .gm-bar-top .gm-bar-cart em .point {
+  display: block;
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 5px;
+  height: 6px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1087px;
+  overflow: hidden;
+}
+#gome-bar .gm-bar-top .gm-bar-cart .text {
+  width: 12px;
+  display: inline-block;
+  color: #fff;
+  line-height: 18px;
+}
+#gome-bar .gm-bar-bot {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  width: 35px;
+  font-size: 12px;
+  color: #999;
+  z-index: 999;
+}
+#gome-bar .gm-bar-bot .gm-bar-qrcode, #gome-bar .gm-bar-bot .gm-bar-survey, #gome-bar .gm-bar-bot .gm-bar-service, #gome-bar .gm-bar-bot .gm-bar-up {
+  position: relative;
+  height: 38px;
+  text-align: center;
+}
+#gome-bar .gm-bar-bot .gm-bar-qrcode i, #gome-bar .gm-bar-bot .gm-bar-survey i, #gome-bar .gm-bar-bot .gm-bar-service i, #gome-bar .gm-bar-bot .gm-bar-up i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -212px -473px;
+}
+#gome-bar .gm-bar-bot .gm-bar-qrcode {
+  margin-top: 5px;
+}
+#gome-bar .gm-bar-bot .gm-bar-qrcode .hidebox {
+  width: 140px;
+  height: 180px;
+  padding: 0;
+  border: 0;
+}
+#gome-bar .gm-bar-bot .gm-bar-survey i {
+  background-position: -212px -493px;
+}
+#gome-bar .gm-bar-bot .gm-bar-service i {
+  background-position: -212px -513px;
+}
+#gome-bar .gm-bar-bot .gm-bar-up i {
+  background-position: -212px -533px;
+}
+#gome-bar .gm-bar-bot .qrcode, #gome-bar .gm-bar-bot .up, #gome-bar .gm-bar-bot .service, #gome-bar .gm-bar-bot .survey {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  padding: 9px 0;
+  color: #999;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 2;
+}
+#gome-bar .gm-bar-bot .qrcode i, #gome-bar .gm-bar-bot .up i, #gome-bar .gm-bar-bot .service i, #gome-bar .gm-bar-bot .survey i {
+  vertical-align: baseline;
+}
+
 #gm-head {
   width: 990px;
   height: 120px;
