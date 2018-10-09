@@ -1,0 +1,353 @@
+@charset "utf-8";
+// 楼层
+a{
+    color:#5e5e5e;
+}
+#gm-floors {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;   
+    .gm-floor-t{
+        height: 38px;
+        padding-top: 32px;
+    }
+    .gm-floor{
+        .floor-title{
+            float: left;
+            width: 210px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 20px;
+            color:#000;
+            overflow: hidden;
+            .h2_text{
+                float: left;
+                padding-right: 6px;
+            }
+            h2{
+                font-weight: 500;
+                font-size:100%;
+            }
+        }
+    }
+    .tab{
+        float: right;
+        margin-top: 8px;
+        max-width: 790px;
+        height: 30px;
+        overflow: hidden;
+        position: relative;
+        li{
+            float: left;
+            a{
+                display:inline-block;
+                font-size:$font-size-14;
+                height: 30px;
+                padding: 0 15px;
+                line-height: 30px;
+            }
+        }
+        .active{
+            background:#719ef7;
+            a{
+                color:#fff;
+            }
+        }
+    }
+}
+.gm-floor-b{
+    height: 470px;
+}
+.floor-b-l {
+    position: relative;
+    float: left;
+    width: 210px;
+    height: 470px;
+    a:hover{
+        text-decoration: underline;
+    }
+    .img{
+        display:block;
+        background:#fff;
+        img{
+            display: block;
+            width: 220px;
+            height: 278px;
+            margin-left: -10px;
+        }
+    }
+    .channel{
+        width: 180px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background:#6294f6;
+        overflow: hidden;
+        li{
+            width: 180px;
+            height: 32px;
+            line-height: 32px;
+            a,span{
+                
+                display: inline-block;
+                font-size: 14px;
+                color: #f0f0f0;
+            }
+            span{
+                padding: 0 5px;
+            }
+        }
+    }
+    .keywords{
+        height: 160px;
+        width: 210px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        ul{
+            float: left;
+            height: 137px;
+            overflow: hidden;
+        }
+        li{
+            height:28px;
+            line-height:28px;
+            a{
+                display: inline-block;
+                color: #f0f0f0;
+                height: 20px;
+            }
+        }
+        .w55{
+            width: 50px;
+            margin: 8px 0 15px 15px;
+        }
+        .w43,.w62{
+            width: 37px;
+            margin: 8px 0 15px 10px;
+        }
+        .w62{
+            width: 73px;
+            margin: 8px 15px 15px 10px;
+        }
+    }
+}
+.floor-b-r {
+    position: relative;
+    float: left;
+    width: 990px;
+    .main{
+        display:$none;
+        position: absolute;
+        left:0;
+        top:0;
+        width:990px;
+        height:470px;
+        @include clearfix();
+    }
+    // 幻灯片按钮和tab切换按钮
+    .slide-btn,.floor-tab-btn{
+        display:$none;
+        p{
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 30px;
+            height: 60px;
+            margin-top: -30px;
+            cursor: pointer;
+            &:hover a{
+                opacity: .4;
+            }
+        }
+        a{
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 30px;
+            height: 60px;
+            background: #000;
+            opacity: .25;
+        }
+        span{
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 30px;
+            height: 60px;
+            background:url("https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png") no-repeat;
+            z-index: 101;
+        }
+        .slide-prev{
+            left:0;
+            span{
+                background-position:-84px -136px;;
+            }
+        }
+        .slide-next,.tab-next{
+            right:0;
+            span{
+                background-position:-84px -74px;
+            }
+        }
+    }
+    .floor-tab-btn{
+        position: relative;
+        p{
+            top:234px;
+            right:0;
+        }
+    }
+    // 滑过出现tab切换按钮
+    &:hover .floor-tab-btn{
+        display:block;
+    }
+    .floor-slide{
+        position: relative;
+        float: left;
+        width: 389px;
+        height: 470px;
+        overflow: hidden;
+        // 滑过出现幻灯片
+        &:hover .slide-btn{
+            display:block;
+        }
+        // 幻灯片
+        .slide{
+            position: relative;
+            li{
+                position:absolute;
+                top:0;
+                left:0;
+                width:389px;
+                height:470px;
+                background:#fff;
+            }
+        }
+        // 长方块
+        ol{
+            position: absolute;
+            bottom: 121px;
+            left: 50%;
+            width: 81px;
+            height: 16px;
+            margin-left: -40px;
+            text-align: center;
+            li{
+                float: left;
+                width:18px;
+                height:10px;
+                margin-left: 3px;
+            }
+            a{
+                display: block;
+                width: 18px;
+                height: 4px;
+                background: #fff;
+                opacity: .6;
+            }
+            .cur a{
+                background: #f5004b;
+                opacity: 1;
+            }
+        }
+        // 品牌
+        .brand{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 372px;
+            height: 102px;
+            overflow: hidden;
+            cursor: pointer;
+            z-index:99;
+            li{
+                float: left;
+                width: 122px;
+                height: 50px;
+                margin: 0 0 1px 1px;
+                background: #fff;
+                opacity: .9;
+                cursor: pointer;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+            img{
+                width: 100px;
+                height: 30px;
+                margin: 10px 0 0 11px;
+            }
+        }
+    }
+    .floor-imgs{
+        float: left;
+        width: 601px;
+        height: 470px;
+        overflow: hidden;
+        ul{
+            width: 600px;
+            height: 470px;
+            border-left: 1px solid #eee;
+            @include clearfix();
+        }
+        li{
+            float: left;
+            width: 200px;
+            height: 235px;            
+        }
+        a{
+            display:block;
+            width:199px;
+            height: 234px;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        img{
+            width:199px;
+            height:234px;
+        }
+    }
+}
+// tab切换页
+.tab-item{
+    @include clearfix();
+    li{
+        float: left;
+        width: 198px;
+        height: 235px;
+        overflow: hidden;
+        a{
+            display: block;
+            width: 197px;
+            height: 234px;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 130px;
+                height: 130px;
+                margin: 20px 0 15px 34px;
+            }
+            p{
+                width: 157px;
+                height: 36px;
+                margin-left: 20px;
+                overflow: hidden;
+                line-height: 18px;
+                font-size: 12px;
+                color: #5e5e5e;
+            }
+            .p_price{
+                height: 20px;
+                line-height: 26px;
+                color: #ff0027;
+                font-size: 14px;
+            }
+            &:hover .p_name{
+                color: #f5004b;
+            }
+        }
+    }
+}

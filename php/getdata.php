@@ -1,15 +1,29 @@
 <?php
     header('content-type:text/html;charset=utf-8');
     include 'conn.php';
+    // 美日必抢数据
     $result1=mysql_query("select * from imgsinfo where type='countdown'");
     $countdown=array();
     for($i=0;$i<mysql_num_rows($result1);$i++){
         $countdown[$i]=mysql_fetch_array($result1,MYSQLI_ASSOC);
     }
+    // 放大镜数据
     $result2=mysql_query("select * from magnifier");
     $magnifier=array();
     for($i=0;$i<mysql_num_rows($result2);$i++){
         $magnifier[$i]=mysql_fetch_array($result2,MYSQLI_ASSOC);
+    }
+    // banner数据
+    $result3=mysql_query("select * from bannerimg");
+    $bannerlist=array();
+    for($i=0;$i<mysql_num_rows($result3);$i++){
+        $bannerlist[$i]=mysql_fetch_array($result3,MYSQLI_ASSOC);
+    }
+    // 楼层数据
+    $result4=mysql_query("select * from listimgs");
+    $floorlist=array();
+    for($i=0;$i<mysql_num_rows($result4);$i++){
+        $floorlist[$i]=mysql_fetch_array($result4,MYSQLI_ASSOC);
     }
     class jdata{
 
@@ -19,6 +33,7 @@
 	//给成员赋值。
 	$gome->countdown=$countdown;
 	$gome->magnifier=$magnifier;
-	// $gome->subnavlist=$subnavlist;
+	$gome->bannerlist=$bannerlist;
+	$gome->floorlist=$floorlist;
 	echo json_encode($gome);
 ?>

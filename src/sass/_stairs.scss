@@ -1,0 +1,113 @@
+@charset "utf-8";
+// 楼梯
+#gm-stairs {
+    position: fixed;
+    display: block;
+    top:75px;
+    left: 83.6px;
+    background:#fff;
+    text-align: left;
+    z-index: 960;
+    li{
+        width: 64px;
+        border: 1px solid #e6e6e6;
+        text-align: center;
+    }
+    .fl_nav{
+        width: 64px;
+        border: 1px solid #e6e6e6;
+        text-align: center;
+        background: #f6f6f6;
+        color: #5e5e5e;
+        font-size: 13px;
+        font-weight: 700;
+        height: 30px;
+        line-height: 31px;
+    }
+    .stairs{
+        width: 66px;
+        overflow: hidden;
+    }
+    .handler{
+        position: relative;
+        height: 43px;
+        line-height: 5px;
+        border-top:0;
+        cursor: pointer;
+        a{
+            display:inline-block;
+            width: 64px;
+            height: 43px;
+            margin-top:9px;
+            overflow: hidden;
+            span{
+                height: 12px;
+                padding-top: 8px;
+                padding-bottom: 1px;
+                line-height: 12px;
+                color: #777;
+                cursor: pointer;
+            }
+            p{
+                width: 48px;
+                height: 16px;
+                margin-left: 8px;
+                line-height: 16px;
+                color:#5e5e5e;
+                cursor: pointer;
+                overflow: hidden;
+            }
+        }
+    }
+    // 滑过样式
+    .handler:hover{
+        a,span,p{
+            color: #f5004b;
+        }
+    }
+    // 点击样式
+    .current{
+        a{
+            margin-top:0;
+            span,p{
+                color: #f5004b;
+            }
+        }
+        b{
+            @include icons3(10px,10px,-152px,0,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png");
+            float: left;
+            margin-left: -1px;
+            margin-top: -1px;
+            z-index: 2;
+        }
+    }
+    // 返回顶部和回到底部
+    .fl_goto{
+        width: 66px;
+        overflow: hidden;
+        li{
+            position: relative;
+            height: 29px;
+            line-height: 5px;
+            text-align: center;
+            border-top:0;
+            cursor: pointer;
+            a{
+                @include icons3(17px,9px,-216px,-52px,"https://app.gomein.net.cn/gmpro/2.0.0/channel/newindex/8.5.1/css/i/ui.png");
+                margin-top: 10px;
+            }
+        }
+        .down{
+            a{
+                background-position:-216px 0;
+            }
+        }
+        // 滑过样式
+        .up:hover  a{
+            background-position:-216px -78px;
+        }
+        .down:hover  a{
+            background-position:-216px -26px;
+        }
+    }
+}
