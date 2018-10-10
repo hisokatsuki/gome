@@ -2,6 +2,7 @@
 #gm-feature{
     width:$width1200;
     margin:0 auto;
+    @include clearfix();
     .gm-title{ //标题共用样式
         width:100%;
         height:60px;

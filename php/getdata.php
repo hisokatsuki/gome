@@ -19,11 +19,17 @@
     for($i=0;$i<mysql_num_rows($result3);$i++){
         $bannerlist[$i]=mysql_fetch_array($result3,MYSQLI_ASSOC);
     }
-    // 楼层数据
-    $result4=mysql_query("select * from listimgs");
-    $floorlist=array();
+    // 楼层第一个tab页数据
+    $result4=mysql_query("select * from selection_hot");
+    $floorfirst=array();
     for($i=0;$i<mysql_num_rows($result4);$i++){
-        $floorlist[$i]=mysql_fetch_array($result4,MYSQLI_ASSOC);
+        $floorfirst[$i]=mysql_fetch_array($result4,MYSQLI_ASSOC);
+    }
+    // 楼层其他tab页数据
+    $result5=mysql_query("select * from listimgs");
+    $floorlist=array();
+    for($i=0;$i<mysql_num_rows($result5);$i++){
+        $floorlist[$i]=mysql_fetch_array($result5,MYSQLI_ASSOC);
     }
     class jdata{
 
@@ -34,6 +40,7 @@
 	$gome->countdown=$countdown;
 	$gome->magnifier=$magnifier;
 	$gome->bannerlist=$bannerlist;
+	$gome->floorfirst=$floorfirst;
 	$gome->floorlist=$floorlist;
 	echo json_encode($gome);
 ?>

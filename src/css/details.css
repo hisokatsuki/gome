@@ -1,46 +1,58 @@
 @charset "UTF-8";
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 li {
-  list-style: none; }
+  list-style: none;
+}
 
 em, i {
-  font-style: normal; }
+  font-style: normal;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 img {
-  display: block; }
+  display: block;
+}
 
 body {
   font-size: 12px;
   font-family: Arial, "Microsoft Yahei";
   line-height: 24px;
-  color: #888; }
+  color: #888;
+}
 
 @font-face {
   font-family: iconfont;
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+}
 .gm-icon {
   font-family: 'iconfont' !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #top-banner {
-  background: #b70b01; }
+  background: #b70b01;
+}
 #top-banner .wrap {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 #top-banner img {
-  display: block; }
+  display: block;
+}
 #top-banner span {
   display: block;
   position: absolute;
@@ -51,46 +63,59 @@ body {
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -60px -466px;
   overflow: hidden;
   text-indent: -9999px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 #gome-topmenu {
   height: 30px;
   background: #f8f8f8;
-  border-bottom: 1px solid #f3f3f3; }
+  border-bottom: 1px solid #f3f3f3;
+}
 #gome-topmenu .wrap {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 #gome-topmenu li {
-  float: left; }
+  float: left;
+}
 #gome-topmenu .public_dropdown {
   display: none;
   position: absolute;
   top: 29px;
   border: 1px solid #e6e6e6;
   overflow: hidden;
-  background: #fff; }
+  background: #fff;
+}
 #gome-topmenu .drop:hover .public_dropdown {
   display: block;
-  z-index: 999; }
+  z-index: 999;
+}
 #gome-topmenu .drop:hover span {
   border-color: #e6e6e6;
   background: #fff;
-  z-index: 1000; }
+  z-index: 1000;
+}
 
 .menu-left {
-  float: left; }
+  float: left;
+}
 .menu-left a {
-  color: #888; }
+  color: #888;
+}
 .menu-left a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .menu-left .gome-home {
   display: none;
   margin: 0 10px;
-  line-height: 32px; }
+  line-height: 32px;
+}
 .menu-left .gome-home a {
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 .menu-left .gome-home a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .menu-left .gome-home i {
   margin-right: 2px;
   display: inline-block;
@@ -98,17 +123,20 @@ body {
   height: 12px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -17px -1362px;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 .menu-left .gome-vip {
   position: relative;
   margin-right: 12px;
-  line-height: 30px; }
+  line-height: 30px;
+}
 .menu-left .gome-vip span {
   position: relative;
   display: block;
   padding: 0 20px 0 10px;
   border: 1px solid #f8f8f8;
-  border-bottom: 0; }
+  border-bottom: 0;
+}
 .menu-left .gome-vip span i {
   display: block;
   position: absolute;
@@ -117,16 +145,20 @@ body {
   width: 7px;
   height: 4px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .menu-left .gome-vip:hover i {
-  background-position: -55px -433px; }
+  background-position: -55px -433px;
+}
 .menu-left .login {
   margin-right: 6px;
   line-height: 32px;
-  color: #888; }
+  color: #888;
+}
 .menu-left .reg {
   position: relative;
-  color: #f5004b; }
+  color: #f5004b;
+}
 .menu-left .reg i {
   display: block;
   position: absolute;
@@ -135,26 +167,34 @@ body {
   width: 12px;
   height: 13px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -145px -1496px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .menu-right {
-  float: right; }
+  float: right;
+}
 .menu-right a {
-  color: #888; }
+  color: #888;
+}
 .menu-right a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .menu-right li {
-  position: relative; }
+  position: relative;
+}
 .menu-right li:hover i {
-  background-position: -55px -433px; }
+  background-position: -55px -433px;
+}
 .menu-right span {
   position: relative;
   display: block;
   padding: 0 20px 0 10px;
   border: 1px solid #f8f8f8;
-  border-bottom: 0; }
+  border-bottom: 0;
+}
 .menu-right span a {
-  line-height: 32px; }
+  line-height: 32px;
+}
 .menu-right i {
   display: block;
   position: absolute;
@@ -163,32 +203,39 @@ body {
   width: 7px;
   height: 4px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -62px -433px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .menu-right em {
   font-size: 17px;
   color: #dd00a7;
   background: 0 0;
   line-height: 30px;
   height: 30px;
-  top: 0; }
+  top: 0;
+}
 .menu-right .gome-link {
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 .menu-right .gome-link a {
-  line-height: 32px; }
+  line-height: 32px;
+}
 
 .gome-vip .public_dropdown {
   width: 290px;
   left: 0;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+}
 .gome-vip .vip-name {
-  padding: 5px 0 20px; }
+  padding: 5px 0 20px;
+}
 .gome-vip .vip-name:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-vip .vip-name em {
   float: left;
   display: inline-block;
@@ -196,27 +243,35 @@ body {
   height: 55px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -337px;
-  border-radius: 50px; }
+  border-radius: 50px;
+}
 .gome-vip .vip-name div:nth-of-type(1) {
   float: left;
   width: 220px;
-  padding-left: 15px; }
+  padding-left: 15px;
+}
 .gome-vip .vip-name p {
-  margin-top: 15px; }
+  margin-top: 15px;
+}
 .gome-vip .vip-name p a {
-  color: #069; }
+  color: #069;
+}
 .gome-vip .vip-icon {
   position: relative;
   padding-top: 15px;
-  border-top: 1px solid #f3f3f3; }
+  border-top: 1px solid #f3f3f3;
+}
 .gome-vip .vip-icon p {
   line-height: 18px;
-  color: #333; }
+  color: #333;
+}
 .gome-vip .vip-icon p a {
   float: right;
-  color: #ccc; }
+  color: #ccc;
+}
 .gome-vip .vip-icon p a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gome-vip .vip-icon div {
   position: relative;
   width: 240px;
@@ -224,24 +279,29 @@ body {
   margin: 10px 25px 0;
   left: 0;
   overflow: hidden;
-  z-index: 2; }
+  z-index: 2;
+}
 .gome-vip .vip-icon ul {
   position: absolute;
   left: 0;
   top: 0;
-  width: 720px; }
+  width: 720px;
+}
 .gome-vip .vip-icon li {
   width: 80px;
   height: 70px;
-  text-align: center; }
+  text-align: center;
+}
 .gome-vip .vip-icon i {
   display: block;
   height: 40px;
   color: #ccc;
   line-height: 40px;
-  font-size: 40px; }
+  font-size: 40px;
+}
 .gome-vip .vip-icon i:hover {
-  color: #888; }
+  color: #888;
+}
 .gome-vip .vip-icon .vip-icon-prev {
   display: block;
   position: absolute;
@@ -250,9 +310,11 @@ body {
   width: 16px;
   height: 29px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -60px -357px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-vip .vip-icon .vip-icon-prev:hover {
-  background-position: -60px -513px; }
+  background-position: -60px -513px;
+}
 .gome-vip .vip-icon .vip-icon-next {
   display: block;
   position: absolute;
@@ -261,51 +323,62 @@ body {
   width: 16px;
   height: 29px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -76px -357px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-vip .vip-icon .vip-icon-next:hover {
-  background-position: -76px -513px; }
+  background-position: -76px -513px;
+}
 
 .gome-mygome .public_dropdown {
   width: 260px;
-  left: 0; }
+  left: 0;
+}
 .gome-mygome .public_dropdown strong {
   display: block;
-  padding: 10px 10px 0; }
+  padding: 10px 10px 0;
+}
 .gome-mygome .public_dropdown strong a {
   line-height: 24px;
-  color: #069; }
+  color: #069;
+}
 .gome-mygome .public_dropdown .mygome-order {
   padding: 0 0 9px;
   margin: 0 10px;
-  border-bottom: 1px solid #f3f3f3; }
+  border-bottom: 1px solid #f3f3f3;
+}
 .gome-mygome .public_dropdown .mygome-order:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-mygome .public_dropdown .mygome-order li {
   float: left;
   width: 50%;
   height: 25px;
-  line-height: 25px; }
+  line-height: 25px;
+}
 .gome-mygome .public_dropdown .mygome-coupon:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-mygome .public_dropdown .mygome-coupon li {
   width: 63px;
   text-align: center;
-  padding: 8px 0 10px; }
+  padding: 8px 0 10px;
+}
 .gome-mygome .public_dropdown .mygome-coupon a {
   display: block;
   line-height: 14px;
   margin: 5px 0;
-  border-right: 1px solid #f3f3f3; }
+  border-right: 1px solid #f3f3f3;
+}
 .gome-mygome .public_dropdown .mygome-coupon b {
   display: inline-block;
   width: 100%;
@@ -313,108 +386,132 @@ body {
   vertical-align: middle;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-mygome .public_dropdown p {
   padding: 10px;
   background: #f8f8f8;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-mygome .public_dropdown .mygome-track {
   height: 50px;
   padding: 0 0 18px 10px;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+}
 .gome-mygome .public_dropdown .mygome-track:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-mygome .public_dropdown .mygome-track li {
   display: inline-block;
   width: 50px;
   height: 50px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -397px;
-  margin: 0 12px 10px 0; }
+  margin: 0 12px 10px 0;
+}
 
 .gome-enterprise .public_dropdown {
   right: 0;
-  width: 200px; }
+  width: 200px;
+}
 .gome-enterprise .public_dropdown a {
   display: inline-block;
   width: 200px;
   height: 200px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1511px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1511px;
+}
 
 .gome-service .public_dropdown {
   width: 210px;
   left: 0;
-  padding: 15px; }
+  padding: 15px;
+}
 .gome-service .public_dropdown ul {
   height: 48px;
   padding-bottom: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-service .public_dropdown li {
   width: 33%;
-  height: 24px; }
+  height: 24px;
+}
 .gome-service .public_dropdown li:hover a {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gome-service .public_dropdown p {
-  font-weight: 700; }
+  font-weight: 700;
+}
 .gome-service .public_dropdown .online {
   display: block;
   height: 25px;
   line-height: 25px;
   background: #dd00a7;
-  text-align: center; }
+  text-align: center;
+}
 
 #gome-topmenu .online {
-  color: #fff; }
+  color: #fff;
+}
 #gome-topmenu .online em {
   margin-right: 10px;
   font-size: 19px;
   color: #fff;
-  line-height: 25px; }
+  line-height: 25px;
+}
 
 #gome-topmenu dd li {
-  float: none; }
+  float: none;
+}
 
 .gome-sitemap .public_dropdown {
   right: -98px;
   width: 1198px;
-  padding: 10px 0; }
+  padding: 10px 0;
+}
 .gome-sitemap .public_dropdown:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-sitemap .public_dropdown dl {
   float: left;
   padding: 0 15px 0 40px;
   margin: 10px 0;
-  border-left: 1px solid #f3f3f3; }
+  border-left: 1px solid #f3f3f3;
+}
 .gome-sitemap .public_dropdown dl:nth-of-type(5) {
-  border-left: 0; }
+  border-left: 0;
+}
 .gome-sitemap .public_dropdown dt {
   color: #5e5e5e;
   font-size: 14px;
   margin-bottom: 10px;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .gome-sitemap .public_dropdown dd {
-  height: 120px; }
+  height: 120px;
+}
 .gome-sitemap .public_dropdown dd:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gome-sitemap .public_dropdown ul {
   float: left;
-  width: 75px; }
+  width: 75px;
+}
 .gome-sitemap .public_dropdown .hot {
   display: block;
   position: absolute;
@@ -423,7 +520,8 @@ body {
   width: 11px;
   height: 14px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -452px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gome-sitemap .public_dropdown .new {
   display: block;
   position: absolute;
@@ -432,36 +530,42 @@ body {
   width: 11px;
   height: 14px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -452px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .gome-phone .public_dropdown {
   right: 0;
   width: 130px;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+}
 .gome-phone .public_dropdown a {
   display: inline-block;
   width: 130px;
   height: 170px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -799px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -799px;
+}
 
 #gome-head {
   position: relative;
   width: 1200px;
   height: 120px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 #gome-head:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gome-head .gm-logo {
   position: absolute;
   left: 0;
   width: 125px;
-  margin: 32px 10px 0 0; }
+  margin: 32px 10px 0 0;
+}
 #gome-head .gm-logo a {
   display: inline-block;
   width: 125px;
@@ -469,24 +573,28 @@ body {
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/logo.png") no-repeat 0 0;
   text-indent: -999px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-head .gm-logo-gif {
   position: absolute;
   left: 135px;
   width: 100px;
-  margin: 35px 0 0 10px; }
+  margin: 35px 0 0 10px;
+}
 #gome-head .gm-search {
   position: absolute;
   top: 32px;
   left: 385px;
   width: 500px;
-  z-index: 91; }
+  z-index: 91;
+}
 #gome-head .gm-search .gm-search-top {
   position: relative;
   height: 30px;
   border: 1px solid #dd00a7;
   font-size: 14px;
-  background: #fff; }
+  background: #fff;
+}
 #gome-head .gm-search .gm-search-top .voice-search {
   position: absolute;
   top: 0;
@@ -498,9 +606,11 @@ body {
   background: url("../images/voice.png") no-repeat center;
   background-size: 13px 19px;
   cursor: pointer;
-  opacity: .55; }
+  opacity: .55;
+}
 #gome-head .searchform {
-  position: relative; }
+  position: relative;
+}
 #gome-head .searchform label {
   position: absolute;
   top: 1px;
@@ -509,7 +619,8 @@ body {
   color: #a5a5a5;
   width: 62px;
   height: 30px;
-  line-height: 30px; }
+  line-height: 30px;
+}
 #gome-head .searchform input {
   position: absolute;
   width: 310px;
@@ -520,7 +631,8 @@ body {
   color: #5E5E5E;
   border: 0;
   background: 0;
-  outline: 0; }
+  outline: 0;
+}
 #gome-head .searchform button {
   float: right;
   width: 90px;
@@ -531,7 +643,8 @@ body {
   background: #dd00a7;
   color: #fff;
   letter-spacing: 2px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 #gome-head .search-type-dropdown {
   position: absolute;
   float: left;
@@ -541,14 +654,16 @@ body {
   height: 30px;
   line-height: 30px;
   font-size: 14px;
-  color: #a5a5a5; }
+  color: #a5a5a5;
+}
 #gome-head .search-type-dropdown .search-type {
   position: relative;
   width: 42px;
   height: 30px;
   padding: 0 10px;
   border-right: 1px solid #dd00a7;
-  cursor: pointer; }
+  cursor: pointer;
+}
 #gome-head .search-type-dropdown .search-type i {
   display: block;
   position: absolute;
@@ -557,7 +672,8 @@ body {
   width: 11px;
   height: 7px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -145px -1469px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-head .search-type-dropdown .search-dropdown {
   display: none;
   position: absolute;
@@ -565,44 +681,56 @@ body {
   right: -1px;
   top: 30px;
   background: #fff;
-  border: 1px solid #dd00a7; }
+  border: 1px solid #dd00a7;
+}
 #gome-head .search-type-dropdown .search-dropdown li {
   width: 42px;
   height: 25px;
   line-height: 25px;
   padding: 0 10px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 #gome-head .search-type-dropdown .search-dropdown li:hover {
-  background: #eee; }
+  background: #eee;
+}
 #gome-head .search-type-dropdown:hover .search-dropdown {
-  display: block; }
+  display: block;
+}
 #gome-head .gm-hot-keywords {
   height: 14px;
   line-height: 14px;
   margin-top: 6px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-head .gm-hot-keywords a:nth-of-type(1) {
-  color: #f5004b; }
+  color: #f5004b;
+}
 #gome-head .gm-hot-keywords a {
   color: #a5a5a5;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 #gome-head .gm-hot-keywords a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 #gome-head .gm-shopcar {
   position: absolute;
   top: 32px;
   right: 0;
   width: 240px;
-  z-index: 8; }
+  z-index: 8;
+}
 #gome-head .gm-shopcar .shopcar {
   position: relative;
-  float: right; }
+  float: right;
+}
 #gome-head .gm-shopcar .shopcarbox {
   position: relative;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 #gome-head .gm-shopcar .shopcarbox > span {
   display: block;
-  background: #fff; }
+  background: #fff;
+}
 #gome-head .gm-shopcar .shopcarbox a {
   position: relative;
   display: block;
@@ -611,10 +739,12 @@ body {
   margin: 1px;
   color: #5e5e5e;
   padding: 5px 20px 0 45px;
-  line-height: 34px; }
+  line-height: 34px;
+}
 #gome-head .gm-shopcar .shopcarbox a:hover {
   color: #f5004b;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 #gome-head .gm-shopcar .shopcarbox .down {
   display: none;
   position: absolute;
@@ -624,23 +754,29 @@ body {
   padding: 0;
   background: #fff;
   box-shadow: 0 0 18px rgba(0, 0, 0, 0.09);
-  z-index: -1; }
+  z-index: -1;
+}
 #gome-head .gm-shopcar .shopcarbox .noshop {
   text-align: center;
   line-height: 100px;
-  color: #a5a5a5; }
+  color: #a5a5a5;
+}
 #gome-head .gm-shopcar .shopcarbox .noshop a {
   display: inline;
   padding: 0;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 #gome-head .gm-shopcar .shopcarbox:hover > span {
-  box-shadow: 0 -9px 9px transparent, -9px -9px 9px rgba(0, 0, 0, 0.03), 7px -6px 9px rgba(0, 0, 0, 0.03); }
+  box-shadow: 0 -9px 9px transparent, -9px -9px 9px rgba(0, 0, 0, 0.03), 7px -6px 9px rgba(0, 0, 0, 0.03);
+}
 #gome-head .gm-shopcar .shopcarbox:hover .down {
-  display: block; }
+  display: block;
+}
 #gome-head .gm-shopcar .shopcarbox:hover b {
   border-top: 4px solid transparent;
   border-bottom: 4px solid #5e5e5e;
-  top: 11px; }
+  top: 11px;
+}
 #gome-head .gm-shopcar em {
   display: block;
   position: absolute;
@@ -649,7 +785,8 @@ body {
   width: 27px;
   height: 20px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -100px -701px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-head .gm-shopcar .shopnum {
   position: absolute;
   display: block;
@@ -662,10 +799,12 @@ body {
   color: #fff;
   text-align: center;
   background: #a5a5a5;
-  font-weight: 700; }
+  font-weight: 700;
+}
 #gome-head .gm-shopcar .shopnum span {
   color: #fff;
-  line-height: 18px; }
+  line-height: 18px;
+}
 #gome-head .gm-shopcar i {
   position: absolute;
   left: 5px;
@@ -674,7 +813,8 @@ body {
   height: 0;
   border: 4px solid transparent;
   border-left: 4px solid #a5a5a5;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-head .gm-shopcar b {
   position: absolute;
   top: 19px;
@@ -684,28 +824,33 @@ body {
   border: 4px solid transparent;
   border-top: 4px solid #5e5e5e;
   overflow: hidden;
-  z-index: 96; }
+  z-index: 96;
+}
 
 #gome-category {
   border-bottom: 1px solid #dd00a7;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+}
 #gome-category .wrap {
   width: 1200px;
   height: 40px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .gm-sidecatrgory {
   float: left;
   position: relative;
   width: 200px;
-  z-index: 995; }
+  z-index: 995;
+}
 .gm-sidecatrgory:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gm-sidecatrgory h2 {
   position: relative;
   width: 200px;
@@ -714,12 +859,14 @@ body {
   font-weight: 700;
   background: #f1f1f1;
   opacity: 0.9;
-  z-index: 10; }
+  z-index: 10;
+}
 .gm-sidecatrgory h2 a {
   display: block;
   padding-left: 15px;
   line-height: 40px;
-  color: #585858; }
+  color: #585858;
+}
 
 .gm-nav {
   position: absolute;
@@ -727,7 +874,8 @@ body {
   top: 41px;
   width: 200px;
   height: 450px;
-  z-index: 200; }
+  z-index: 200;
+}
 .gm-nav .graybgcolor {
   position: absolute;
   top: 0;
@@ -736,58 +884,81 @@ body {
   height: 450px;
   background: #333;
   opacity: 0.7;
-  z-index: 1000; }
+  z-index: 1000;
+}
 .gm-nav .sidenav {
   position: relative;
-  z-index: 9999; }
+  z-index: 9999;
+}
 .gm-nav .sidenav h3 {
-  padding-left: 15px; }
+  padding-left: 15px;
+}
 .gm-nav .sidenav a {
   display: inline-block;
   margin-left: 3px;
-  font-size: 14px; }
+  font-size: 14px;
+}
 .gm-nav .sidenav a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gm-nav .sidenav li {
   height: 30px;
-  line-height: 30px; }
+  line-height: 30px;
+}
 .gm-nav .sidenav li:hover {
-  background: #fbfbfb; }
+  background: #fbfbfb;
+}
 .gm-nav .sidenav li:hover a {
-  color: #333; }
+  color: #333;
+}
 .gm-nav .sidenav li a {
   display: inline-block;
-  color: #fff; }
+  color: #fff;
+}
 .gm-nav .sidenav .first, .gm-nav .sidenav .last {
   height: 29px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-nav .sidenav .first {
-  margin-top: 1px; }
+  margin-top: 1px;
+}
 .gm-nav .subnav {
   display: none;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 199px;
-  background: #fff;
-  z-index: 99; }
-.gm-nav .subnav-content {
   width: 1000px;
-  border: 1px solid #818181; }
+  height: 448px;
+  background: #fff;
+  z-index: 99;
+}
+.gm-nav .subnav-content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 999px;
+  height: 450px;
+  border: 1px solid #818181;
+}
 .gm-nav .subnav-content:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gm-nav .subnav-left {
   float: left;
   height: 450px;
-  background: #fbfbfb; }
+  background: #fbfbfb;
+}
 .gm-nav .subnav-left .subnav-l-title {
   height: 20px;
   padding: 20px 0 7px 20px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-nav .subnav-left .subnav-l-title a {
   float: left;
   height: 20px;
@@ -798,35 +969,43 @@ body {
   color: #fff;
   text-align: left;
   background: #f5004b;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .gm-nav .subnav-left .subnav-l-title a i {
   margin-left: 6px;
   display: inline-block;
   width: 5px;
   height: 7px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -70px -433px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -70px -433px;
+}
 .gm-nav .subnav-left .subnav-l-title a:hover {
-  background: red; }
+  background: red;
+}
 .gm-nav .subnav-left .subnav-l-content {
   width: 769px;
-  margin: 6px 0 10px 20px; }
+  margin: 6px 0 10px 20px;
+}
 .gm-nav .subnav-left .subnav-l-content .content-box {
   width: 769px;
   padding-bottom: 11px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-nav .subnav-left ul {
   width: 769px;
-  margin: 11px 30px 0 -8px; }
+  margin: 11px 30px 0 -8px;
+}
 .gm-nav .subnav-left ul:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gm-nav .subnav-left ul div {
-  float: left; }
+  float: left;
+}
 .gm-nav .subnav-left ul .title {
   width: 61px;
   height: 22px;
@@ -836,13 +1015,16 @@ body {
   font-size: 12px;
   color: #5e5e5e;
   text-align: left;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .gm-nav .subnav-left ul .list {
   position: relative;
   margin-top: -14px;
-  padding-top: 5px; }
+  padding-top: 5px;
+}
 .gm-nav .subnav-left ul .def {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gm-nav .subnav-left ul a {
   display: inline-block;
   height: 14px;
@@ -851,9 +1033,11 @@ body {
   line-height: 14px;
   color: #5e5e5e;
   font-size: 12px;
-  border-left: 1px solid #e0e0e0; }
+  border-left: 1px solid #e0e0e0;
+}
 .gm-nav .subnav-left ul a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gm-nav .subnav-left ul .line {
   position: absolute;
   width: 100%;
@@ -861,56 +1045,68 @@ body {
   top: 35px;
   border-bottom: 1px  solid #f3f3f3;
   margin-bottom: 7px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-nav .subnav-right {
   position: relative;
   float: left;
   width: 210px;
   height: 448px;
-  background: #fff; }
+  background: #fff;
+}
 .gm-nav .subnav-right .brand {
   padding: 0 0 11px 10px;
-  border-bottom: 1px solid #f4f4f4; }
+  border-bottom: 1px solid #f4f4f4;
+}
 .gm-nav .subnav-right .brand:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gm-nav .subnav-right .brand a {
   float: left;
   display: block;
   width: 100px;
   height: 55px;
-  text-align: center; }
+  text-align: center;
+}
 .gm-nav .subnav-right .brand img {
   display: inline-block;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 .gm-nav .subnav-right > a {
   position: absolute;
   top: 268px;
-  left: 0; }
+  left: 0;
+}
 
 .mainnav {
   float: left;
   width: 800px;
-  height: 38px; }
+  height: 38px;
+}
 .mainnav li {
   position: relative;
   float: left;
   padding: 0 13px;
   text-align: center;
-  line-height: 38px; }
+  line-height: 38px;
+}
 .mainnav .def a {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .mainnav a {
   height: 40px;
   line-height: 40px;
   font-size: 15px;
-  color: #000; }
+  color: #000;
+}
 .mainnav a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .mainnav .hot {
   display: block;
   position: absolute;
@@ -919,196 +1115,241 @@ body {
   width: 20px;
   height: 14px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -130px -721px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .mainnav .line {
   position: absolute;
   top: 14px;
   right: 0;
   width: 1px;
   height: 13px;
-  background-color: #b2b2b2; }
+  background-color: #b2b2b2;
+}
 
 .rightscroll {
   position: relative;
   float: right;
   width: 194px;
   height: 38px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .rightscroll .scrollimgs {
   float: left;
   width: 170px;
-  height: 228px; }
+  height: 228px;
+}
 .rightscroll .scrollbtn {
   position: absolute;
   float: left;
   top: 0;
   right: 0;
   width: 13px;
-  height: 20px; }
+  height: 20px;
+}
 .rightscroll .scrollbtn a {
   display: block;
-  height: 5px; }
+  height: 5px;
+}
 .rightscroll .scrollbtn .btn-up {
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+}
 .rightscroll .scrollbtn .btn-up i {
   display: inline-block;
   width: 9px;
   height: 5px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1348px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1348px;
+}
 .rightscroll .scrollbtn .btn-down {
-  padding-top: 5px; }
+  padding-top: 5px;
+}
 .rightscroll .scrollbtn .btn-down i {
   display: inline-block;
   width: 9px;
   height: 5px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1353px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1353px;
+}
 
 #gome-help {
   width: 1200px;
-  margin: 30px auto 0; }
+  margin: 30px auto 0;
+}
 #gome-help ul {
   background: #f5f5f5;
-  padding: 15px 0; }
+  padding: 15px 0;
+}
 #gome-help ul:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gome-help ul li {
   position: relative;
   float: left;
   width: 33%;
-  text-align: center; }
+  text-align: center;
+}
 #gome-help ul i {
   display: inline-block;
   width: 40px;
   height: 42px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1469px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 #gome-help ul a {
   font-size: 18px;
   line-height: 40px;
-  color: #404040; }
+  color: #404040;
+}
 #gome-help ul a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 #gome-help ul a:nth-of-type(1) {
-  font-weight: bold; }
+  font-weight: bold;
+}
 #gome-help ul span {
   margin: 0 16px;
   display: inline-block;
   width: 3px;
   height: 10px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -120px -1489px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -120px -1489px;
+}
 #gome-help .gm-help-box {
   width: 110%;
-  margin-left: -5%; }
+  margin-left: -5%;
+}
 #gome-help .gm-help-box:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gome-help .gm-help-box dl {
   float: left;
   width: 9%;
-  padding: 15px 0 0 125px; }
+  padding: 15px 0 0 125px;
+}
 #gome-help .gm-help-box dt {
   font-size: 16px;
   color: #5e5e5e;
-  line-height: 25px; }
+  line-height: 25px;
+}
 #gome-help .gm-help-box dd {
-  line-height: 20px; }
+  line-height: 20px;
+}
 #gome-help .gm-help-box a {
-  color: #a5a5a5; }
+  color: #a5a5a5;
+}
 #gome-help .gm-help-box a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 
 #gome-footer {
   margin-top: 15px;
   border-top: 1px solid #dd00a7;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+}
 #gome-footer .gm-footer-box {
   position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 20px 0 0;
-  background: #f7f7f7; }
+  background: #f7f7f7;
+}
 #gome-footer .gm-footer-box ul:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gome-footer .gm-footer-box li {
   float: left;
-  padding-right: 13px; }
+  padding-right: 13px;
+}
 #gome-footer .gm-footer-box li:nth-of-type(5), #gome-footer .gm-footer-box li:nth-of-type(12) {
-  color: #ccc; }
+  color: #ccc;
+}
 #gome-footer .gm-footer-box a {
-  color: #666; }
+  color: #666;
+}
 #gome-footer .gm-footer-box a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 #gome-footer .gm-footer-box span {
   display: inline-block;
-  padding: 0 50px 40px 0; }
+  padding: 0 50px 40px 0;
+}
 #gome-footer .gm-footer-box span:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gome-footer .gm-footer-box span p {
   float: left;
-  margin-left: 10px; }
+  margin-left: 10px;
+}
 #gome-footer .gm-footer-box span em {
   display: block;
   color: #333;
   font-size: 16px;
-  line-height: 25px; }
+  line-height: 25px;
+}
 #gome-footer .gm-footer-box span i {
   float: left;
   display: inline-block;
   width: 45px;
   height: 45px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -135px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -135px;
+}
 #gome-footer .gm-footer-box span:nth-of-type(2) i {
-  background-position: -45px -135px; }
+  background-position: -45px -135px;
+}
 #gome-footer .qrcode-section {
   position: absolute;
   top: 15px;
-  right: -10px; }
+  right: -10px;
+}
 #gome-footer .qrcode-section .code-sm {
   position: relative;
-  width: 50px; }
+  width: 50px;
+}
 #gome-footer .qrcode-section .code-sm:hover div {
-  display: block; }
+  display: block;
+}
 #gome-footer .qrcode-section em {
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  margin: 0 10px; }
+  margin: 0 10px;
+}
 #gome-footer .qrcode-section .wx i {
   display: inline-block;
   width: 40px;
   height: 25px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -105px -135px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -105px -135px;
+}
 #gome-footer .qrcode-section .web i {
   display: inline-block;
   width: 40px;
   height: 25px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -185px -135px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -185px -135px;
+}
 #gome-footer .qrcode-section .code-sm .icon-triangle {
   display: block;
   position: absolute;
@@ -1117,7 +1358,8 @@ body {
   width: 13px;
   height: 8px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -67px -127px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-footer .qrcode-section .code-sm div {
   position: absolute;
   left: -50px;
@@ -1126,18 +1368,23 @@ body {
   padding: 10px;
   border: 1px solid #eee;
   display: none;
-  background: #fff; }
+  background: #fff;
+}
 #gome-footer .qrcode-section .app {
-  width: 110px; }
+  width: 110px;
+}
 #gome-footer .qrcode-section a {
-  display: inline-block; }
+  display: inline-block;
+}
 #gome-footer .qrcode-section p {
-  line-height: 22px; }
+  line-height: 22px;
+}
 #gome-footer .gm-footer-credit {
   border-top: 1px solid #e6e6e6;
   margin-top: 5px;
   padding: 10px 0 25px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-footer .gm-footer-credit b {
   float: left;
   display: block;
@@ -1145,30 +1392,40 @@ body {
   padding: 0 30px 0 5px;
   color: #999;
   line-height: 18px;
-  font-weight: normal; }
+  font-weight: normal;
+}
 #gome-footer .gm-footer-credit a:nth-of-type(3) b, #gome-footer .gm-footer-credit a:nth-of-type(5) b {
-  padding-top: 9px; }
+  padding-top: 9px;
+}
 #gome-footer .gm-footer-credit a:nth-of-type(4) b {
-  width: 50px; }
+  width: 50px;
+}
 #gome-footer .gm-footer-credit a:nth-of-type(6) b {
-  width: 110px; }
+  width: 110px;
+}
 #gome-footer .gm-footer-credit i {
   float: left;
   display: inline-block;
   width: 35px;
   height: 35px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -180px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -180px;
+}
 #gome-footer .gm-footer-credit .f-icon1 {
-  background-position: -35px -180px; }
+  background-position: -35px -180px;
+}
 #gome-footer .gm-footer-credit .f-icon2 {
-  background-position: -70px -180px; }
+  background-position: -70px -180px;
+}
 #gome-footer .gm-footer-credit .f-icon3 {
-  background-position: -105px -180px; }
+  background-position: -105px -180px;
+}
 #gome-footer .gm-footer-credit .f-icon4 {
-  background-position: -140px -180px; }
+  background-position: -140px -180px;
+}
 #gome-footer .gm-footer-credit .f-icon5 {
-  background-position: -175px -180px; }
+  background-position: -175px -180px;
+}
 
 #gome-bar {
   position: fixed;
@@ -1177,7 +1434,8 @@ body {
   width: 35px;
   height: 100%;
   z-index: 999;
-  background: #5c5c5c; }
+  background: #5c5c5c;
+}
 #gome-bar .gm-bar-top b, #gome-bar .gm-bar-bot b {
   display: block;
   position: absolute;
@@ -1186,12 +1444,15 @@ body {
   width: 7px;
   height: 11px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -47px -464px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-bar .gm-bar-top li, #gome-bar .gm-bar-bot li {
   position: relative;
-  height: 38px; }
+  height: 38px;
+}
 #gome-bar .gm-bar-top li:hover, #gome-bar .gm-bar-bot li:hover {
-  background: #343434; }
+  background: #343434;
+}
 #gome-bar .gm-bar-top .hidebox, #gome-bar .gm-bar-bot .hidebox {
   display: none;
   position: absolute;
@@ -1208,37 +1469,46 @@ body {
   text-align: center;
   cursor: pointer;
   overflow: hidden;
-  z-index: -1; }
+  z-index: -1;
+}
 #gome-bar .gm-bar-top li:hover .hidebox, #gome-bar .gm-bar-bot li:hover .hidebox {
   display: block;
   border-right: 0;
-  right: 35px; }
+  right: 35px;
+}
 #gome-bar .gm-bar-top li:hover b, #gome-bar .gm-bar-bot li:hover b {
-  background-position: -40px -464px; }
+  background-position: -40px -464px;
+}
 #gome-bar .gm-bar-top {
   position: absolute;
   top: 15px;
   right: 0;
-  text-align: center; }
+  text-align: center;
+}
 #gome-bar .gm-bar-top li {
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/uiline.png") no-repeat center bottom; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/uiline.png") no-repeat center bottom;
+}
 #gome-bar .gm-bar-top .gm-bar-member, #gome-bar .gm-bar-top .gm-bar-collect, #gome-bar .gm-bar-top .gm-bar-cart {
   position: relative;
   height: 39px;
   line-height: 39px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 #gome-bar .gm-bar-top .gm-bar-member i, #gome-bar .gm-bar-top .gm-bar-collect i, #gome-bar .gm-bar-top .gm-bar-cart i {
   margin-left: 5px;
   display: inline-block;
   width: 28px;
   height: 18px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -18px -1025px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -18px -1025px;
+}
 #gome-bar .gm-bar-top .gm-bar-collect i {
-  background-position: -71px -1023px; }
+  background-position: -71px -1023px;
+}
 #gome-bar .gm-bar-top .gm-bar-cart {
   height: 90px;
-  padding-top: 30px; }
+  padding-top: 30px;
+}
 #gome-bar .gm-bar-top .gm-bar-cart i {
   display: inline-block;
   width: 31px;
@@ -1246,7 +1516,8 @@ body {
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -24px -1046px;
   margin: 0 4px 3px 0;
-  display: block; }
+  display: block;
+}
 #gome-bar .gm-bar-top .gm-bar-cart em {
   display: inline-block;
   position: absolute;
@@ -1255,13 +1526,15 @@ body {
   width: 18px;
   height: 16px;
   color: #fff;
-  background: #a5a5a5; }
+  background: #a5a5a5;
+}
 #gome-bar .gm-bar-top .gm-bar-cart em .num {
   position: absolute;
   top: 0;
   left: 6px;
   font-weight: 400;
-  line-height: 16px; }
+  line-height: 16px;
+}
 #gome-bar .gm-bar-top .gm-bar-cart em .point {
   display: block;
   position: absolute;
@@ -1270,12 +1543,14 @@ body {
   width: 5px;
   height: 6px;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1087px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gome-bar .gm-bar-top .gm-bar-cart .text {
   width: 12px;
   display: inline-block;
   color: #fff;
-  line-height: 18px; }
+  line-height: 18px;
+}
 #gome-bar .gm-bar-bot {
   position: absolute;
   bottom: 35px;
@@ -1283,30 +1558,38 @@ body {
   width: 35px;
   font-size: 12px;
   color: #999;
-  z-index: 999; }
+  z-index: 999;
+}
 #gome-bar .gm-bar-bot .gm-bar-qrcode, #gome-bar .gm-bar-bot .gm-bar-survey, #gome-bar .gm-bar-bot .gm-bar-service, #gome-bar .gm-bar-bot .gm-bar-up {
   position: relative;
   height: 38px;
-  text-align: center; }
+  text-align: center;
+}
 #gome-bar .gm-bar-bot .gm-bar-qrcode i, #gome-bar .gm-bar-bot .gm-bar-survey i, #gome-bar .gm-bar-bot .gm-bar-service i, #gome-bar .gm-bar-bot .gm-bar-up i {
   display: inline-block;
   width: 20px;
   height: 20px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -212px -473px; }
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -212px -473px;
+}
 #gome-bar .gm-bar-bot .gm-bar-qrcode {
-  margin-top: 5px; }
+  margin-top: 5px;
+}
 #gome-bar .gm-bar-bot .gm-bar-qrcode .hidebox {
   width: 140px;
   height: 180px;
   padding: 0;
-  border: 0; }
+  border: 0;
+}
 #gome-bar .gm-bar-bot .gm-bar-survey i {
-  background-position: -212px -493px; }
+  background-position: -212px -493px;
+}
 #gome-bar .gm-bar-bot .gm-bar-service i {
-  background-position: -212px -513px; }
+  background-position: -212px -513px;
+}
 #gome-bar .gm-bar-bot .gm-bar-up i {
-  background-position: -212px -533px; }
+  background-position: -212px -533px;
+}
 #gome-bar .gm-bar-bot .qrcode, #gome-bar .gm-bar-bot .up, #gome-bar .gm-bar-bot .service, #gome-bar .gm-bar-bot .survey {
   position: relative;
   display: inline-block;
@@ -1316,117 +1599,145 @@ body {
   color: #999;
   overflow: hidden;
   cursor: pointer;
-  z-index: 2; }
+  z-index: 2;
+}
 #gome-bar .gm-bar-bot .qrcode i, #gome-bar .gm-bar-bot .up i, #gome-bar .gm-bar-bot .service i, #gome-bar .gm-bar-bot .survey i {
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 .wrap {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 a {
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 
 #gome-topmenu .gome-home {
-  display: block; }
+  display: block;
+}
 
 #gome-category {
-  display: none; }
+  display: none;
+}
 
 #gm-shopimg {
-  height: 120px; }
+  height: 120px;
+}
 #gm-shopimg img {
-  height: 120px; }
+  height: 120px;
+}
 
 #gm-shop-nav {
-  background: #333; }
+  background: #333;
+}
 #gm-shop-nav ul:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gm-shop-nav ul li {
   float: left;
-  text-align: center; }
+  text-align: center;
+}
 #gm-shop-nav ul li:hover {
-  background: #2a2a2a; }
+  background: #2a2a2a;
+}
 #gm-shop-nav ul li a {
   display: block;
   height: 40px;
   padding: 0 20px;
   line-height: 40px;
   font-size: 16px;
-  color: #fff; }
+  color: #fff;
+}
 
 #gm-menu {
   position: relative;
   background-color: #f6f6f6;
   margin-bottom: 16px;
-  z-index: 501; }
+  z-index: 501;
+}
 #gm-menu .wrap:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gm-menu .left {
-  float: left; }
+  float: left;
+}
 #gm-menu .left ul {
   padding: 8px 6px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 #gm-menu .left ul:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 #gm-menu .left li {
-  float: left; }
+  float: left;
+}
 #gm-menu .left li a {
   display: inline-block;
   padding: 4px 6px 4px 8px;
   color: #5e5e5e;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 #gm-menu .left li .icon-right {
   display: inline-block;
   width: 7px;
   height: 11px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 0;
-  margin: 0 2px; }
+  margin: 0 2px;
+}
 #gm-menu .left .active {
   width: 100px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gm-menu .right {
   float: right;
   padding: 8px 0;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gm-menu .right .name, #gm-menu .right .supplier, #gm-menu .right .collect {
   font-size: 13px;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 #gm-menu .right .identify {
   padding: 0 4px;
   color: #fff;
-  background-color: #e3101e; }
+  background-color: #e3101e;
+}
 #gm-menu .right .supplier {
   line-height: 22px;
   margin-left: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 #gm-menu .right .supplier i {
   margin-right: 3px;
   display: inline-block;
   width: 21px;
   height: 20px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -167px; }
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -167px;
+}
 #gm-menu .right .collect {
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 #gm-menu .right .collect i {
   margin-right: 3px;
   padding-top: 5px;
@@ -1435,28 +1746,42 @@ a {
   height: 15px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -100px;
-  color: #000; }
+  color: #000;
+}
 
 #gm-container {
   width: 1200px;
   margin: 0 auto;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
+#gm-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
 
 .gm-left {
   float: left;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
 .gm-left .magnifier {
   position: relative;
-  width: 450px; }
+  width: 450px;
+}
 .gm-left .magnifier #spic {
   position: relative;
   width: 448px;
   height: 448px;
   border: 1px solid #d9d9d9;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .magnifier #spic img {
   width: 450px;
-  height: 450px; }
+  height: 450px;
+}
 .gm-left .magnifier #spic .icon-search {
   display: block;
   position: absolute;
@@ -1469,16 +1794,19 @@ a {
   z-index: 20;
   overflow: hidden;
   text-align: center;
-  padding-top: 3px; }
+  padding-top: 3px;
+}
 .gm-left .magnifier #sf {
   position: absolute;
   left: 0;
   top: 0;
   width: 50px;
   height: 50px;
-  background: orange;
+  background: #ccc;
   opacity: 0.3;
-  visibility: hidden; }
+  visibility: hidden;
+  cursor: crosshair;
+}
 .gm-left .magnifier #bf {
   position: absolute;
   left: 450px;
@@ -1487,48 +1815,62 @@ a {
   height: 448px;
   border: 1px solid #e4e4e4;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+  z-index: 999;
+}
 .gm-left .magnifier #bf img {
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+}
 .gm-left .magnifier #ulist {
   position: relative;
   height: 62px;
   margin: 20px 0 16px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .magnifier #ulist #list {
   position: absolute;
   left: 25px;
   top: 0;
   width: 400px;
   height: 60px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .magnifier #ulist ul {
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 1000px; }
+  width: 1000px;
+}
 .gm-left .magnifier #ulist li {
   float: left;
   width: 60px;
   height: 60px;
   margin-right: 25px;
-  cursor: pointer; }
+  cursor: pointer;
+}
 .gm-left .magnifier #ulist img {
   width: 58px;
-  height: 58px; }
+  height: 58px;
+  padding-top: 1px;
+  margin: 0 auto;
+}
 .gm-left .magnifier #ulist .active {
-  border: 1px solid #e3101e; }
+  padding-top: 0;
+  border: 1px solid #e3101e;
+}
 .gm-left .magnifier a {
   display: block;
   position: absolute;
   width: 15px;
   height: 54px;
-  top: 0; }
+  top: 0;
+}
 .gm-left .magnifier #right {
   right: 0;
-  color: #333; }
+  color: #333;
+}
 .gm-left .magnifier #right i {
   display: block;
   position: absolute;
@@ -1537,13 +1879,16 @@ a {
   width: 11px;
   height: 21px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -835px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .magnifier #right:hover i {
-  background-position: 0 -556px; }
+  background-position: 0 -556px;
+}
 .gm-left .magnifier #left {
   left: 0;
   z-index: 2;
-  color: #fff; }
+  color: #fff;
+}
 .gm-left .magnifier #left i {
   display: block;
   position: absolute;
@@ -1552,47 +1897,57 @@ a {
   width: 11px;
   height: 21px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -804px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .magnifier #left:hover i {
-  background-position: 0 -525px; }
+  background-position: 0 -525px;
+}
 .gm-left .toolbar {
-  width: 450px; }
+  width: 450px;
+}
 .gm-left .toolbar:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .gm-left .toolbar .product-number {
   float: left;
   width: 135px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 .gm-left .toolbar a {
   float: right;
   display: block;
   position: relative;
   margin-left: 6px;
   line-height: 18px;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 .gm-left .toolbar a:hover {
-  color: #f5004b; }
+  color: #f5004b;
+}
 .gm-left .toolbar i {
   float: left;
-  margin-right: 5px; }
+  margin-right: 5px;
+}
 .gm-left .toolbar .collect i {
   display: inline-block;
   width: 16px;
   height: 15px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -100px; }
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -100px;
+}
 .gm-left .toolbar .wish i {
   display: inline-block;
   width: 14px;
   height: 12px;
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -1929px;
-  margin-top: 2px; }
+  margin-top: 2px;
+}
 .gm-left .toolbar .share .price_box {
   display: none;
   position: absolute;
@@ -1601,7 +1956,8 @@ a {
   padding: 8px 12px;
   border: 1px solid #ccc;
   background: #fff;
-  z-index: 10; }
+  z-index: 10;
+}
 .gm-left .toolbar .share .price_box i {
   display: block;
   position: absolute;
@@ -1610,82 +1966,101 @@ a {
   width: 12px;
   height: 7px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -1885px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-left .toolbar .share .price_box .price_box_tit {
   font-family: NSimSun;
-  color: #666; }
+  color: #666;
+}
 .gm-left .toolbar .share .price_box .share_txt {
   font-family: NSimSun;
-  color: #999; }
+  color: #999;
+}
 .gm-left .toolbar .share .price_box span {
-  color: #069; }
+  color: #069;
+}
 .gm-left .toolbar .share i {
   display: inline-block;
   width: 18px;
   height: 17px;
   vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -1902px; }
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -1902px;
+}
 .gm-left .toolbar .share:hover .price_box {
-  display: block; }
+  display: block;
+}
 
 .gm-right {
   float: left;
   width: 720px;
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 .gm-right .hgroup {
   position: relative;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+}
 .gm-right .hgroup h1 {
   width: 610px;
   padding-top: 5px;
   line-height: 26px;
   font-size: 16px;
   color: #5e5e5e;
-  font-weight: 600; }
+  font-weight: 600;
+}
 .gm-right .hgroup h4 {
   width: 610px;
   line-height: 20px;
   font-size: 12px;
   color: #e3101e;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .gm-right .hgroup h4 a {
-  color: #069; }
+  color: #069;
+}
 .gm-right .hgroup .contrast {
   position: absolute;
   right: 0;
   top: 0;
   padding: 5px 10px;
   border: 1px solid #ccc;
-  cursor: pointer; }
+  cursor: pointer;
+}
 .gm-right .hgroup .contrast span {
   display: block;
   line-height: 12px;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 .gm-right .hgroup .contrast:hover {
   background: #f8f8f8;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+}
 
 .prd-price {
   position: relative;
   width: 690px;
   padding: 20px 10px 0 20px;
-  background: #f6f6f6; }
+  background: #f6f6f6;
+}
 .prd-price .prd-price-top {
   padding-bottom: 18px;
-  line-height: 34px; }
+  line-height: 34px;
+}
 .prd-price .prd-price-top:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-price .prd-price-top .prd-price-name {
   float: left;
-  color: #888; }
+  color: #888;
+}
 .prd-price .prd-price-top .prd-price-left {
   float: left;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 .prd-price .prd-price-top .prd-price-left .price {
   float: left;
   display: block;
@@ -1693,51 +2068,65 @@ a {
   font-family: Arial;
   font-size: 24px;
   color: #e3101e;
-  font-weight: 700; }
+  font-weight: 700;
+}
 .prd-price .prd-price-top .prd-price-left .price em {
   display: block;
   float: left;
   margin-right: 2px;
-  font-size: 16px; }
+  font-size: 16px;
+}
 .prd-price .prd-price-top .prd-price-left .reduce {
   float: left;
-  color: #069; }
+  color: #069;
+}
 .prd-price .prd-price-top .prd-price-right {
   float: right;
   height: 33px;
-  line-height: 12px; }
+  line-height: 12px;
+}
 .prd-price .prd-price-top .prd-price-right .line {
   float: left;
   margin-right: 3px;
   line-height: 32px;
   font-family: '宋体';
   font-size: 32px;
-  color: #ccc; }
+  color: #ccc;
+}
 .prd-price .prd-price-top .prd-price-right .container {
-  float: left; }
+  float: left;
+}
 .prd-price .prd-price-top .prd-price-right .container p {
-  line-height: 12px; }
+  line-height: 12px;
+}
 .prd-price .prd-price-top .prd-price-right .container p:nth-of-type(2) {
-  margin-top: 9px; }
+  margin-top: 9px;
+}
 .prd-price .prd-price-top .prd-price-right .container a {
-  color: #069; }
+  color: #069;
+}
 .prd-price .prd-price-top .prd-price-right .container a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 .prd-price .prd-price-bottom {
-  padding: 0 0 10px; }
+  padding: 0 0 10px;
+}
 .prd-price .prd-price-bottom:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-price .prd-price-bottom .prd-price-left {
   float: left;
-  color: #888; }
+  color: #888;
+}
 .prd-price .prd-price-bottom .prd-price-right {
   float: left;
-  margin-left: 18px; }
+  margin-left: 18px;
+}
 .prd-price .prd-price-bottom .prd-price-right b {
   position: relative;
   padding: 1px 8px;
@@ -1749,7 +2138,8 @@ a {
   border-top: 1px solid #e3010e;
   border-bottom: 1px solid #e3010e;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+}
 .prd-price .prd-price-bottom .prd-price-right .left {
   display: block;
   position: absolute;
@@ -1758,7 +2148,8 @@ a {
   width: 3px;
   height: 18px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -1999px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-price .prd-price-bottom .prd-price-right .right {
   display: block;
   position: absolute;
@@ -1767,34 +2158,42 @@ a {
   width: 3px;
   height: 18px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2027px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .prd-properties {
-  padding-left: 20px; }
+  padding-left: 20px;
+}
 .prd-properties .features {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 .prd-properties .features:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-properties .features .prd-properties-left {
   float: left;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .features .prd-properties-right {
   float: left;
   margin-left: 23px;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .features .prd-properties-right span {
   position: relative;
   padding: 3px 10px 3px 17px;
   margin-right: 16px;
   border: 1px solid #61819f;
-  border-left: 0 solid #61819f; }
+  border-left: 0 solid #61819f;
+}
 .prd-properties .features .prd-properties-right span a {
-  color: #61819f; }
+  color: #61819f;
+}
 .prd-properties .features .prd-properties-right .properties-right1 em, .prd-properties .features .prd-properties-right .properties-right2 em, .prd-properties .features .prd-properties-right .properties-right3 em {
   display: block;
   position: absolute;
@@ -1803,7 +2202,8 @@ a {
   width: 8px;
   height: 20px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2077px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-properties .features .prd-properties-right .properties-right1 b {
   display: block;
   position: absolute;
@@ -1812,7 +2212,8 @@ a {
   width: 16px;
   height: 16px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2107px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-properties .features .prd-properties-right .properties-right2 b {
   display: block;
   position: absolute;
@@ -1821,7 +2222,8 @@ a {
   width: 16px;
   height: 16px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2185px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-properties .features .prd-properties-right .properties-right3 b {
   display: block;
   position: absolute;
@@ -1830,34 +2232,43 @@ a {
   width: 16px;
   height: 16px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2133px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-properties .send-to {
   position: relative;
   margin-top: 13px;
-  line-height: 18px; }
+  line-height: 18px;
+}
 .prd-properties .send-to:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-properties .send-to .prd-properties-left {
   float: left;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .send-to .prd-properties-right {
   float: left;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 .prd-properties .send-to .prd-properties-right span {
   display: inline-block;
-  line-height: 18px; }
+  line-height: 18px;
+}
 .prd-properties .send-to .prd-properties-right .address {
-  padding: 0 21px 0 6px; }
+  padding: 0 21px 0 6px;
+}
 .prd-properties .send-to .prd-properties-right .address a {
   position: relative;
-  color: #5e5e5e; }
+  color: #5e5e5e;
+}
 .prd-properties .send-to .prd-properties-right .address a:hover {
-  color: #e3101e; }
+  color: #e3101e;
+}
 .prd-properties .send-to .prd-properties-right .address i {
   display: block;
   position: absolute;
@@ -1866,78 +2277,97 @@ a {
   width: 10px;
   height: 6px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -602px;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .prd-properties .send-to .prd-properties-right .hasstock {
-  margin-left: 20px; }
+  margin-left: 20px;
+}
 .prd-properties .send-to .prd-properties-right .support {
   margin-left: 20px;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .send-to .prd-properties-right .support a {
   margin: 0 10px;
   display: inline-block;
-  color: #61819f; }
+  color: #61819f;
+}
 .prd-properties .send-to .prd-properties-right .support a:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 .prd-properties .time {
   margin-top: 12px;
   line-height: 12px;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .time .prd-properties-right {
-  margin-left: 69px; }
+  margin-left: 69px;
+}
 .prd-properties .service {
   margin-top: 16px;
-  line-height: 12px; }
+  line-height: 12px;
+}
 .prd-properties .service:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-properties .service .prd-properties-left {
   float: left;
-  color: #888; }
+  color: #888;
+}
 .prd-properties .service .prd-properties-right {
   float: left;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 
 .sales-property {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 .sales-property .color:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .sales-property .color .prdleft {
   float: left;
   line-height: 42px;
-  color: #888; }
+  color: #888;
+}
 .sales-property .color .prdright {
   float: left;
   width: 630px;
-  margin-left: 15px; }
+  margin-left: 15px;
+}
 .sales-property .color .prd-img-item {
   float: left;
   width: auto;
   margin-right: 7px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+}
 .sales-property .color .prd-img-item a {
   position: relative;
   display: block;
   height: 40px;
   color: #5e5e5e;
   border: 1px solid #e6e6e6;
-  overflow: hidden; }
+  overflow: hidden;
+}
 .sales-property .color .prd-img-item a img {
   float: left;
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 .sales-property .color .prd-img-item a span {
   float: left;
   padding: 14px 10px;
-  line-height: 12px; }
+  line-height: 12px;
+}
 .sales-property .color .prd-img-item a i {
   display: block;
   position: absolute;
@@ -1947,39 +2377,48 @@ a {
   height: 11px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2211px;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .sales-property .color .prd-img-item a:hover {
-  border: 1px solid #e3101e; }
+  border: 1px solid #e3101e;
+}
 .sales-property .color .prd-img-item .select {
-  border: 1px solid #e3101e; }
+  border: 1px solid #e3101e;
+}
 .sales-property .color .prd-img-item .select i {
-  visibility: visible; }
+  visibility: visible;
+}
 .sales-property .version:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .sales-property .version .prdleft {
   float: left;
   line-height: 38px;
-  color: #888; }
+  color: #888;
+}
 .sales-property .version .prdright {
   float: left;
   width: 630px;
   margin-left: 15px;
-  line-height: 12px; }
-.sales-property .version .prdright .prdmod {
+  line-height: 12px;
+}
+.sales-property .version .prdmod {
   float: left;
   margin-right: 7px;
-  margin-bottom: 7px; }
-.sales-property .version .prdright .prdmod a {
+  margin-bottom: 7px;
+}
+.sales-property .version .prdmod a {
   position: relative;
   display: block;
   border: 1px solid #ccc;
-  padding: 11px 10px; }
-.sales-property .version .prdright .prdmod a i {
+  padding: 11px 10px;
+}
+.sales-property .version .prdmod a i {
   display: block;
   position: absolute;
   top: 24px;
@@ -1988,13 +2427,17 @@ a {
   height: 11px;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2211px;
   overflow: hidden;
-  visibility: hidden; }
-.sales-property .version .prdright .prdmod a:hover {
-  border: 1px solid #e3101e; }
-.sales-property .version .prdright .prdmod .select {
-  border: 1px solid #e3101e; }
-.sales-property .version .prdright .prdmod .select i {
-  visibility: visible; }
+  visibility: hidden;
+}
+.sales-property .version .prdmod a:hover {
+  border: 1px solid #e3101e;
+}
+.sales-property .version .prdmod .select {
+  border: 1px solid #e3101e;
+}
+.sales-property .version .prdmod .select i {
+  visibility: visible;
+}
 
 .e-w-service:after {
   content: " ";
@@ -2002,42 +2445,67 @@ a {
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .e-w-service .prdleft {
   float: left;
   line-height: 38px;
-  color: #888; }
+  color: #888;
+}
 .e-w-service .prdright {
   float: left;
   width: 630px;
   margin-left: 15px;
-  line-height: 12px; }
+  line-height: 12px;
+}
 .e-w-service .prdright .prdmod {
   float: left;
-  margin-right: 7px; }
+  margin-right: 7px;
+}
 .e-w-service .prdright .prdmod a {
   position: relative;
   display: block;
   padding: 11px 8px 11px 30px;
-  border: 1px solid #ccc; }
-.e-w-service .prdright .prdmod a img {
+  border: 1px solid #ccc;
+}
+.e-w-service .prdright .prdmod img {
   position: absolute;
   top: 8px;
-  left: 8px; }
+  left: 8px;
+}
+.e-w-service .prdright .prdmod i {
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  width: 11px;
+  height: 11px;
+  background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2211px;
+  overflow: hidden;
+  visibility: hidden;
+}
+.e-w-service .prdright .prdmod .select {
+  border: 1px solid #e3101e;
+}
+.e-w-service .prdright .prdmod .select i {
+  visibility: visible;
+}
 
 .prd-btn {
   position: relative;
   height: 42px;
   padding-left: 20px;
   margin-bottom: 25px;
-  margin-top: 34px; }
+  margin-top: 34px;
+}
 .prd-btn .count {
   position: relative;
   float: left;
   width: 46px;
   height: 38px;
   margin-right: 15px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+}
 .prd-btn .count .qty {
   float: left;
   display: block;
@@ -2047,7 +2515,8 @@ a {
   text-align: center;
   color: #5e5e5e;
   border: 0;
-  outline: 0; }
+  outline: 0;
+}
 .prd-btn .count a {
   display: block;
   float: left;
@@ -2058,13 +2527,16 @@ a {
   text-align: center;
   border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  background: #f8f8f8; }
+  background: #f8f8f8;
+}
 .prd-btn .count .disab {
   color: #ccc;
-  cursor: not-allowed; }
+  cursor: not-allowed;
+}
 .prd-btn .count .reduce {
   border-bottom: 0;
-  padding-bottom: 1px; }
+  padding-bottom: 1px;
+}
 .prd-btn .addcart {
   float: left;
   height: 24px;
@@ -2073,7 +2545,8 @@ a {
   line-height: 22px;
   font-size: 18px;
   color: #fff;
-  background-color: #e3101e; }
+  background-color: #e3101e;
+}
 .prd-btn .mobile-btn {
   float: left;
   position: relative;
@@ -2084,7 +2557,8 @@ a {
   line-height: 22px;
   color: #5e5e5e;
   font-size: 12px;
-  border: 1px solid #ccc; }
+  border: 1px solid #ccc;
+}
 .prd-btn .mobile-btn i {
   display: inline-block;
   width: 28px;
@@ -2092,7 +2566,8 @@ a {
   vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/2.0.0/item/1.12.1/css/i/bg-sprite.png?__sprite") no-repeat 0 -2362px;
   margin-right: 8px;
-  margin-left: 6px; }
+  margin-left: 6px;
+}
 .prd-btn .mobile-btn div {
   position: absolute;
   display: none;
@@ -2102,30 +2577,37 @@ a {
   border: 1px solid #ccc;
   border-top: 0;
   background: #fff;
-  z-index: 100; }
+  z-index: 100;
+}
 .prd-btn .mobile-btn div img {
   margin-left: 4px;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 .prd-btn .mobile-btn:hover div {
-  display: block; }
+  display: block;
+}
 
 .prd-tips {
   margin-bottom: 35px;
   line-height: 20px;
-  color: #888; }
+  color: #888;
+}
 .prd-tips:after {
   content: " ";
   display: block;
   clear: both;
   height: 0;
   overflow: hidden;
-  visibility: hidden; }
+  visibility: hidden;
+}
 .prd-tips span {
   display: block;
   float: left;
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 .prd-tips p {
   float: left;
-  padding-left: 10px; }
+  padding-left: 10px;
+}
 
 /*# sourceMappingURL=details.css.map */

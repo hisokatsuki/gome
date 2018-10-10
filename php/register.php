@@ -8,9 +8,9 @@
     if(isset($_POST['name']) || isset($_POST['submit'])){
         $name=@$_POST['name'];
     }
-    else{
-        exit('重复的用户名');
-    }
+    // else{
+    //     exit('非法操作！');
+    // }
     $result=mysql_query("select * from userinfo where username='$name'");
     if(mysql_fetch_array($result)){ //有重复的用户名
         echo true;

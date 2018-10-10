@@ -925,13 +925,20 @@ body {
 .gm-nav .subnav {
   display: none;
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 199px;
+  width: 1000px;
+  height: 448px;
   background: #fff;
   z-index: 99;
 }
 .gm-nav .subnav-content {
-  width: 1000px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 999px;
+  height: 450px;
   border: 1px solid #818181;
 }
 .gm-nav .subnav-content:after {

@@ -1,8 +1,8 @@
 @charset "utf-8";
 // 楼梯
 #gm-stairs {
+    display:$none;
     position: fixed;
-    display: block;
     top:75px;
     left: 83.6px;
     background:#fff;
@@ -24,11 +24,11 @@
         height: 30px;
         line-height: 31px;
     }
-    .stairs{
+    ul{
         width: 66px;
         overflow: hidden;
     }
-    .handler{
+    .stairs{
         position: relative;
         height: 43px;
         line-height: 5px;
@@ -60,7 +60,7 @@
         }
     }
     // 滑过样式
-    .handler:hover{
+    .stairs:hover{
         a,span,p{
             color: #f5004b;
         }

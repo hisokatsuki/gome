@@ -3,6 +3,9 @@
 a{
     color:#5e5e5e;
 }
+.lazyloading{
+    background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
+}
 #gm-floors {
     width: 1200px;
     margin: 0 auto;
@@ -10,6 +13,14 @@ a{
     .gm-floor-t{
         height: 38px;
         padding-top: 32px;
+    }
+    .advertising{
+        height:100px;
+        margin-top: 18px;
+        img{
+            width: 1200px;
+            height: 100px;
+        }
     }
     .gm-floor{
         .floor-title{
@@ -47,8 +58,14 @@ a{
                 line-height: 30px;
             }
         }
-        .active{
+        .active1{
             background:#719ef7;
+            a{
+                color:#fff;
+            }
+        }
+        .active2{
+            background:#50bfec;
             a{
                 color:#fff;
             }
@@ -80,7 +97,6 @@ a{
         width: 180px;
         padding-left: 15px;
         padding-right: 15px;
-        background:#6294f6;
         overflow: hidden;
         li{
             width: 180px;

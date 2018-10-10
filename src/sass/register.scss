@@ -145,7 +145,7 @@ body{
         position: relative;
         padding:0 0 26px 151px;
         height:40px;
-        label{
+        .labelname{
             position: absolute;
             top:0;
             left:0;
@@ -170,29 +170,31 @@ body{
         // 提示框
         .msg-box{
             float: left;
-            width:370px;
+            // width:370px;
+            height:38px;
             margin-left:5px;
+            overflow: hidden;
             .focus-box,.blur-box{
                 display:$none;
+                height:36px;
+                border:1px solid #ccc;
+                background-color:#fff;
                 @include clearfix();
-                p{
+                label{
                     float: left;
-                    height:$line-height-18;
-                    padding:9px 5px 9px 5px;
-                    line-height:$line-height-18;
-                    background-color:#fff;
-                    border:1px solid #ccc;
+                    height:36px;
+                    line-height:36px;
+                    margin:0 5px 0 5px;
                 }
             }
             .blur-box{
+                overflow: hidden;
                 color:#ff5757;
             }
         }
         // 绿色的正确
         .correct{
-            @include icons2(17px,17px,10px,425px,0,-20px,"https://misc.gomein.net.cn/images/regfront/register/register.png");
-            overflow: hidden;
-            display:$none;        
+            @include icons3(17px,17px,0,-20px,"https://misc.gomein.net.cn/images/regfront/register/register.png");     
         }
     }
     .formlist-btn{

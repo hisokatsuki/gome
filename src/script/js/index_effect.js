@@ -1,20 +1,77 @@
 define(['../thirdplugins/jquery'], function () {
     return {
-        // 引入公共头部和尾部
+        // 1.引入公共头部和尾部
         publich_h_f: !function () {
             $('#header').load('header.html');
             $('#footer').load('footer.html');
         }(),
-        // banner效果
+        // 2.banner效果
         banner_effect:!function(){
             var $banner=$('.banner');
             var $ol_btn=$('.gm-banner ol li');
-            // alert($banner_btn.length);
+            var $btnleft=$('.banner-btn .btn-left');
+            var $btnright=$('.banner-btn .btn-right');
+            var $num=0;
+            var $len=$ol_btn.size();
+            // 滑过切换
             $ol_btn.hover(function(){
-                
+                $num=$(this).index();
+                $(this).addClass('active').siblings('li').removeClass('active');
+                $banner.children().eq($num).show().animate({opacity:1},800).siblings('li').hide().css({opacity:0});
+            });
+            // 点击切换
+            $btnleft.on('click',function(){
+                $num--;
+                if($num<0){
+                    $num=$len-1;
+                }
+                $ol_btn.eq($num).addClass('active').siblings('li').removeClass('active');
+                $banner.children().eq($num).show().animate({opacity:1},800).siblings('li').hide().css({opacity:0});
+            });
+            $btnright.on('click',function(){
+                $num++;
+                if($num>$len-1){
+                    $num=0;
+                }
+                $ol_btn.eq($num).addClass('active').siblings('li').removeClass('active');
+                $banner.children().eq($num).show().animate({opacity:1},800).siblings('li').hide().css({opacity:0});
+            });
+            // banner轮播
+            var timer=setInterval(function(){
+                $num++;
+                if($num>$len-1){
+                    $num=0;
+                }
+                $ol_btn.eq($num).addClass('active').siblings('li').removeClass('active');
+                $banner.children().eq($num).show().animate({opacity:1},800).siblings('li').hide().css({opacity:0});
+            },5000);
+            // 鼠标移到图片上停止轮播,移出继续轮播
+            $banner.hover(function(){
+                clearInterval(timer);
+            },function(){
+                timer=setInterval(function(){
+                    $num++;
+                    if($num>$len-1){
+                        $num=0;
+                    }
+                    $ol_btn.eq($num).addClass('active').siblings('li').removeClass('active');
+                    $banner.children().eq($num).show().animate({opacity:1},800).siblings('li').hide().css({opacity:0});
+                },5000);
             });
         }(),
-        // 美日必抢效果
+        // 二级导航效果
+        subnav_effect:!function(){
+            var $header=$('#header');
+            $header.on('mouseover','#gome-category .gm-nav .nav-item',function(){
+                $header.find('.subnav').show();
+                $header.find('.subnav-content').eq($(this).index()).show().siblings('.subnav-content').hide();
+            });
+            $header.on('mouseout','#gome-category .gm-nav .nav-item',function(){
+                $header.find('.subnav').hide();
+                $header.find('.subnav-content').eq($(this).index()).hide();
+            });
+        }(),
+        // 3.美日必抢效果
         countdown_effect: !function () {
             // 点击按钮切换
             var $c_btnleft = $('.c-btn-left');
@@ -71,8 +128,9 @@ define(['../thirdplugins/jquery'], function () {
                 }
             }, 1000);
         }(),
-        // 楼层--幻灯片
+        // 4.楼层--幻灯片
         floor_slide:!function(){
+            var $floorslide=$('.floor-slide');
             var $floor_slide=$('.floor-slide .slide li');
             var $prevbtn=$('.floor-slide .slide-btn .slide-prev');
             var $nextbtn=$('.floor-slide .slide-btn .slide-next');
@@ -82,6 +140,7 @@ define(['../thirdplugins/jquery'], function () {
             $btnli.hover(function(){
                 $num=$(this).index();
                 $(this).addClass('cur').siblings('li').removeClass('cur');
+                // $floor_slide.eq($num).show().animate({opacity:1}).siblings('li').animate({opacity:0}).hide();
                 $floor_slide.eq($num).show().siblings('li').hide();
             })
             $prevbtn.on('click',function(){
@@ -89,6 +148,7 @@ define(['../thirdplugins/jquery'], function () {
                 if($num<0){
                     $num=$len-1;
                 }
+                $floor_slide.eq($num).animate({opactiy:1}).siblings('li').animate({opactiy:0});
                 $floor_slide.eq($num).show().siblings('li').hide();
                 $btnli.eq($num).addClass('cur').siblings('li').removeClass('cur');
             });
@@ -97,19 +157,36 @@ define(['../thirdplugins/jquery'], function () {
                 if($num>$len-1){
                     $num=0;
                 }
+                $floor_slide.eq($num).animate({opactiy:1}).siblings('li').animate({opactiy:0});
                 $floor_slide.eq($num).show().siblings('li').hide();
                 $btnli.eq($num).addClass('cur').siblings('li').removeClass('cur');
             });
+            // 轮播
             var timer=setInterval(function(){
                 $num++;
                 if($num>$len-1){
                     $num=0;
                 }
+                $floor_slide.eq($num).animate({opactiy:1}).siblings('li').animate({opactiy:0});
                 $floor_slide.eq($num).show().siblings('li').hide();
                 $btnli.eq($num).addClass('cur').siblings('li').removeClass('cur');
             },5000);
+            // 鼠标移到上面停止轮播，移出继续轮播
+            $floorslide.hover(function(){
+                clearInterval(timer);
+            },function(){
+                timer=setInterval(function(){
+                    $num++;
+                    if($num>$len-1){
+                        $num=0;
+                    }
+                $floor_slide.eq($num).animate({opactiy:1}).siblings('li').animate({opactiy:0});
+                $floor_slide.eq($num).show().siblings('li').hide();
+                    $btnli.eq($num).addClass('cur').siblings('li').removeClass('cur');
+                },5000);
+            });
         }(),
-        // 楼层--tab切换
+        // 5.楼层--tab切换
         floor_tab:!function(){
             var $tab_title=$('.gm-floor-t .tab li');
             var $mainlist=$('.floor-b-r .main');
@@ -130,6 +207,29 @@ define(['../thirdplugins/jquery'], function () {
                 $tab_title.eq($num).addClass('active').siblings('li').removeClass('active');
                 $mainlist.eq($num).show().siblings('.main').hide();
             })
+        }(),
+        // 楼梯效果
+        stairs_effect:!function(){
+            var $gm_stairs=$('#gm-stairs'); //楼梯导航
+            var $stairs=$('.stairs'); //楼梯
+            var $gm_floor=$('.gm-floor'); //楼层
+            // 滚动条拉到一定距离，出现楼梯导航
+            $(window).on('scroll',function(){
+                var $scrolltop=$(window).scrollTop();
+                if($scrolltop>1800){
+                    $gm_stairs.show();
+                }else{
+                    $gm_stairs.hide();
+                }
+                $gm_floor.each(function(index,ele){
+                    var $top=$gm_floor.eq(index).offset().top;
+                    if($top>$scrolltop){
+                        $stairs.removeClass('current');
+                        $stairs.eq(index).addClass('current');
+                        return false;
+                    }
+                });
+            });
         }()
     }
 })

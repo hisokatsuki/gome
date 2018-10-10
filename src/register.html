@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册</title>
     <link rel="stylesheet" href="css/register.css">
+    <script src="script/thirdplugins/require.js" deter async="true" data-main="script/js/register.js"></script>
 </head>
 <body>
     <!-- logo -->
@@ -20,59 +21,55 @@
             <p class="login-info">我已经注册，现在就<a href="login.html">登录</a></p>
             <p class="user-reg">用户注册</p>
             <div class="formlists">
-                <form action="http://localhost/myself/gome/php/register.php" method="POST">
+                <form id="form" action="http://localhost/myself/gome/php/register.php" method="POST">
                     <!-- 用户名 -->
                     <div class="formlist form-name">
-                        <label>用户名：</label>
+                        <label class="labelname">用户名：</label>
                         <input type="text" name="username" id="uname">
                         <div class="msg-box">
                             <div class="focus-box">
-                                <p>4-20个字符，支持汉字、字母、数字及“-”、“_”组合</p>
+                                <label>4-20个字符，支持汉字、字母、数字及“-”、“_”组合</label>
                             </div>
                             <div class="blur-box">
-                                <p>请输入用户名</p>
+                                <label id="uname-error" class="error" for="uname">请输入用户名</label>
                             </div>
                         </div>
-                        <i class="correct"></i>
                     </div>
                     <!-- 设置密码 -->
-                    <div class="formlist form-pass">
-                        <label>设置密码：</label>
-                        <input type="password" name="password" id="pass">
+                    <div class="formlist form-labelass">
+                        <label class="labelname">设置密码：</label>
+                        <input type="password" name="password" id="password">
                         <div class="msg-box">
                             <div class="focus-box">
-                                <p>6-20个字符，建议由字母，数字与符号两种以上组成</p>
+                                <label>6-20个字符，建议由字母，数字与符号两种以上组成</label>
                             </div>
                             <div class="blur-box">
-                                <p>请输入密码</p>
+                                <label id="pass-error" class="error" for="password">请输入密码</label>
                             </div>
                         </div>
-                        <i class="correct"></i>
                     </div>
                     <!-- 确认密码 -->
                     <div class="formlist form-c-pass">
-                        <label>确认密码：</label>
+                        <label class="labelname">确认密码：</label>
                         <input type="password" name="c_password" id="c_pass">
                         <div class="msg-box">
                             <div class="focus-box">
-                                <p>请再次输入密码</p>
+                                <label>请再次输入密码</label>
                             </div>
                             <div class="blur-box">
-                                <p>请输入密码</p>
+                                <label id="c_pass-error" class="error" for="c_pass">请输入密码</label>
                             </div>
                         </div>
-                        <i class="correct"></i>
                     </div>
                     <!-- 手机号 -->
                     <div class="formlist form-mobile">
-                        <label>手机号：</label>
+                        <label class="labelname">手机号：</label>
                         <input type="text" name="mobile" id="mobile">
                         <div class="msg-box">
                             <div class="blur-box">
-                                <p>手机号不能为空</p>
+                                <label id="mobile-error" class="error" for="mobile">手机号不能为空</label>
                             </div>
                         </div>
-                        <i class="correct"></i>
                     </div>
                     <!-- 立即注册 -->
                     <div class="formlist-btn">
@@ -119,7 +116,5 @@
     </div>
     <!-- footer -->
     <div id="footer"></div>
-    <script src="script/thirdplugins/jquery1.11.3.js"></script>
-    <script src="script/js/register.js"></script>
 </body>
 </html>

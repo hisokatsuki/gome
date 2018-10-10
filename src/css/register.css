@@ -624,7 +624,7 @@ body {
   padding: 0 0 26px 151px;
   height: 40px;
 }
-.formlists .formlist label {
+.formlists .formlist .labelname {
   position: absolute;
   top: 0;
   left: 0;
@@ -648,11 +648,15 @@ body {
 }
 .formlists .formlist .msg-box {
   float: left;
-  width: 370px;
+  height: 38px;
   margin-left: 5px;
+  overflow: hidden;
 }
 .formlists .formlist .msg-box .focus-box, .formlists .formlist .msg-box .blur-box {
   display: none;
+  height: 36px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }
 .formlists .formlist .msg-box .focus-box:after, .formlists .formlist .msg-box .blur-box:after {
   content: " ";
@@ -662,28 +666,22 @@ body {
   overflow: hidden;
   visibility: hidden;
 }
-.formlists .formlist .msg-box .focus-box p, .formlists .formlist .msg-box .blur-box p {
+.formlists .formlist .msg-box .focus-box label, .formlists .formlist .msg-box .blur-box label {
   float: left;
-  height: 18px;
-  padding: 9px 5px 9px 5px;
-  line-height: 18px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 5px 0 5px;
 }
 .formlists .formlist .msg-box .blur-box {
+  overflow: hidden;
   color: #ff5757;
 }
 .formlists .formlist .correct {
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 425px;
+  display: inline-block;
   width: 17px;
   height: 17px;
+  vertical-align: middle;
   background: url("https://misc.gomein.net.cn/images/regfront/register/register.png") no-repeat 0 -20px;
-  overflow: hidden;
-  overflow: hidden;
-  display: none;
 }
 .formlists .formlist-btn {
   padding: 15px 0;
