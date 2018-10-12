@@ -43,6 +43,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.lazyloading {
+  background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
+}
+
 #top-banner {
   background: #b70b01;
 }
@@ -581,6 +585,18 @@ body {
   width: 100px;
   margin: 35px 0 0 10px;
 }
+#gome-head .suspension-top {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background: #fff;
+  opacity: .9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 1px 5px;
+  z-index: 90;
+}
 #gome-head .gm-search {
   position: absolute;
   top: 32px;
@@ -590,6 +606,7 @@ body {
 }
 #gome-head .gm-search .gm-search-top {
   position: relative;
+  width: 500px;
   height: 30px;
   border: 1px solid #dd00a7;
   font-size: 14px;
@@ -608,8 +625,22 @@ body {
   cursor: pointer;
   opacity: .55;
 }
+#gome-head .gm-search .search-top-fixed {
+  position: fixed;
+  top: 8px;
+  left: 50%;
+  margin-left: -215px;
+}
 #gome-head .searchform {
   position: relative;
+}
+#gome-head .searchform:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 #gome-head .searchform label {
   position: absolute;
@@ -644,10 +675,10 @@ body {
   color: #fff;
   letter-spacing: 2px;
   cursor: pointer;
+  outline: none;
 }
 #gome-head .search-type-dropdown {
   position: absolute;
-  float: left;
   top: 0;
   left: 0;
   width: 62px;
@@ -655,6 +686,8 @@ body {
   line-height: 30px;
   font-size: 14px;
   color: #a5a5a5;
+  cursor: pointer;
+  z-index: 50;
 }
 #gome-head .search-type-dropdown .search-type {
   position: relative;
@@ -662,7 +695,6 @@ body {
   height: 30px;
   padding: 0 10px;
   border-right: 1px solid #dd00a7;
-  cursor: pointer;
 }
 #gome-head .search-type-dropdown .search-type i {
   display: block;
@@ -693,9 +725,6 @@ body {
 #gome-head .search-type-dropdown .search-dropdown li:hover {
   background: #eee;
 }
-#gome-head .search-type-dropdown:hover .search-dropdown {
-  display: block;
-}
 #gome-head .gm-hot-keywords {
   height: 14px;
   line-height: 14px;
@@ -711,6 +740,63 @@ body {
 }
 #gome-head .gm-hot-keywords a:hover {
   color: #f5004b;
+}
+#gome-head .gm-search-result {
+  display: none;
+  position: absolute;
+  top: 32px;
+  left: 0;
+}
+#gome-head .gm-search-result .search-result {
+  width: 408px;
+  line-height: 18px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+  background: #fff;
+}
+#gome-head .gm-search-result .search-result a {
+  display: block;
+  line-height: 30px;
+  padding-left: 10px;
+}
+#gome-head .gm-search-result .search-result a:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+#gome-head .gm-search-result .search-result a:hover {
+  background: #f8f8f8;
+}
+#gome-head .gm-search-result .search-result a:hover .result {
+  color: #f5004b;
+}
+#gome-head .gm-search-result .search-result .result {
+  float: left;
+  color: #5e5e5e;
+}
+#gome-head .gm-search-result .search-result .result-qty {
+  float: right;
+  padding-right: 10px;
+  color: #a5a5a5;
+}
+#gome-head .gm-search-result .result-close {
+  padding-left: 10px;
+  line-height: 30px;
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  cursor: pointer;
+}
+#gome-head .gm-search-result .result-close:hover a {
+  color: #f5004b;
+}
+#gome-head .search-result-fixed {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  margin-left: -215px;
 }
 #gome-head .gm-shopcar {
   position: absolute;
@@ -867,6 +953,29 @@ body {
   line-height: 40px;
   color: #585858;
 }
+.gm-sidecatrgory h2 span {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 12px;
+  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1344px;
+  overflow: hidden;
+  display: none;
+  margin: 14px 17px;
+}
+
+.sidecatrgory-fixed {
+  position: fixed;
+  top: 6px;
+  left: 50%;
+  width: 200px;
+  margin-left: -600px;
+}
+.sidecatrgory-fixed .gm-nav {
+  display: none;
+}
 
 .gm-nav {
   position: absolute;
@@ -905,15 +1014,15 @@ body {
   height: 30px;
   line-height: 30px;
 }
-.gm-nav .sidenav li:hover {
-  background: #fbfbfb;
-}
-.gm-nav .sidenav li:hover a {
-  color: #333;
-}
 .gm-nav .sidenav li a {
   display: inline-block;
   color: #fff;
+}
+.gm-nav .sidenav .active {
+  background: #fbfbfb;
+}
+.gm-nav .sidenav .active a {
+  color: #333;
 }
 .gm-nav .sidenav .first, .gm-nav .sidenav .last {
   height: 29px;
@@ -922,24 +1031,16 @@ body {
 .gm-nav .sidenav .first {
   margin-top: 1px;
 }
-.gm-nav .subnav {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 199px;
-  width: 1000px;
-  height: 448px;
-  background: #fff;
-  z-index: 99;
-}
 .gm-nav .subnav-content {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 199px;
   width: 999px;
-  height: 450px;
+  height: 448px;
+  background: #fff;
   border: 1px solid #818181;
+  z-index: 99;
 }
 .gm-nav .subnav-content:after {
   content: " ";

@@ -3,9 +3,6 @@
 a{
     color:#5e5e5e;
 }
-.lazyloading{
-    background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
-}
 #gm-floors {
     width: 1200px;
     margin: 0 auto;
@@ -66,6 +63,48 @@ a{
         }
         .active2{
             background:#50bfec;
+            a{
+                color:#fff;
+            }
+        }
+        .active3{
+            background:#7f86ec;
+            a{
+                color:#fff;
+            }
+        }
+        .active4{
+            background:#41ccb8;
+            a{
+                color:#fff;
+            }
+        }
+        .active5{
+            background:#e85cc5;
+            a{
+                color:#fff;
+            }
+        }
+        .active6{
+            background:#ff7689;
+            a{
+                color:#fff;
+            }
+        }
+        .active7{
+            background:#abce5b;
+            a{
+                color:#fff;
+            }
+        }
+        .active8{
+            background:#829daa;
+            a{
+                color:#fff;
+            }
+        }
+        .active9{
+            background:#c57ef1;
             a{
                 color:#fff;
             }
@@ -276,7 +315,7 @@ a{
             height: 102px;
             overflow: hidden;
             cursor: pointer;
-            z-index:99;
+            z-index:89;
             li{
                 float: left;
                 width: 122px;
@@ -364,6 +403,77 @@ a{
             &:hover .p_name{
                 color: #f5004b;
             }
+        }
+    }
+}
+.gm-floor-4,.gm-floor-6,.gm-floor-7,.gm-floor-9{
+    .floor-b-r{
+        width:1080px;
+    }
+    .floor-b-l{
+        width:120px;
+        img{
+            width:130px;
+            height:245px;
+        }
+    }
+    .channel{
+        position:absolute;
+        left:-10px;
+        bottom: 160px;
+        width:90px;
+        margin-left:10px;
+    }    
+    .w1080{
+        width:1080px;
+        .floor-slide{
+            width:479px;
+            .brand{
+                left:50px;
+            }
+        }
+    }
+    .main{
+        .tab-item{
+            width:1080px;
+            li{
+                width: 216px
+            }
+            a{
+                width:215px;
+            }
+            img{
+                margin-left:43px;
+            }
+        }
+    }
+}
+.gm-floor-5{
+    .channel{
+        position:absolute;
+        left:-10px;
+        bottom: 160px;
+        width:210px;
+        margin-left:10px;
+    }
+}
+.gm-floor-6{
+    .floor-imgs{
+        ul{
+            position: relative;
+        }
+        li:nth-of-type(2){
+            width:200px;
+            height:470px;
+            a,img{
+                width:199px;
+                height:469px;
+            }
+        }
+        li:nth-of-type(4){
+            position: absolute;
+            left:0;
+            top:235px;
         }
     }
 }

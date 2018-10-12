@@ -432,6 +432,19 @@
         width:100px;
         margin:35px 0 0 10px;
     }
+    // 搜索和导航固定在顶部的背景
+    .suspension-top{
+        display:$none;
+        position: fixed;
+        top:0;
+        left: 0;
+        height:50px;
+        width:100%;
+        background:#fff;
+        opacity: .9;
+        box-shadow:rgba(0,0,0,0.2) 0 1px 5px;
+        z-index: 90;
+    }
     // 搜索
     .gm-search{
         position: absolute;
@@ -441,6 +454,7 @@
         z-index:91;
         .gm-search-top{
             position: relative;
+            width:500px;
             height:30px;
             border: 1px solid #dd00a7;
             font-size:$font-size-14;
@@ -460,9 +474,16 @@
                 opacity:.55;
             }
         }
+        .search-top-fixed{
+            position: fixed;
+            top:8px;
+            left:50%;
+            margin-left:-215px;
+        }
     }
     .searchform{
         position: relative;
+        @include clearfix();
         // 输入框中的提示语
         label{
             position: absolute;
@@ -499,12 +520,12 @@
             color: #fff;
             letter-spacing:2px;
             cursor: pointer;
+            outline:none;
         }
     }
     // 搜索类型及下拉
     .search-type-dropdown{
         position: absolute;
-        float: left;
         top:0;
         left:0;
         width:62px;
@@ -512,6 +533,8 @@
         line-height: 30px;
         font-size:$font-size-14;
         color: #a5a5a5;
+        cursor: pointer;
+        z-index:50;
         // 搜索的类型
         .search-type{
             position: relative;
@@ -519,14 +542,13 @@
             height:30px;
             padding:0 10px;
             border-right: 1px solid #dd00a7;
-            cursor: pointer;
             i{
                 @include icons1(11px,7px,11px,9px,-145px,-1469px);
             }
         }
         // 搜索的类型的下拉列表
         .search-dropdown{
-            display: none;
+            display:$none;
             position: absolute;
             left:-1px;
             right:-1px;
@@ -543,12 +565,7 @@
             li:hover{
                 background:#eee;
             }
-        }
-        &:hover .search-dropdown{
-            display: block;
-        }
-        
-        
+        }     
     }
     // 热点关键字
     .gm-hot-keywords{
@@ -564,6 +581,58 @@
             margin-right:5px;
             @include a-changecolor();
         }
+    }
+    // 搜索结果
+    .gm-search-result{
+        display:$none;
+        position: absolute;
+        top:32px;
+        left:0;
+        .search-result{
+            width:408px;
+            line-height:$line-height-18;
+            border:1px solid #ccc;
+            border-bottom:0;
+            background:#fff;
+            a{
+                display:block;
+                line-height:30px;
+                padding-left:10px;
+                @include clearfix();
+            }
+            a:hover{
+                 background:#f8f8f8;
+            }
+            a:hover .result{
+                color:$font-color;
+            }
+            .result{
+                float: left;
+                color:#5e5e5e;
+            }
+            .result-qty{
+                float: right;
+                padding-right:10px;
+                color:#a5a5a5;
+            }
+        }
+        .result-close{
+            padding-left:10px;
+            line-height:30px;
+            border:1px solid #f2f2f2;
+            background:#fff;
+            cursor: pointer;
+            &:hover a{
+                color:$font-color;
+            }
+        }
+    }
+    // 搜索--固定在顶部的类名
+    .search-result-fixed{
+        position: fixed;
+        top:40px;
+        left:50%;
+        margin-left:-215px;
     }
     // 购物车
     .gm-shopcar{
@@ -712,7 +781,23 @@
             line-height:40px;
             color:#585858;
         }
+        span{
+            @include icons1(18px,12px,0,0,0,-1344px);
+            display:$none;
+            margin: 14px 17px;
+        }
     } 
+}
+// 导航固定在顶部的类名
+.sidecatrgory-fixed{
+    position: fixed;
+    top: 6px;
+    left: 50%;
+    width: 200px;
+    margin-left: -600px;   
+    .gm-nav{
+        display: $none;
+    }
 }
 // 侧边导航
 .gm-nav{
@@ -749,15 +834,15 @@
         li{
             height:30px;
             line-height:30px;
-            &:hover{
-                background:#fbfbfb;
-            }
-            &:hover a{
-                color:#333;
-            }
             a{
                 display: inline-block;
                 color:#fff;
+            }
+        }
+        .active{
+            background:#fbfbfb;
+            a{
+                color:#333;
             }
         }
         // 第一和最后一个li
@@ -770,25 +855,17 @@
         } 
     } 
     // 二级导航 
-    .subnav{
-        display:none;
-        position: absolute;
-        top:0;
-        left:199px;
-        width: 1000px;
-        height:448px;
-        background:#fff;
-        z-index:99;
-    }
     .subnav-content{
         display:$none;
         position: absolute;
         top:0;
-        left:0;
-        @include clearfix();
+        left:199px;
         width:999px;
-        height:450px;
+        height:448px;
+        background:#fff;
         border:1px solid #818181;
+        z-index:99;
+        @include clearfix();
     }
     // 二级导航左部
     .subnav-left{

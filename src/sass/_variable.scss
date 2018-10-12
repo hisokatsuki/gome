@@ -59,6 +59,10 @@ body{
     -webkit-text-stroke-width:0.2px;
     -moz-osx-font-smoothing:grayscale;
 }
+// 图片未加载出来时显示背景图
+.lazyloading{
+    background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
+}
 // 封装小图标的函数
 @mixin icons1($width:12px,$height:13px,$top:1px,$right:-16px,$position-left:-145px,$position-top:-1496px,$url:"https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") {
     display:block;

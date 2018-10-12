@@ -43,6 +43,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.lazyloading {
+  background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
+}
+
 #gome-help {
   width: 1200px;
   margin: 30px auto 0;

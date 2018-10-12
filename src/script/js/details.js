@@ -1,1 +1,1 @@
-require(['details_effect']);
+require(['details_effect','header']);
