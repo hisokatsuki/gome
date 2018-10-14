@@ -1,6 +1,6 @@
 define(['../thirdplugins/jquery'], function () {
     return {
-        // 搜索数据
+        // 1.搜索数据
         search_data:!function(){
             var $header=$('#header');
             // input搜索事件
@@ -93,33 +93,57 @@ define(['../thirdplugins/jquery'], function () {
         }(),
         // 4.搜索和导航顶部悬浮
         search_nav_effect:!function(){
-            var $header=$('#header');
             $(window).on('scroll',function(){
+                var $gm_sidecatrgory=$('.gm-sidecatrgory');
+                var $gm_search_top=$('.gm-search-top');
+                var $suspension_top=$('.suspension-top');
+                var $gm_search_result=$('.gm-search-result');
+                var $gm_nav=$('.gm-nav');
                 if($('html,body').scrollTop()>722){
-                    $('.gm-nav').hide();
-                    var $gm_sidecatrgory=$('.gm-sidecatrgory');
-                    var $gm_search_top=$('.gm-search-top');
-                    var $suspension_top=$('.suspension-top');
-                    var $gm_search_result=$('.gm-search-result');
+                    $gm_nav.hide();
                     $suspension_top.show();
                     $gm_search_top.addClass('search-top-fixed');
                     $gm_sidecatrgory.addClass('sidecatrgory-fixed').find('h2 span').show();
                     $gm_search_result.addClass('search-result-fixed');
                     $gm_sidecatrgory.on('mouseover',function(){
-                        $('.gm-nav').show();
+                        $gm_nav.show();
                     })
                     $gm_sidecatrgory.on('mouseout',function(){
-                        $('.gm-nav').hide();
+                        $gm_nav.hide();
                     });
                 }else{
-                        $header.find('.suspension-top').hide();
-                        $header.find('.gm-search-top').removeClass('search-top-fixed');
-                        $header.find('.gm-sidecatrgory').removeClass('sidecatrgory-fixed').find('h2 span').hide();
-                        $header.find('.gm-search-result').removeClass('search-result-fixed');
-                        $header.find('.gm-sidecatrgory').off();
-                        $('.gm-nav').show();
-                    }
+                    $suspension_top.hide();
+                    $gm_search_top.removeClass('search-top-fixed');
+                    $gm_sidecatrgory.removeClass('sidecatrgory-fixed').find('h2 span').hide();
+                    $gm_search_result.removeClass('search-result-fixed');
+                    $gm_sidecatrgory.off();
+                    $gm_nav.show();
+                }
             });
+        }(),
+        // 5.导航栏右边的滚动广告
+        scrollimgs_effect:!function(){
+            var $header=$('#header');
+            var $num=1;
+            $header.on('click','.btn-up',function(){
+                $num++;
+                console.log($num);            
+                if($num>3){
+                    $num=3;
+                }
+                $('.scrollimgs ul').animate({top:-40*($num-1)})
+            });
+            $header.on('click','.btn-down',function(){
+                if($num==1){
+                    $('.scrollimgs ul').css({top:-80})
+                }
+                $num--;
+                console.log($num);
+                if($num<0){
+                    $num=2;
+                }
+                $('.scrollimgs ul').animate({top:40*($num+1)})
+            })
         }()
     }
 })

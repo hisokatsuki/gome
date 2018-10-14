@@ -1,7 +1,7 @@
-define(['details_data','../thirdplugins/jquery'],function(){
-    return {
-        // 放大镜效果
-        magnifier:!function(){
+define(['details_data','config','tools'],function(data,jquery,tools){
+    require(['jquery','jquerycookie','jqueryvalidate'],function(){
+        // 1.放大镜效果
+        !function(){
             var $spic=$('#spic');
             var $sf=$('#sf');
             var $bf=$('#bf');
@@ -79,6 +79,88 @@ define(['details_data','../thirdplugins/jquery'],function(){
                 $(this).find('a').addClass('select');
                 $(this).siblings('.prd-img-item').find('a').removeClass('select');
             })
+        }(),
+        // 2.加减数量，input输入数量
+        !function(){
+            var $qty=$('.qty');
+            var $add=$('.add');
+            var $reduce=$('.reduce');
+            var $value=1;
+            // 输入数量
+            $qty.on('input',function(){
+                $value=parseInt($qty.val());
+                tools.reg_input($qty,$value);
+                if($value>1){
+                    $reduce.removeClass('disab');
+                }else{
+                    $reduce.addClass('disab');
+                }
+                if($value<99){
+                    $add.removeClass('disab');
+                }else{
+                    $add.addClass('disab');
+                }
+            });
+            // 加数量
+            $add.on('click',function(){
+                $value++;
+                if($value<99){
+                    $add.removeClass('disab');
+                    $reduce.removeClass('disab');
+                    $qty.val($value);
+                }else{
+                    $qty.val(99);
+                    $add.addClass('disab');
+                }
+            });
+            // 减数量
+            $reduce.on('click',function(){
+                if($value>1){
+                    $value--;
+                    $qty.val($value);
+                    if($value==1){
+                    $reduce.addClass('disab');
+                    }
+                }
+            });
+        }(),
+        // 3.加入购物车，数据存入cookie
+        !function(){
+            var $sidarr=[];
+            var $qtyarr=[];
+            var $addcart=$('#addcart');
+            var arr=[1,2,3];
+            // 获取cookie
+            function getcookie(){
+                if($.cookie('cartsid') && $.cookie('cartqty')){
+                    $sidarr=$.cookie('cartsid').split(','); //从cookie中获取过来的是字符串,所以需要转为数组
+                    $qtyarr=$.cookie('cartqty').split(',');
+                }
+            }
+            $addcart.on('click',function(){
+                var $sid=location.search.substring(5);
+                getcookie();
+                if($.inArray($sid,$sidarr)!=-1){ //存在cookie
+                    if($.cookie('cartqty')==null){ //如果数量为null
+                        var $value=parseInt($('.qty').val());
+                        $qtyarr[$.inArray($sid,$sidarr)]=$value; //sid和qty是一一对应的，通过sid的索引位置找到qty索引位置、
+                        $.cookie('cartqty',$qtyarr.toString(),{expires:10});
+                        $sidarr[$.inArray($sid,$sidarr)]=$sid;
+                        $.cookie('cartsid',$sidarr.toString(),{expires:10});
+                    }else{
+                        //数量不为null，数组的数量加上input的数量
+                        var $value=parseInt($qtyarr[$.inArray($sid,$sidarr)])+parseInt($('.qty').val()); 
+                        $qtyarr[$.inArray($sid,$sidarr)]=$value;
+                        $.cookie('cartqty',$qtyarr,{expires:10});
+                    }
+                }else{ //不存在cookie，将sid和qty追加到cookie中
+                    $sidarr.push($sid);
+                    $.cookie('cartsid',$sidarr,{expires:10});
+                    $qtyarr.push($('.qty').val());
+                    $.cookie('cartqty',$qtyarr,{expires:10});
+                }
+                $('.add-success').animate({opacity:1},1000).animate({opacity:0},1000);
+            });
         }()
-    }
+    })
 })

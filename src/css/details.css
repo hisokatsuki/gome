@@ -1239,6 +1239,11 @@ body {
   width: 170px;
   height: 228px;
 }
+.rightscroll .scrollimgs ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .rightscroll .scrollbtn {
   position: absolute;
   float: left;
@@ -1248,28 +1253,37 @@ body {
   height: 20px;
 }
 .rightscroll .scrollbtn a {
+  position: relative;
   display: block;
-  height: 5px;
+  height: 10px;
+  margin-top: 5px;
+}
+.rightscroll .scrollbtn a:hover {
+  border: 1px solid #e4e4e4;
+  background-color: #efefef;
 }
 .rightscroll .scrollbtn .btn-up {
-  margin-bottom: 3px;
+  margin-bottom: 8px;
 }
 .rightscroll .scrollbtn .btn-up i {
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 1px;
   width: 9px;
   height: 5px;
-  vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1348px;
-}
-.rightscroll .scrollbtn .btn-down {
-  padding-top: 5px;
+  overflow: hidden;
 }
 .rightscroll .scrollbtn .btn-down i {
-  display: inline-block;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 1px;
   width: 9px;
   height: 5px;
-  vertical-align: middle;
   background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -20px -1353px;
+  overflow: hidden;
 }
 
 #gome-help {
@@ -2647,6 +2661,21 @@ a {
   font-size: 18px;
   color: #fff;
   background-color: #e3101e;
+}
+.prd-btn .add-success {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  height: 50px;
+  padding: 0 20px;
+  margin-left: -50px;
+  margin-top: -25px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  background: #000;
+  opacity: 0;
 }
 .prd-btn .mobile-btn {
   float: left;

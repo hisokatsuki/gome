@@ -105,6 +105,10 @@
         float: left;
     }
 }
+// cart-title
+.cart-title{
+    display:$none;
+}
 .cart-header{
     width: 988px;
     height: 44px;
@@ -145,7 +149,7 @@
 }
 // cart-list
 .cart-list{
-
+    display:$none;
     .cart-shop-header{
         height: 38px;
         margin-top: 10px;
@@ -202,6 +206,10 @@
                 border: 1px solid #e6e6e6;
                 overflow: hidden;
             }
+            img{
+                width:80px;
+                height:80px;
+            }
         }
         .fl{
             float: left;
@@ -255,23 +263,23 @@
                 border: 1px solid #ccc;
             }
             .count-input{
+                display: block;
+                width: 100%;
                 height: 20px;
                 margin: 0;
                 padding: 0;
-                overflow: hidden;
-                border: 1px solid #ccc;
-                border-right: none;
-                border-left: none;
-                width: 100%;
-                display: block;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
                 text-align: center;
                 background: #fff;
+                overflow: hidden;
                 input{
+                    float: left;
                     width: 100%;
                     height: 20px;
                     margin: 0;
                     padding: 0;
-                    line-height:18px;
+                    line-height:20px;
                     border:0;
                     text-align: center;
                     overflow: hidden;
@@ -319,6 +327,7 @@
 }
 // cart-bottom
 .cart-bottom{
+    display:$none;
     height:60px;
     margin-top: 20px;
     background:#f3f3f3;
@@ -398,6 +407,89 @@
                 @include icons3(12px,13px,-648px,-42px,"https://css.gomein.net.cn/gmpro/2.0.0/cart/2.5.8/css/i/sprite.png?v=0.4.5");
                 margin-left:6px;
                 
+            }
+        }
+    }
+}
+// 推荐商品
+#gm-recommend-prd{
+    width:$width990;
+    height: 251px;
+    margin:0 auto;
+    margin-top:20px;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+    .recommend-prd{
+        padding: 20px 42px;
+        height: 202px;
+        .container{
+            position: relative;
+            height:202px;
+            margin-top: 5px;
+            overflow: hidden;
+            @include clearfix();
+        }
+        .container-item{
+            position: relative;
+            float: left;
+            width: 150px;
+            margin: 0 15px;
+            text-align: left;
+        }
+        .item-image{
+            position: relative;
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            line-height: 100px;
+            overflow: hidden;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+        .item-title{
+            display:block;
+            height: 38px;
+            margin-top: 14px;
+            line-height:$line-height-18;
+            color:#333;
+            overflow: hidden;
+        }
+        .item-price{
+            height: 18px;
+            margin-bottom: 6px;
+            margin-left: 46px;
+            line-height:$line-height-18;
+            color: #d70010;
+            font-weight: 700;
+            font-family: "微软雅黑";
+        }
+        .add-success{
+            display:$none;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width:100px;
+            height:30px;
+            margin-left:-50px;
+            margin-top:-65px;
+            text-align: center;
+            line-height:30px;
+            color:#fff;
+            background:rgba(0,0,0,.5);
+        }
+        .item-btn{
+            display: inline-block;
+            height: 24px;
+            padding: 0 13px;
+            margin-left: 25px;
+            line-height: 24px;
+            color: #333;
+            border: 1px solid #e6e6e6;
+            &:hover{
+                border-color:#ccc;
             }
         }
     }

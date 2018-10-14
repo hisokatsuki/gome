@@ -1037,6 +1037,11 @@
         float: left;
         width:170px;
         height:228px;
+        ul{
+            position: absolute;
+            top:0;
+            left:0;
+        }
     }
     // 按钮
     .scrollbtn{
@@ -1047,21 +1052,26 @@
         width:13px;
         height:20px;
         a{
+            position: relative;
             display:block;
-            height:5px;
+            height:10px;
+            margin-top:5px;
+            &:hover{
+                border:1px solid #e4e4e4;
+                background-color: #efefef;
+            }
         }
         // 上
         .btn-up{
-            margin-bottom:3px;
+            margin-bottom:8px;
             i{
-                @include icons3(9px,5px,-20px,-1348px);
+                @include icons1(9px,5px,3px,1px,-20px,-1348px);
             }
         }
         // 下
         .btn-down{
-            padding-top:5px;
             i{
-                @include icons3(9px,5px,-20px,-1353px);
+                @include icons1(9px,5px,3px,1px,-20px,-1353px);
             }
         }
     }

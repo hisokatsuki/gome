@@ -6,7 +6,6 @@ define(['config'],function(){
         }();
         // 2.登录
         !function(){
-            var bstop=true;
             var $errtip=$('.err-tip p');
             var $name=$('.name input');
             var $pass=$('.pass input');

@@ -78,7 +78,7 @@ define(['../thirdplugins/jquery','tools'], function (jquery,tools) {
             // 4.2倒计时
             var $time = '';
             function countDown() {
-                var $future = new Date('2018-10-12 20:36:00');
+                var $future = new Date('2018-12-30 00:00:00');
                 var $nowtime = new Date();
                 $time = ($future - $nowtime) / 1000;
                 var $h = parseInt($time % 86400 / 3600);
@@ -100,102 +100,30 @@ define(['../thirdplugins/jquery','tools'], function (jquery,tools) {
         }(),
         // 5.楼层--幻灯片
         floor_slide:!function(){
-            var $floorslide1=$('.gm-floor-1 .floor-slide');
-            var $floor_slide1=$('.gm-floor-1 .floor-slide .slide li');
-            var $prevbtn1=$('.gm-floor-1 .slide-btn .slide-prev');
-            var $nextbtn1=$('.gm-floor-1 .slide-btn .slide-next');
-            var $btnli1=$('.gm-floor-1 .floor-slide ol li');
-            var $floorslide2=$('.gm-floor-2 .floor-slide');
-            var $floor_slide2=$('.gm-floor-2 .floor-slide .slide li');
-            var $prevbtn2=$('.gm-floor-2 .slide-btn .slide-prev');
-            var $nextbtn2=$('.gm-floor-2 .slide-btn .slide-next');
-            var $btnli2=$('.gm-floor-2 .floor-slide ol li');
-            var $floorslide3=$('.gm-floor-3 .floor-slide');
-            var $floor_slide3=$('.gm-floor-3 .floor-slide .slide li');
-            var $prevbtn3=$('.gm-floor-3 .slide-btn .slide-prev');
-            var $nextbtn3=$('.gm-floor-3 .slide-btn .slide-next');
-            var $btnli3=$('.gm-floor-3 .floor-slide ol li');
-            var $floorslide4=$('.gm-floor-4 .floor-slide');
-            var $floor_slide4=$('.gm-floor-4 .floor-slide .slide li');
-            var $prevbtn4=$('.gm-floor-4 .slide-btn .slide-prev');
-            var $nextbtn4=$('.gm-floor-4 .slide-btn .slide-next');
-            var $btnli4=$('.gm-floor-4 .floor-slide ol li');
-            var $floorslide5=$('.gm-floor-5 .floor-slide');
-            var $floor_slide5=$('.gm-floor-5 .floor-slide .slide li');
-            var $prevbtn5=$('.gm-floor-5 .slide-btn .slide-prev');
-            var $nextbtn5=$('.gm-floor-5 .slide-btn .slide-next');
-            var $btnli5=$('.gm-floor-5 .floor-slide ol li');
-            var $floorslide6=$('.gm-floor-6 .floor-slide');
-            var $floor_slide6=$('.gm-floor-6 .floor-slide .slide li');
-            var $prevbtn6=$('.gm-floor-6 .slide-btn .slide-prev');
-            var $nextbtn6=$('.gm-floor-6 .slide-btn .slide-next');
-            var $btnli6=$('.gm-floor-6 .floor-slide ol li');
-            var $floorslide7=$('.gm-floor-7 .floor-slide');
-            var $floor_slide7=$('.gm-floor-7 .floor-slide .slide li');
-            var $prevbtn7=$('.gm-floor-7 .slide-btn .slide-prev');
-            var $nextbtn7=$('.gm-floor-7 .slide-btn .slide-next');
-            var $btnli7=$('.gm-floor-7 .floor-slide ol li');
-            var $floorslide8=$('.gm-floor-8 .floor-slide');
-            var $floor_slide8=$('.gm-floor-8 .floor-slide .slide li');
-            var $prevbtn8=$('.gm-floor-8 .slide-btn .slide-prev');
-            var $nextbtn8=$('.gm-floor-8 .slide-btn .slide-next');
-            var $btnli8=$('.gm-floor-8 .floor-slide ol li');
-            var $floorslide9=$('.gm-floor-9 .floor-slide');
-            var $floor_slide9=$('.gm-floor-9 .floor-slide .slide li');
-            var $prevbtn9=$('.gm-floor-9 .slide-btn .slide-prev');
-            var $nextbtn9=$('.gm-floor-9 .slide-btn .slide-next');
-            var $btnli9=$('.gm-floor-9 .floor-slide ol li');
+            var $gm_floor=$('.gm-floor');
             var $num=0;
-            tools.tab_slide($btnli1,$floorslide1,$prevbtn1,$nextbtn1,$floor_slide1,'li','cur',$floor_slide1.size(),$num);
-            tools.tab_slide($btnli2,$floorslide2,$prevbtn2,$nextbtn2,$floor_slide2,'li','cur',$floor_slide2.size(),$num);
-            tools.tab_slide($btnli3,$floorslide3,$prevbtn3,$nextbtn3,$floor_slide3,'li','cur',$floor_slide3.size(),$num);
-            tools.tab_slide($btnli4,$floorslide4,$prevbtn4,$nextbtn4,$floor_slide4,'li','cur',$floor_slide4.size(),$num);
-            tools.tab_slide($btnli5,$floorslide5,$prevbtn5,$nextbtn5,$floor_slide5,'li','cur',$floor_slide5.size(),$num);
-            tools.tab_slide($btnli6,$floorslide6,$prevbtn6,$nextbtn6,$floor_slide6,'li','cur',$floor_slide6.size(),$num);
-            tools.tab_slide($btnli7,$floorslide7,$prevbtn7,$nextbtn7,$floor_slide7,'li','cur',$floor_slide7.size(),$num);
-            tools.tab_slide($btnli8,$floorslide8,$prevbtn8,$nextbtn8,$floor_slide8,'li','cur',$floor_slide8.size(),$num);
-            tools.tab_slide($btnli9,$floorslide9,$prevbtn9,$nextbtn9,$floor_slide9,'li','cur',$floor_slide9.size(),$num);
+            $.each($gm_floor,function(index,ele){
+                var $floorslide=$(ele).find('.floor-slide');
+                var $floor_slide=$(ele).find('.floor-slide .slide li');
+                var $prevbtn=$(ele).find('.slide-btn .slide-prev');
+                var $nextbtn=$(ele).find('.slide-btn .slide-next');
+                var $btnli=$(ele).find('.floor-slide ol li');
+                tools.tab_slide($btnli,$floorslide,$prevbtn,$nextbtn,$floor_slide,'li','cur',$floor_slide.size(),$num);   
+            })
         }(),
         // 6.九个楼层--tab切换
         floor_tab:!function(){
-            var $tab_title1=$('.gm-floor-1 .gm-floor-t .tab li');
-            var $mainlist1=$('.gm-floor-1 .floor-b-r .main');
-            var $tab_btn1=$('.gm-floor-1 .floor-b-r .tab-next');
-            var $tab_title2=$('.gm-floor-2 .gm-floor-t .tab li');
-            var $mainlist2=$('.gm-floor-2 .floor-b-r .main');
-            var $tab_btn2=$('.gm-floor-2 .floor-b-r .tab-next');
-            var $tab_title3=$('.gm-floor-3 .gm-floor-t .tab li');
-            var $mainlist3=$('.gm-floor-3 .floor-b-r .main');
-            var $tab_btn3=$('.gm-floor-3 .floor-b-r .tab-next');
-            var $tab_title4=$('.gm-floor-4 .gm-floor-t .tab li');
-            var $mainlist4=$('.gm-floor-4 .floor-b-r .main');
-            var $tab_btn4=$('.gm-floor-4 .floor-b-r .tab-next');
-            var $tab_title5=$('.gm-floor-5 .gm-floor-t .tab li');
-            var $mainlist5=$('.gm-floor-5 .floor-b-r .main');
-            var $tab_btn5=$('.gm-floor-5 .floor-b-r .tab-next');
-            var $tab_title6=$('.gm-floor-6 .gm-floor-t .tab li');
-            var $mainlist6=$('.gm-floor-6 .floor-b-r .main');
-            var $tab_btn6=$('.gm-floor-6 .floor-b-r .tab-next');
-            var $tab_title7=$('.gm-floor-7 .gm-floor-t .tab li');
-            var $mainlist7=$('.gm-floor-7 .floor-b-r .main');
-            var $tab_btn7=$('.gm-floor-7 .floor-b-r .tab-next');
-            var $tab_title8=$('.gm-floor-8 .gm-floor-t .tab li');
-            var $mainlist8=$('.gm-floor-8 .floor-b-r .main');
-            var $tab_btn8=$('.gm-floor-8 .floor-b-r .tab-next');
-            var $tab_title9=$('.gm-floor-9 .gm-floor-t .tab li');
-            var $mainlist9=$('.gm-floor-9 .floor-b-r .main');
-            var $tab_btn9=$('.gm-floor-9 .floor-b-r .tab-next');
             var $num=0;
+            var $gm_floor=$('.gm-floor');
             // 6.1滑过切换和点击切换
-            tools.floortab_switch($tab_title1,$tab_btn1,$mainlist1,'li','.main',$tab_title1.size(),'active1',$num);
-            tools.floortab_switch($tab_title2,$tab_btn2,$mainlist2,'li','.main',$tab_title2.size(),'active2',$num);
-            tools.floortab_switch($tab_title3,$tab_btn3,$mainlist3,'li','.main',$tab_title3.size(),'active3',$num);
-            tools.floortab_switch($tab_title4,$tab_btn4,$mainlist4,'li','.main',$tab_title4.size(),'active4',$num);
-            tools.floortab_switch($tab_title5,$tab_btn5,$mainlist5,'li','.main',$tab_title5.size(),'active5',$num);
-            tools.floortab_switch($tab_title6,$tab_btn6,$mainlist6,'li','.main',$tab_title6.size(),'active6',$num);
-            tools.floortab_switch($tab_title7,$tab_btn7,$mainlist7,'li','.main',$tab_title7.size(),'active7',$num);
-            tools.floortab_switch($tab_title8,$tab_btn8,$mainlist8,'li','.main',$tab_title8.size(),'active8',$num);
-            tools.floortab_switch($tab_title9,$tab_btn9,$mainlist9,'li','.main',$tab_title9.size(),'active9',$num);
+            $.each($gm_floor,function(index,ele){
+                var $tab_title=$(ele).find('.gm-floor-t .tab li');
+                var $mainlist=$(ele).find('.floor-b-r .main');
+                var $tab_btn=$(ele).find('.floor-b-r .tab-next');
+                var classname='active'+(index+1);
+                tools.floortab_switch($tab_title,$tab_btn,$mainlist,'li','.main',$tab_title.size(),classname,$num);
+    
+            })
         }(),
         // 7.楼梯效果
         stairs_effect:!function(){
