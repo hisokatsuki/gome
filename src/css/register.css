@@ -1,307 +1,247 @@
 @charset "UTF-8";
 * {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 em, i {
-  font-style: normal;
-}
+  font-style: normal; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 img {
-  display: block;
-}
+  display: block; }
 
 body {
   font-size: 12px;
   font-family: Arial, "Microsoft Yahei";
   line-height: 24px;
-  color: #888;
-}
+  color: #888; }
 
 @font-face {
   font-family: iconfont;
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
-}
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg"); }
+
 .gm-icon {
   font-family: 'iconfont' !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
+  -moz-osx-font-smoothing: grayscale; }
 
 .lazyloading {
-  background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat;
-}
+  background: url("https://app.gomein.net.cn/gmlib/ui/loading/3.0.0/loading-sm.png") 50% 50% no-repeat; }
 
 #gome-help {
   width: 1200px;
-  margin: 30px auto 0;
-}
-#gome-help ul {
-  background: #f5f5f5;
-  padding: 15px 0;
-}
-#gome-help ul:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gome-help ul li {
-  position: relative;
-  float: left;
-  width: 33%;
-  text-align: center;
-}
-#gome-help ul i {
-  display: inline-block;
-  width: 40px;
-  height: 42px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1469px;
-  margin-right: 10px;
-}
-#gome-help ul a {
-  font-size: 18px;
-  line-height: 40px;
-  color: #404040;
-}
-#gome-help ul a:hover {
-  color: #f5004b;
-}
-#gome-help ul a:nth-of-type(1) {
-  font-weight: bold;
-}
-#gome-help ul span {
-  margin: 0 16px;
-  display: inline-block;
-  width: 3px;
-  height: 10px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -120px -1489px;
-}
-#gome-help .gm-help-box {
-  width: 110%;
-  margin-left: -5%;
-}
-#gome-help .gm-help-box:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gome-help .gm-help-box dl {
-  float: left;
-  width: 9%;
-  padding: 15px 0 0 125px;
-}
-#gome-help .gm-help-box dt {
-  font-size: 16px;
-  color: #5e5e5e;
-  line-height: 25px;
-}
-#gome-help .gm-help-box dd {
-  line-height: 20px;
-}
-#gome-help .gm-help-box a {
-  color: #a5a5a5;
-}
-#gome-help .gm-help-box a:hover {
-  color: #f5004b;
-}
+  margin: 30px auto 0; }
+  #gome-help ul {
+    background: #f5f5f5;
+    padding: 15px 0; }
+    #gome-help ul:after {
+      content: " ";
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+    #gome-help ul li {
+      position: relative;
+      float: left;
+      width: 33%;
+      text-align: center; }
+    #gome-help ul i {
+      display: inline-block;
+      width: 40px;
+      height: 42px;
+      vertical-align: middle;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1469px;
+      margin-right: 10px; }
+    #gome-help ul a {
+      font-size: 18px;
+      line-height: 40px;
+      color: #404040; }
+      #gome-help ul a:hover {
+        color: #f5004b; }
+    #gome-help ul a:nth-of-type(1) {
+      font-weight: bold; }
+    #gome-help ul span {
+      margin: 0 16px;
+      display: inline-block;
+      width: 3px;
+      height: 10px;
+      vertical-align: middle;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -120px -1489px; }
+  #gome-help .gm-help-box {
+    width: 110%;
+    margin-left: -5%; }
+    #gome-help .gm-help-box:after {
+      content: " ";
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+    #gome-help .gm-help-box dl {
+      float: left;
+      width: 9%;
+      padding: 15px 0 0 125px; }
+    #gome-help .gm-help-box dt {
+      font-size: 16px;
+      color: #5e5e5e;
+      line-height: 25px; }
+    #gome-help .gm-help-box dd {
+      line-height: 20px; }
+    #gome-help .gm-help-box a {
+      color: #a5a5a5; }
+      #gome-help .gm-help-box a:hover {
+        color: #f5004b; }
 
 #gome-footer {
   margin-top: 15px;
   border-top: 1px solid #dd00a7;
-  background: #f7f7f7;
-}
-#gome-footer .gm-footer-box {
-  position: relative;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0 0;
-  background: #f7f7f7;
-}
-#gome-footer .gm-footer-box ul:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gome-footer .gm-footer-box li {
-  float: left;
-  padding-right: 13px;
-}
-#gome-footer .gm-footer-box li:nth-of-type(5), #gome-footer .gm-footer-box li:nth-of-type(12) {
-  color: #ccc;
-}
-#gome-footer .gm-footer-box a {
-  color: #666;
-}
-#gome-footer .gm-footer-box a:hover {
-  color: #f5004b;
-}
-#gome-footer .gm-footer-box span {
-  display: inline-block;
-  padding: 0 50px 40px 0;
-}
-#gome-footer .gm-footer-box span:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-#gome-footer .gm-footer-box span p {
-  float: left;
-  margin-left: 10px;
-}
-#gome-footer .gm-footer-box span em {
-  display: block;
-  color: #333;
-  font-size: 16px;
-  line-height: 25px;
-}
-#gome-footer .gm-footer-box span i {
-  float: left;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -135px;
-}
-#gome-footer .gm-footer-box span:nth-of-type(2) i {
-  background-position: -45px -135px;
-}
-#gome-footer .qrcode-section {
-  position: absolute;
-  top: 15px;
-  right: -10px;
-}
-#gome-footer .qrcode-section .code-sm {
-  position: relative;
-  width: 50px;
-}
-#gome-footer .qrcode-section .code-sm:hover div {
-  display: block;
-}
-#gome-footer .qrcode-section em {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  margin: 0 10px;
-}
-#gome-footer .qrcode-section .wx i {
-  display: inline-block;
-  width: 40px;
-  height: 25px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -105px -135px;
-}
-#gome-footer .qrcode-section .web i {
-  display: inline-block;
-  width: 40px;
-  height: 25px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -185px -135px;
-}
-#gome-footer .qrcode-section .code-sm .icon-triangle {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 68px;
-  width: 13px;
-  height: 8px;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -67px -127px;
-  overflow: hidden;
-}
-#gome-footer .qrcode-section .code-sm div {
-  position: absolute;
-  left: -50px;
-  bottom: 54px;
-  z-index: 99;
-  padding: 10px;
-  border: 1px solid #eee;
-  display: none;
-  background: #fff;
-}
-#gome-footer .qrcode-section .app {
-  width: 110px;
-}
-#gome-footer .qrcode-section a {
-  display: inline-block;
-}
-#gome-footer .qrcode-section p {
-  line-height: 22px;
-}
-#gome-footer .gm-footer-credit {
-  border-top: 1px solid #e6e6e6;
-  margin-top: 5px;
-  padding: 10px 0 25px;
-  overflow: hidden;
-}
-#gome-footer .gm-footer-credit b {
-  float: left;
-  display: block;
-  width: 60px;
-  padding: 0 30px 0 5px;
-  color: #999;
-  line-height: 18px;
-  font-weight: normal;
-}
-#gome-footer .gm-footer-credit a:nth-of-type(3) b, #gome-footer .gm-footer-credit a:nth-of-type(5) b {
-  padding-top: 9px;
-}
-#gome-footer .gm-footer-credit a:nth-of-type(4) b {
-  width: 50px;
-}
-#gome-footer .gm-footer-credit a:nth-of-type(6) b {
-  width: 110px;
-}
-#gome-footer .gm-footer-credit i {
-  float: left;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -180px;
-}
-#gome-footer .gm-footer-credit .f-icon1 {
-  background-position: -35px -180px;
-}
-#gome-footer .gm-footer-credit .f-icon2 {
-  background-position: -70px -180px;
-}
-#gome-footer .gm-footer-credit .f-icon3 {
-  background-position: -105px -180px;
-}
-#gome-footer .gm-footer-credit .f-icon4 {
-  background-position: -140px -180px;
-}
-#gome-footer .gm-footer-credit .f-icon5 {
-  background-position: -175px -180px;
-}
+  background: #f7f7f7; }
+  #gome-footer .gm-footer-box {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+    background: #f7f7f7; }
+    #gome-footer .gm-footer-box ul:after {
+      content: " ";
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden; }
+    #gome-footer .gm-footer-box li {
+      float: left;
+      padding-right: 13px; }
+    #gome-footer .gm-footer-box li:nth-of-type(5), #gome-footer .gm-footer-box li:nth-of-type(12) {
+      color: #ccc; }
+    #gome-footer .gm-footer-box a {
+      color: #666; }
+      #gome-footer .gm-footer-box a:hover {
+        color: #f5004b; }
+    #gome-footer .gm-footer-box span {
+      display: inline-block;
+      padding: 0 50px 40px 0; }
+      #gome-footer .gm-footer-box span:after {
+        content: " ";
+        display: block;
+        clear: both;
+        height: 0;
+        overflow: hidden;
+        visibility: hidden; }
+      #gome-footer .gm-footer-box span p {
+        float: left;
+        margin-left: 10px; }
+      #gome-footer .gm-footer-box span em {
+        display: block;
+        color: #333;
+        font-size: 16px;
+        line-height: 25px; }
+      #gome-footer .gm-footer-box span i {
+        float: left;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        vertical-align: middle;
+        background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -135px; }
+    #gome-footer .gm-footer-box span:nth-of-type(2) i {
+      background-position: -45px -135px; }
+  #gome-footer .qrcode-section {
+    position: absolute;
+    top: 15px;
+    right: -10px; }
+    #gome-footer .qrcode-section .code-sm {
+      position: relative;
+      width: 50px; }
+      #gome-footer .qrcode-section .code-sm:hover div {
+        display: block; }
+    #gome-footer .qrcode-section em {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      margin: 0 10px; }
+    #gome-footer .qrcode-section .wx i {
+      display: inline-block;
+      width: 40px;
+      height: 25px;
+      vertical-align: middle;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -105px -135px; }
+    #gome-footer .qrcode-section .web i {
+      display: inline-block;
+      width: 40px;
+      height: 25px;
+      vertical-align: middle;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -185px -135px; }
+    #gome-footer .qrcode-section .code-sm .icon-triangle {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 68px;
+      width: 13px;
+      height: 8px;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -67px -127px;
+      overflow: hidden; }
+    #gome-footer .qrcode-section .code-sm div {
+      position: absolute;
+      left: -50px;
+      bottom: 54px;
+      z-index: 99;
+      padding: 10px;
+      border: 1px solid #eee;
+      display: none;
+      background: #fff; }
+    #gome-footer .qrcode-section .app {
+      width: 110px; }
+    #gome-footer .qrcode-section a {
+      display: inline-block; }
+    #gome-footer .qrcode-section p {
+      line-height: 22px; }
+  #gome-footer .gm-footer-credit {
+    border-top: 1px solid #e6e6e6;
+    margin-top: 5px;
+    padding: 10px 0 25px;
+    overflow: hidden; }
+    #gome-footer .gm-footer-credit b {
+      float: left;
+      display: block;
+      width: 60px;
+      padding: 0 30px 0 5px;
+      color: #999;
+      line-height: 18px;
+      font-weight: normal; }
+    #gome-footer .gm-footer-credit a:nth-of-type(3) b, #gome-footer .gm-footer-credit a:nth-of-type(5) b {
+      padding-top: 9px; }
+    #gome-footer .gm-footer-credit a:nth-of-type(4) b {
+      width: 50px; }
+    #gome-footer .gm-footer-credit a:nth-of-type(6) b {
+      width: 110px; }
+    #gome-footer .gm-footer-credit i {
+      float: left;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      vertical-align: middle;
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -180px; }
+    #gome-footer .gm-footer-credit .f-icon1 {
+      background-position: -35px -180px; }
+    #gome-footer .gm-footer-credit .f-icon2 {
+      background-position: -70px -180px; }
+    #gome-footer .gm-footer-credit .f-icon3 {
+      background-position: -105px -180px; }
+    #gome-footer .gm-footer-credit .f-icon4 {
+      background-position: -140px -180px; }
+    #gome-footer .gm-footer-credit .f-icon5 {
+      background-position: -175px -180px; }
 
 #gome-bar {
   position: fixed;
@@ -310,180 +250,151 @@ body {
   width: 35px;
   height: 100%;
   z-index: 999;
-  background: #5c5c5c;
-}
-#gome-bar .gm-bar-top b, #gome-bar .gm-bar-bot b {
-  display: block;
-  position: absolute;
-  top: 14px;
-  left: 0;
-  width: 7px;
-  height: 11px;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -47px -464px;
-  overflow: hidden;
-}
-#gome-bar .gm-bar-top li, #gome-bar .gm-bar-bot li {
-  position: relative;
-  height: 38px;
-}
-#gome-bar .gm-bar-top li:hover, #gome-bar .gm-bar-bot li:hover {
-  background: #343434;
-}
-#gome-bar .gm-bar-top .hidebox, #gome-bar .gm-bar-bot .hidebox {
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 60px;
-  height: 18px;
-  padding: 9px 10px;
-  line-height: 18px;
-  border: 1px solid #e6e6e6;
-  color: #999;
-  background: #fff;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: -1;
-}
-#gome-bar .gm-bar-top li:hover .hidebox, #gome-bar .gm-bar-bot li:hover .hidebox {
-  display: block;
-  border-right: 0;
-  right: 35px;
-}
-#gome-bar .gm-bar-top li:hover b, #gome-bar .gm-bar-bot li:hover b {
-  background-position: -40px -464px;
-}
-#gome-bar .gm-bar-top {
-  position: absolute;
-  top: 15px;
-  right: 0;
-  text-align: center;
-}
-#gome-bar .gm-bar-top li {
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/uiline.png") no-repeat center bottom;
-}
-#gome-bar .gm-bar-top .gm-bar-member, #gome-bar .gm-bar-top .gm-bar-collect, #gome-bar .gm-bar-top .gm-bar-cart {
-  position: relative;
-  height: 39px;
-  line-height: 39px;
-  cursor: pointer;
-}
-#gome-bar .gm-bar-top .gm-bar-member i, #gome-bar .gm-bar-top .gm-bar-collect i, #gome-bar .gm-bar-top .gm-bar-cart i {
-  margin-left: 5px;
-  display: inline-block;
-  width: 28px;
-  height: 18px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -18px -1025px;
-}
-#gome-bar .gm-bar-top .gm-bar-collect i {
-  background-position: -71px -1023px;
-}
-#gome-bar .gm-bar-top .gm-bar-cart {
-  height: 90px;
-  padding-top: 30px;
-}
-#gome-bar .gm-bar-top .gm-bar-cart i {
-  display: inline-block;
-  width: 31px;
-  height: 20px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -24px -1046px;
-  margin: 0 4px 3px 0;
-  display: block;
-}
-#gome-bar .gm-bar-top .gm-bar-cart em {
-  display: inline-block;
-  position: absolute;
-  top: 16px;
-  left: 14px;
-  width: 18px;
-  height: 16px;
-  color: #fff;
-  background: #a5a5a5;
-}
-#gome-bar .gm-bar-top .gm-bar-cart em .num {
-  position: absolute;
-  top: 0;
-  left: 6px;
-  font-weight: 400;
-  line-height: 16px;
-}
-#gome-bar .gm-bar-top .gm-bar-cart em .point {
-  display: block;
-  position: absolute;
-  top: 14px;
-  left: 6px;
-  width: 5px;
-  height: 6px;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1087px;
-  overflow: hidden;
-}
-#gome-bar .gm-bar-top .gm-bar-cart .text {
-  width: 12px;
-  display: inline-block;
-  color: #fff;
-  line-height: 18px;
-}
-#gome-bar .gm-bar-bot {
-  position: absolute;
-  bottom: 35px;
-  right: 0;
-  width: 35px;
-  font-size: 12px;
-  color: #999;
-  z-index: 999;
-}
-#gome-bar .gm-bar-bot .gm-bar-qrcode, #gome-bar .gm-bar-bot .gm-bar-survey, #gome-bar .gm-bar-bot .gm-bar-service, #gome-bar .gm-bar-bot .gm-bar-up {
-  position: relative;
-  height: 38px;
-  text-align: center;
-}
-#gome-bar .gm-bar-bot .gm-bar-qrcode i, #gome-bar .gm-bar-bot .gm-bar-survey i, #gome-bar .gm-bar-bot .gm-bar-service i, #gome-bar .gm-bar-bot .gm-bar-up i {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: middle;
-  background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -212px -473px;
-}
-#gome-bar .gm-bar-bot .gm-bar-qrcode {
-  margin-top: 5px;
-}
-#gome-bar .gm-bar-bot .gm-bar-qrcode .hidebox {
-  width: 140px;
-  height: 180px;
-  padding: 0;
-  border: 0;
-}
-#gome-bar .gm-bar-bot .gm-bar-survey i {
-  background-position: -212px -493px;
-}
-#gome-bar .gm-bar-bot .gm-bar-service i {
-  background-position: -212px -513px;
-}
-#gome-bar .gm-bar-bot .gm-bar-up i {
-  background-position: -212px -533px;
-}
-#gome-bar .gm-bar-bot .qrcode, #gome-bar .gm-bar-bot .up, #gome-bar .gm-bar-bot .service, #gome-bar .gm-bar-bot .survey {
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  height: 20px;
-  padding: 9px 0;
-  color: #999;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 2;
-}
-#gome-bar .gm-bar-bot .qrcode i, #gome-bar .gm-bar-bot .up i, #gome-bar .gm-bar-bot .service i, #gome-bar .gm-bar-bot .survey i {
-  vertical-align: baseline;
-}
+  background: #5c5c5c; }
+  #gome-bar .gm-bar-top b, #gome-bar .gm-bar-bot b {
+    display: block;
+    position: absolute;
+    top: 14px;
+    left: 0;
+    width: 7px;
+    height: 11px;
+    background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -47px -464px;
+    overflow: hidden; }
+  #gome-bar .gm-bar-top li, #gome-bar .gm-bar-bot li {
+    position: relative;
+    height: 38px; }
+    #gome-bar .gm-bar-top li:hover, #gome-bar .gm-bar-bot li:hover {
+      background: #343434; }
+  #gome-bar .gm-bar-top .hidebox, #gome-bar .gm-bar-bot .hidebox {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    height: 18px;
+    padding: 9px 10px;
+    line-height: 18px;
+    border: 1px solid #e6e6e6;
+    color: #999;
+    background: #fff;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: -1; }
+  #gome-bar .gm-bar-top li:hover .hidebox, #gome-bar .gm-bar-bot li:hover .hidebox {
+    display: block;
+    border-right: 0;
+    right: 35px; }
+  #gome-bar .gm-bar-top li:hover b, #gome-bar .gm-bar-bot li:hover b {
+    background-position: -40px -464px; }
+  #gome-bar .gm-bar-top {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    text-align: center; }
+    #gome-bar .gm-bar-top li {
+      background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/uiline.png") no-repeat center bottom; }
+    #gome-bar .gm-bar-top .gm-bar-member, #gome-bar .gm-bar-top .gm-bar-collect, #gome-bar .gm-bar-top .gm-bar-cart {
+      position: relative;
+      height: 39px;
+      line-height: 39px;
+      cursor: pointer; }
+      #gome-bar .gm-bar-top .gm-bar-member i, #gome-bar .gm-bar-top .gm-bar-collect i, #gome-bar .gm-bar-top .gm-bar-cart i {
+        margin-left: 5px;
+        display: inline-block;
+        width: 28px;
+        height: 18px;
+        vertical-align: middle;
+        background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -18px -1025px; }
+    #gome-bar .gm-bar-top .gm-bar-collect i {
+      background-position: -71px -1023px; }
+    #gome-bar .gm-bar-top .gm-bar-cart {
+      height: 90px;
+      padding-top: 30px; }
+      #gome-bar .gm-bar-top .gm-bar-cart i {
+        display: inline-block;
+        width: 31px;
+        height: 20px;
+        vertical-align: middle;
+        background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -24px -1046px;
+        margin: 0 4px 3px 0;
+        display: block; }
+      #gome-bar .gm-bar-top .gm-bar-cart em {
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 14px;
+        width: 18px;
+        height: 16px;
+        color: #fff;
+        background: #a5a5a5; }
+        #gome-bar .gm-bar-top .gm-bar-cart em .num {
+          position: absolute;
+          top: 0;
+          left: 6px;
+          font-weight: 400;
+          line-height: 16px; }
+        #gome-bar .gm-bar-top .gm-bar-cart em .point {
+          display: block;
+          position: absolute;
+          top: 14px;
+          left: 6px;
+          width: 5px;
+          height: 6px;
+          background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat 0 -1087px;
+          overflow: hidden; }
+      #gome-bar .gm-bar-top .gm-bar-cart .text {
+        width: 12px;
+        display: inline-block;
+        color: #fff;
+        line-height: 18px; }
+  #gome-bar .gm-bar-bot {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+    width: 35px;
+    font-size: 12px;
+    color: #999;
+    z-index: 999; }
+    #gome-bar .gm-bar-bot .gm-bar-qrcode, #gome-bar .gm-bar-bot .gm-bar-survey, #gome-bar .gm-bar-bot .gm-bar-service, #gome-bar .gm-bar-bot .gm-bar-up {
+      position: relative;
+      height: 38px;
+      text-align: center; }
+      #gome-bar .gm-bar-bot .gm-bar-qrcode i, #gome-bar .gm-bar-bot .gm-bar-survey i, #gome-bar .gm-bar-bot .gm-bar-service i, #gome-bar .gm-bar-bot .gm-bar-up i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+        background: url("https://css.gomein.net.cn/gmpro/1.0.0/public/1.0.0/css/i/ui.png") no-repeat -212px -473px; }
+    #gome-bar .gm-bar-bot .gm-bar-qrcode {
+      margin-top: 5px; }
+      #gome-bar .gm-bar-bot .gm-bar-qrcode .hidebox {
+        width: 140px;
+        height: 180px;
+        padding: 0;
+        border: 0; }
+    #gome-bar .gm-bar-bot .gm-bar-survey i {
+      background-position: -212px -493px; }
+    #gome-bar .gm-bar-bot .gm-bar-service i {
+      background-position: -212px -513px; }
+    #gome-bar .gm-bar-bot .gm-bar-up i {
+      background-position: -212px -533px; }
+    #gome-bar .gm-bar-bot .qrcode, #gome-bar .gm-bar-bot .up, #gome-bar .gm-bar-bot .service, #gome-bar .gm-bar-bot .survey {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 20px;
+      padding: 9px 0;
+      color: #999;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 2; }
+      #gome-bar .gm-bar-bot .qrcode i, #gome-bar .gm-bar-bot .up i, #gome-bar .gm-bar-bot .service i, #gome-bar .gm-bar-bot .survey i {
+        vertical-align: baseline; }
 
 body {
-  font-family: Arial,simsun;
-}
+  font-family: Arial,simsun; }
 
 #mask {
   display: none;
@@ -492,8 +403,7 @@ body {
   background: rgba(0, 0, 0, 0.05);
   position: absolute;
   left: 0;
-  top: 0;
-}
+  top: 0; }
 
 #agreement {
   display: none;
@@ -505,217 +415,181 @@ body {
   border: 1px solid #eee;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
-  z-index: 2;
-}
-#agreement h4 {
-  padding: 7px 0;
-  color: #000;
-  font-size: 16px;
-  font-weight: normal;
-  text-align: center;
-}
-#agreement .txt p {
-  font-size: 12px;
-  color: #585858;
-  line-height: 24px;
-}
-#agreement .txt b {
-  font-size: 12px;
-}
-#agreement .gome_agree {
-  padding-top: 15px;
-}
-#agreement .gome_agree a {
-  display: inline-block;
-  padding-bottom: 5px;
-  font-size: 13px;
-  color: #2875cc;
-}
-#agreement .gome_agree div {
-  width: 795px;
-  height: 75px;
-  padding: 0 14px 0 9px;
-  color: #333;
-  border: 1px solid #e6e6e6;
-  line-height: 24px;
-  overflow-y: scroll;
-}
-#agreement a:hover {
-  background: #f20c59;
-  color: #fff;
-}
-#agreement .no, #agreement .yes {
-  display: inline-block;
-  height: 30px;
-  padding: 0 15px;
-  margin-top: 20px;
-  font-size: 14px;
-  color: #5a6066;
-  line-height: 30px;
-  border: 1px solid #cacccf;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#agreement .no {
-  margin-left: 308px;
-}
-#agreement .yes {
-  margin-left: 15px;
-  color: #f20c59;
-  border: 1px solid #f20c59;
-}
+  z-index: 2; }
+  #agreement h4 {
+    padding: 7px 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center; }
+  #agreement .txt p {
+    font-size: 12px;
+    color: #585858;
+    line-height: 24px; }
+  #agreement .txt b {
+    font-size: 12px; }
+  #agreement .gome_agree {
+    padding-top: 15px; }
+  #agreement .gome_agree a {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 13px;
+    color: #2875cc; }
+  #agreement .gome_agree div {
+    width: 795px;
+    height: 75px;
+    padding: 0 14px 0 9px;
+    color: #333;
+    border: 1px solid #e6e6e6;
+    line-height: 24px;
+    overflow-y: scroll; }
+  #agreement a:hover {
+    background: #f20c59;
+    color: #fff; }
+  #agreement .no, #agreement .yes {
+    display: inline-block;
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #5a6066;
+    line-height: 30px;
+    border: 1px solid #cacccf;
+    border-radius: 5px;
+    cursor: pointer; }
+  #agreement .no {
+    margin-left: 308px; }
+  #agreement .yes {
+    margin-left: 15px;
+    color: #f20c59;
+    border: 1px solid #f20c59; }
 
 #logo {
   height: 120px;
-  vertical-align: middle;
-}
-#logo .wrap {
-  width: 990px;
-  margin: 0 auto;
-  padding-top: 18px;
-}
-#logo a {
-  display: inline-block;
-  width: 300px;
-  height: 62px;
-  vertical-align: middle;
-  background: url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat 0 0;
-  margin-top: 16px;
-}
+  vertical-align: middle; }
+  #logo .wrap {
+    width: 990px;
+    margin: 0 auto;
+    padding-top: 18px; }
+  #logo a {
+    display: inline-block;
+    width: 300px;
+    height: 62px;
+    vertical-align: middle;
+    background: url("https://misc.gomein.net.cn/images/regfront/register/registerlogo.png") no-repeat 0 0;
+    margin-top: 16px; }
 
 #register {
   width: 990px;
-  margin: 0 auto;
-}
-#register .wrap {
-  position: relative;
-  margin-top: 68px;
-  padding-bottom: 21px;
-  border: 1px solid #e6e6e6;
-  background: url("https://gfs11.gomein.net.cn/T1E1VjB7YT1RCvBVdK.png") no-repeat scroll 580px -60px;
-}
-#register .wrap .login-info {
-  position: absolute;
-  top: -25px;
-  right: 20px;
-}
-#register .wrap .login-info a {
-  margin-left: 5px;
-  color: #006699;
-}
-#register .wrap .user-reg {
-  position: absolute;
-  top: -42px;
-  left: 149px;
-  width: 150px;
-  height: 40px;
-  margin-left: 2px;
-  font: bold 14px/41px "微软雅黑";
-  color: #cc0000;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #e6e6e6;
-  border-top: 2px solid #cc0000;
-  border-bottom: 0;
-  cursor: pointer;
-}
+  margin: 0 auto; }
+  #register .wrap {
+    position: relative;
+    margin-top: 68px;
+    padding-bottom: 21px;
+    border: 1px solid #e6e6e6;
+    background: url("https://gfs11.gomein.net.cn/T1E1VjB7YT1RCvBVdK.png") no-repeat scroll 580px -60px; }
+    #register .wrap .login-info {
+      position: absolute;
+      top: -25px;
+      right: 20px; }
+      #register .wrap .login-info a {
+        margin-left: 5px;
+        color: #006699; }
+    #register .wrap .user-reg {
+      position: absolute;
+      top: -42px;
+      left: 149px;
+      width: 150px;
+      height: 40px;
+      margin-left: 2px;
+      font: bold 14px/41px "微软雅黑";
+      color: #cc0000;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e6e6e6;
+      border-top: 2px solid #cc0000;
+      border-bottom: 0;
+      cursor: pointer; }
 
 .formlists {
-  padding-top: 40px;
-}
-.formlists .formlist {
-  position: relative;
-  padding: 0 0 26px 151px;
-  height: 40px;
-}
-.formlists .formlist .labelname {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 151px;
-  height: 38px;
-  line-height: 38px;
-  font-size: 14px;
-  text-align: right;
-}
-.formlists .formlist input {
-  position: relative;
-  float: left;
-  width: 288px;
-  height: 36px;
-  padding: 0 4px;
-  border: 1px solid #ccc;
-  line-height: 36px;
-  color: #a5a5a5;
-  vertical-align: middle;
-  outline: 0;
-}
-.formlists .formlist .msg-box {
-  float: left;
-  height: 38px;
-  margin-left: 5px;
-  overflow: hidden;
-}
-.formlists .formlist .msg-box .focus-box, .formlists .formlist .msg-box .blur-box {
-  display: none;
-  height: 36px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-}
-.formlists .formlist .msg-box .focus-box:after, .formlists .formlist .msg-box .blur-box:after {
-  content: " ";
-  display: block;
-  clear: both;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-}
-.formlists .formlist .msg-box .focus-box label, .formlists .formlist .msg-box .blur-box label {
-  float: left;
-  height: 36px;
-  line-height: 36px;
-  margin: 0 5px 0 5px;
-}
-.formlists .formlist .msg-box .blur-box {
-  overflow: hidden;
-  color: #ff5757;
-}
-.formlists .formlist .correct {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  vertical-align: middle;
-  background: url("https://misc.gomein.net.cn/images/regfront/register/register.png") no-repeat 0 -20px;
-}
-.formlists .formlist-btn {
-  padding: 15px 0;
-  margin-top: -15px;
-}
-.formlists .formlist-btn input {
-  display: block;
-  width: 298px;
-  height: 40px;
-  margin: 5px 0 0 151px;
-  font: 16px/40px "微软雅黑";
-  color: #fff;
-  text-align: center;
-  background-color: #ff5757;
-  border: 0;
-  outline: 0;
-  cursor: pointer;
-}
+  padding-top: 40px; }
+  .formlists .formlist {
+    position: relative;
+    padding: 0 0 26px 151px;
+    height: 40px; }
+    .formlists .formlist .labelname {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 151px;
+      height: 38px;
+      line-height: 38px;
+      font-size: 14px;
+      text-align: right; }
+    .formlists .formlist input {
+      position: relative;
+      float: left;
+      width: 288px;
+      height: 36px;
+      padding: 0 4px;
+      border: 1px solid #ccc;
+      line-height: 36px;
+      color: #a5a5a5;
+      vertical-align: middle;
+      outline: 0; }
+    .formlists .formlist .msg-box {
+      float: left;
+      height: 38px;
+      margin-left: 5px;
+      overflow: hidden; }
+      .formlists .formlist .msg-box .focus-box, .formlists .formlist .msg-box .blur-box {
+        display: none;
+        height: 36px;
+        border: 1px solid #ccc;
+        background-color: #fff; }
+        .formlists .formlist .msg-box .focus-box:after, .formlists .formlist .msg-box .blur-box:after {
+          content: " ";
+          display: block;
+          clear: both;
+          height: 0;
+          overflow: hidden;
+          visibility: hidden; }
+        .formlists .formlist .msg-box .focus-box label, .formlists .formlist .msg-box .blur-box label {
+          float: left;
+          height: 36px;
+          line-height: 36px;
+          margin: 0 5px 0 5px; }
+      .formlists .formlist .msg-box .blur-box {
+        overflow: hidden;
+        color: #ff5757; }
+    .formlists .formlist .correct {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      vertical-align: middle;
+      background: url("https://misc.gomein.net.cn/images/regfront/register/register.png") no-repeat 0 -20px; }
+  .formlists .formlist-btn {
+    padding: 15px 0;
+    margin-top: -15px; }
+    .formlists .formlist-btn input {
+      display: block;
+      width: 298px;
+      height: 40px;
+      margin: 5px 0 0 151px;
+      font: 16px/40px "微软雅黑";
+      color: #fff;
+      text-align: center;
+      background-color: #ff5757;
+      border: 0;
+      outline: 0;
+      cursor: pointer; }
 
 #gome-footer {
   background: #fff;
-  border-top: 0;
-}
-#gome-footer .gm-footer-box {
-  width: 990px;
-  background: #fff;
-  font-family: "微软雅黑";
-}
-#gome-footer .gm-footer-box span, #gome-footer .gm-footer-box .qrcode-section {
-  display: none;
-}
-
-/*# sourceMappingURL=register.css.map */
+  border-top: 0; }
+  #gome-footer .gm-footer-box {
+    width: 990px;
+    background: #fff;
+    font-family: "微软雅黑"; }
+    #gome-footer .gm-footer-box span, #gome-footer .gm-footer-box .qrcode-section {
+      display: none; }

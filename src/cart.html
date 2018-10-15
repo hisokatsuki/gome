@@ -40,10 +40,9 @@
         <div class="cart-title wrap">
             <div class="cart-header">
                 <div class="cart-col-1">
-                    <div class="checkbox_choose" style="margin-top:16px;"></div>
-                    <!-- <div class="pabs hide">                  
-                        <div class="white-arrow">◆</div>您还未选择商品              
-                    </div>            -->
+                    <div class="checkbox checkbox_choose all-choose" style="margin-top:16px;">
+                        <input type="checkbox" checked="checked" style="display: none;">                     
+                    </div>
                 </div>
                 <div class="cart-col-2">全选</div>
                 <div class="cart-col-3">商品信息</div>
@@ -58,17 +57,11 @@
             </div>
         </div>
         <div class="cart-list wrap">
-            <div class="cart-shop-header">
-                <div class="cart-col-1">
-                    <div class="checkbox_choose" style="margin-top: 13px;"></div>
-                </div>
-                <div class="cart-col-2">
-                    <span class="cart-shop-name">国美自营</span>
-                </div>
-            </div>
             <div class="cart-shop-good">
                 <div class="cart-col-1">
-                    <div class="checkbox_choose"></div>
+                    <div class="checkbox checkbox_choose">
+                        <input type="checkbox" checked="checked" style="display:none">
+                    </div>
                 </div>
                 <div class="cart-col-2" style="height: 82px;">
                     <a href="#" target="_blank" class="g-img">
@@ -102,7 +95,7 @@
                         </div>
                     </div>
                     <div class="cart-col-6 ">
-                        <div class="cart-amount"> ¥&nbsp;2999.00 </div>
+                        <div class="cart-amount"> ¥ 2999.00 </div>
                     </div>
                 </div>
                 <div class="cart-col-7" style="float:right;">
@@ -118,21 +111,17 @@
         <div class="cart-bottom">
             <div class="wrap">
                 <div class="cart-col-1 pr">
-                    <div class="checkbox_no">
-                        <!-- <input type="checkbox" style="display: none;">  -->
+                    <div class="checkbox checkbox_choose all-choose">
+                        <input type="checkbox" checked="checked" style="display: none;"> 
                     </div>
-                    <!-- <div class="pabs hide selectAllItemOffBottom selectAllItemOffCheck">
-                        <div class="white-arrow">◆</div> 您还未选择商品
-                    </div> -->
                 </div>
                 <div class="cart-col-2"> 全选 <a href="javascript:;" class="cart-del">删除</a> </div>
                 <div class="cart-col-3"></div>
                 <div class="cart-col-4 cart-totle-price">
                     <div class="cart-select">
                         已选
-                        <span class="cart-price-red selected-price"> 0 </span> 件商品
+                        <span class="cart-price-red selected-qty">0</span> 件商品
                         <em class=""></em>
-                        <!-- <i class="c-i bottom-arrow"style="display:none;"></i>  -->
                     </div>
                     <div class="bottom-total-pirce">
                         <dl>
@@ -146,7 +135,6 @@
                         <span class="btn-normal">去结算
                             <em class="c-i arrowRight-white"></em>
                         </span>
-                        <!-- <div class="btn-loading">结算中<i></i></div> -->
                     </a>
                 </div>
             </div>

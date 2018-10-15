@@ -1,0 +1,2 @@
+require(['cart_effect']);
+

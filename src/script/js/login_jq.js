@@ -22,7 +22,7 @@ define(['config'],function(){
                     $errtip.parent().hide();
                     $.ajax({
                         type:'post',
-                        url:'http://localhost/myself/gome/php/login.php',
+                        url:'http://10.31.162.61/myself/gome/php/login.php',
                         data:{
                             name:$('.name input').val(),
                             pass:$('.pass input').val()

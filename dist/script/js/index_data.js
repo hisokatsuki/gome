@@ -82,7 +82,7 @@ define(['../thirdplugins/jquery','header'], function (jquery,header) {
                         $floorlist[index]='<ul class="tab-item">';
                         $.each($d,function(i,ele){
                             if(ele.type==type && ele.tabpage==index+1){
-                                $floorlist[index]+='<li><a href="http://10.31.162.61/myself/gome/src/details.html?sid='+ele.sid+'" target="_blank"><img class="lazyloading" src="'+ele.url+'" alt="'+ele.title+'" sid="'+ele.sid+'"><p class="p_name">'+ele.title+'</p><p class="p_price">'+ele.price+'</p></a></li>';
+                                $floorlist[index]+='<li><a href="http://localhost/myself/gome/src/details.html?sid='+ele.sid+'" target="_blank"><img class="lazyloading" src="'+ele.url+'" alt="'+ele.title+'" sid="'+ele.sid+'"><p class="p_name">'+ele.title+'</p><p class="p_price">'+ele.price+'</p></a></li>';
                             }
                         });
                         $floorlist[index]+='</ul>';  

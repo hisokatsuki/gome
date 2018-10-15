@@ -30,7 +30,7 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                     });
                 });
             }
-            // 页面加载检测购物车(cookie里面)是否有数据，有的话创建商品列表--详情页添加的商品
+            // 1.页面加载检测购物车(cookie里面)是否有数据，有的话创建商品列表--详情页添加的商品
             if($.cookie('cartsid') && $.cookie('cartqty')){
                 var $sidarr=$.cookie('cartsid').split(',');
                 var $qtyarr=$.cookie('cartqty').split(',');
@@ -46,7 +46,6 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                 var $sid=$(this).parent().find('.item-image img').attr('sid'); //获取对应的图片sid
                 $(this).next().animate({opacity:1},1000).animate({opacity:0},1000); //添加购物车成功出现
                 tools.cookietoArray(); //获取cookie，转为数组
-                $('.cart-empty-box').hide();
                 //判断点击的商品sid是否存在cookie中
                 if($.inArray($sid,$sidarr)!=-1){ //存在cookie
                     var $cart_list=$('.cart-list:visible');
@@ -90,9 +89,7 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                     }else{
                         $(this).parent().parent().find('.add').addClass('count-disabled');
                     }
-                    $(this).parents('.cart-list').find('.cart-amount').html('¥ '+single_price($(this)));
                     countpriceqty();
-                    setcookie($(this));
                 });
             })
             // 加数量
@@ -108,28 +105,28 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                     $qty.val(99);
                     $(this).addClass('count-disabled');
                 }
-                $(this).parents('.cart-list').find('.cart-amount').html('¥ '+single_price($(this)));
                 countpriceqty();
-                setcookie($(this));
+                // $('.count-input input').val()
             });
             // 减数量
             $gm_cart_lists.on('click','.cart-count .reduce',function(){
                 var $qty=$(this).parent().find('.qty');
+                var $price=parseFloat($('.cart-list:visible .cart-shop-good .cart-amount').html().substring(2));
+                console.log($price);
                 $value=parseInt($qty.val());
                 $value--;
                 if($value>1){
                     $qty.val($value);
                     $(this).next().removeClass('count-disabled');
                     $(this).removeClass('count-disabled');
+                    // $('.cart-shop-good .cart-amount').html('¥ '+$value*$price);
                 }else{
                     $value=1;
                     $qty.val($value);
                     $(this).addClass('count-disabled');
                 }
-                console.log(single_price($(this)));
-                $(this).parents('.cart-list').find('.cart-amount').html('¥ '+single_price($(this)));
+                $('.cart-shop-good .cart-amount').html('¥ '+($value*$price));
                 countpriceqty();
-                setcookie($(this));
             });
             // 计算总价和总数
             function countpriceqty(){
@@ -137,7 +134,7 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                 var $countqty=0;
                 var $cart_list=$('.cart-list:visible');
                 $.each($cart_list,function(index,ele){
-                    if($(ele).find('.cart-shop-good .cart-col-1 .checkbox_choose input:checkbox').is(':checked')){
+                    if($(ele).find('.cart-shop-good .cart-col-1 .checkbox_choose')){
                         $countprice+=(parseFloat($(ele).find('.cart-amount').html().substring(2)));
                         $countqty+=parseInt($(ele).find('.qty').val())
                     }
@@ -147,84 +144,11 @@ define(['config','cart_data','../thirdplugins/jquery','tools'],function(config,d
                 $('.cart-bottom .selected-qty').html($countqty);
             }
             // 计算数量改变后单个商品的价格
-            function single_price(ele){
-                var $dj = parseFloat(ele.parents('.cart-list').find('.cart-price').html().substring(2));
-                var $sqty = parseInt(ele.parents('.cart-list').find('.count-input input').val());
-                return ($dj * $sqty).toFixed(2);
+            function single_price(){
+                var $dj = parseFloat(row.parents('.goods-item').find('.b-price').find('strong').html());
+                var $cnum = parseInt(row.parents('.goods-item').find('.quantity-form input').val());
+                return ($dj * $cnum).toFixed(2);
             }
-            // 将改变后的数量的值存放到cookie
-            function setcookie(ele) { 
-                tools.cookietoArray();
-                var $index = ele.parents('.cart-list').find('.cart-col-2 img').attr('sid');
-                $qtyarr[$sidarr.indexOf($index)] = ele.parents('.cart-list').find('.count-input input').val();
-                $.cookie('cartqty', $qtyarr.toString(), {expires:10});
-            }
-            // 全选
-            $('.all-choose').on('click', function() {
-                $(this).addClass('checked_choose');
-                $('.cart-list:visible').find('input:checkbox').prop('checked', $(this).prop('checked'));
-                $('.all-choose').prop('checked', $(this).prop('checked'));
-                countpriceqty();//求和
-            });
-            $gm_cart_lists.on('click','.cart-list:visible .cart-shop-good .checkbox', function() {
-                var $checkboxs = $('.cart-list:visible .cart-shop-good .checkbox');
-                var $checked=$('.cart-list:visible .cart-shop-good .checkbox_choose');
-                if($(this).find('input:checked').size()>0){
-                    $(this).removeClass('checkbox_choose').addClass('checkbox_no');
-                    $(this).find('input').prop('checked',false);
-                }else{
-                    $(this).removeClass('checkbox_no').addClass('checkbox_choose');
-                    $(this).find('input').prop('checked',true);
-                }
-                if ($checked.length == $checkboxs.size()) {
-                    $('.all-choose').removeClass('checkbox_no').addClass('checkbox_choose').find('input').prop('checked', true);                   
-                } else {
-                    $('.all-choose').removeClass('checkbox_choose').addClass('checkbox_no').find('input').prop('checked', false);                
-                }
-                countpriceqty();
-            });
-            // 删除
-            // 删除cookie的函数
-            function delcartslist(sid, sidarr,qtyarr) {//sid：当前的sid，sidarr:cookie的sid的值
-                var num = -1;
-                $.each(sidarr,function(index){
-                    if (sid == sidarr[index]) {
-                        num = index;
-                    }
-                })
-                sidarr.splice(num,1);//删除数组对应的值
-                qtyarr.splice(num,1);//删除数组对应的值
-                $.cookie('cartsid', sidarr.toString(),{expires:10});//添加cookie
-                $.cookie('cartqty', qtyarr.toString(),{expires:10});
-            }
-            //删除单个商品的函数(委托)
-            $gm_cart_lists.on('click','.cart-good-fun a',function(){
-                tools.cookietoArray(); //转数组
-                if(confirm('你确定要删除吗？')){
-                    $(this).parents('.cart-list').remove();
-                }
-                delcartslist($(this).parents('.cart-list').find('.cart-col-2 img').attr('sid'), $sidarr,$qtyarr);
-                countpriceqty();
-                if($('.cart-list:visible').size()==0){
-                    $('.cart-empty-box').show();
-                    $('.cart-title').hide();
-                    $('.cart-bottom').hide();
-                }
-            });
-            //删除全部商品的函数
-            $('.cart-del').on('click', function() {
-                tools.cookietoArray(); //转数组
-                $('.cart-list:visible').each(function() {
-                    if ($(this).find('input:checkbox').is(':checked')) {
-                        $(this).remove();
-                        delcartslist($(this).find('.cart-col-2 img').attr('sid'), $sidarr,$qtyarr);
-                    }
-                });
-                $('.cart-title').hide();
-                $('.cart-bottom').hide();
-                $('.cart-empty-box').show();
-                countpriceqty();
-            });
         }();
     })
 })

@@ -77,7 +77,7 @@ define(['config'],function(){
                 if($uname.val().length>=4){
                     $.ajax({
                         type:'post',
-                        url:'http://localhost/myself/gome/php/register.php',
+                        url:'http://10.31.162.61/myself/gome/php/register.php',
                         data:{
                             name:$uname.val()
                         }

@@ -180,6 +180,7 @@
     }
     .cart-shop-good{
         position: relative;
+        margin-top:10px;
         border: 1px solid #e6e6e6;
         background:#fffaf4;
         text-align: center;
@@ -189,9 +190,6 @@
             padding: 20px 0;
         }
         .cart-col-1{
-            position: absolute;
-            top:0;
-            left:0;
             width:40px;
             line-height:14px;
         }
@@ -283,14 +281,19 @@
                     border:0;
                     text-align: center;
                     overflow: hidden;
+                    outline: 0;
                 }
             }
             .reduce{
                 left:0;
+                color:#666;
             }
             .add{
                 right:0;
-                color: #666;
+                color:#666;
+            }
+            .count-disabled{
+                color: #ccc;
             }
         }
         .cart-col-6{
@@ -467,7 +470,6 @@
             font-family: "微软雅黑";
         }
         .add-success{
-            display:$none;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -479,6 +481,7 @@
             line-height:30px;
             color:#fff;
             background:rgba(0,0,0,.5);
+            opacity: 0;
         }
         .item-btn{
             display: inline-block;
